@@ -4,8 +4,8 @@ a weird comment
 """
 
 # * This.
-# ? Question
+# *? Question
 # ! Watch out!
-# TODO: saved for later
+# *TODO: saved for later
 
 print("Hello World!")  # an inline comment
