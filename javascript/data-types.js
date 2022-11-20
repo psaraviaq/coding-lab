@@ -4,8 +4,9 @@
 console.log(typeof 2);
 
 //* 2) String
-console.log(typeof "Hello?"); // single or double quotes
+console.log(typeof "It's me"); // single or double quotes
 console.log(typeof `Tch`);
+console.log("wow".length); // 'length' is a property
 
 //* 3) Boolean
 console.log(typeof true);

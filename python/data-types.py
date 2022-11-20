@@ -7,7 +7,8 @@ print(type(-2.7))  # * Floats
 print(type(complex(1, 3)))  # * Complex numbers
 
 # * 2) Sequence
-print(type('hello'))  # * Strings (single or double quotes)
+print(type("I'm Pedro"))  # * Strings (single or double quotes)
+print(len('hello'))  # 'len' is a function
 print(type([0, 1]))  # * Lists
 print(type((2, 3)))  # ? Tuples (values can't change, need more info)
 
