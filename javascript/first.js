@@ -7,7 +7,7 @@ comment
 
 //* Note
 //? What to do
-//! Warning !!!
+//*! Warning !!!
 //TODO: Do that
 
 console.log("Hello World!"); // inline comment
