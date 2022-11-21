@@ -12,5 +12,13 @@ comment
 
 console.log("Hello World!"); // inline comment
 
-var greet = "Hello";
-console.log(`${greet} Pedro`);
+//* Using a variable from the console
+var rl = require("readline/promises").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+(async function () {
+  var greet = await rl.question("Type a greeting: ");
+  console.log(`${greet} Pedro!`);
+  rl.close();
+})();

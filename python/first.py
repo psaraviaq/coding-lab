@@ -10,5 +10,6 @@ a weird comment
 
 print("Hello World!")  # an inline comment
 
-greet = "Hello"
-print(f'{greet} Pedro')
+# * Using a variable from the console
+greet = input("Type a greeting: ")
+print(f'{greet} Pedro!')
