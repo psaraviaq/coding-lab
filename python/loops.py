@@ -1,5 +1,5 @@
 word = "EASY"
-# * "for" loops
+#! "for" loops (no conditions, they use the length of a variable)
 for letter in "simple":
     print(letter, end=".\n")
 for i in range(0, len(word)):
