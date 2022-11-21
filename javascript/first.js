@@ -11,3 +11,6 @@ comment
 //*TODO: Do that
 
 console.log("Hello World!"); // inline comment
+
+var greet = "Hello";
+console.log(`${greet} Pedro`);

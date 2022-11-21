@@ -9,3 +9,6 @@ a weird comment
 # *TODO: saved for later
 
 print("Hello World!")  # an inline comment
+
+greet = "Hello"
+print(f'{greet} Pedro')
