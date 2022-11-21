@@ -19,3 +19,8 @@ console.log(1 == true); //* Equality "=="
 console.log(3 != "3"); //* Inequality "!="
 console.log(0 === "0"); //* Strict equality "==="
 console.log(7 !== 6); //* Strict Inequality "!=="
+
+//? Additional Operators
+//* "in" (hasOwnProperty?)
+//* "?." (optional chaining operator)
+//* "," (used in "for" like "i++, j--")
