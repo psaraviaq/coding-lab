@@ -1,3 +1,5 @@
+//TODO: Add more array methods
+
 //* Examples and methods
 var languages = ["english", "portuguese", "spanish", "french"];
 console.log(languages.join(" "));
