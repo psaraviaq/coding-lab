@@ -6,13 +6,15 @@ class Country {
     this.currency = currency;
   }
 
-  definition() {
-    console.log("This is an example of a country");
+  talk() {
+    console.log(`In this country, people speak in ${this.language}`);
+    this.language = "french";
+    console.log(`In this country, people also speak in ${this.language}`);
   }
 }
 
 //* Instance of the class
-const france = new Country("french", "euro");
+const canada = new Country("english", "euro");
 
-console.log(`${france.language}: ${france.currency}`);
-france.definition();
+console.log(`${canada.language}: ${canada.currency}`);
+canada.talk();
