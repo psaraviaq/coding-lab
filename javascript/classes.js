@@ -1,3 +1,4 @@
+//* The "class" keyword was just introduced in ES6
 //* Class definition (methods don't have the "function" keyword)
 class Country {
   constructor(language, currency) {
