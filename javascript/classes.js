@@ -39,6 +39,8 @@ class EuropeanCountry extends Country {
   }
 
   aboutMe() {
+    //! "super" is a keyword, it's not a variable that you can read
+    //console.log(super)
     const proto = super.getTypes();
 
     //* Another way to access the prototype
@@ -50,3 +52,17 @@ class EuropeanCountry extends Country {
 
 const france = new EuropeanCountry("France", "french", "euro");
 france.aboutMe();
+
+//! The "constructor" function is not necessary
+//* You can even build properties outside of it
+class Kingdom extends EuropeanCountry {
+  food = "fish and chips";
+
+  posting() {
+    console.log(`In ${this.name}: ${this.currency}`);
+  }
+}
+
+const uk = new Kingdom("UK", "english", "pound");
+console.log(`I love ${uk.food}`);
+uk.posting();
