@@ -29,4 +29,4 @@ if (true) {
 }
 console.log(age);
 //! "const" variables must be assigned a value when declaring them
-const currentJob;
+// const currentJob;

@@ -6,8 +6,8 @@ try {
 }
 
 //! However, it can't handle syntax errors
-try {
-  2+3+
-} catch (err) {
-  console.log("This will never print out")
-}
+// try {
+//   2+3+
+// } catch (err) {
+//   console.log("This will never print out")
+// }

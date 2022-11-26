@@ -14,4 +14,4 @@ print(my_set)
 # * There are also another methods like "union", "intersection", .etc
 
 #! Not a "sequence", they don't contain an ordered index of all elements
-print(my_set[1])
+# print(my_set[1])
