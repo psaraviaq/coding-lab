@@ -1,5 +1,5 @@
 
-#! Class definition (methods must contain the "self" parameter):
+#! Class definition (methods must contain "self", a convention, as their 1st parameter)
 class Cat:
     sound = "meow"
 
@@ -18,6 +18,23 @@ class Cat:
 # * Instance of a class
 my_cat = Cat("Pacha", "female")
 
-print(my_cat.gender)
 print(my_cat.sound)
+print(my_cat.gender)
 my_cat.saySomething()
+
+
+class LatinoCat(Cat):
+    def __init__(self, name, gender, country) -> None:
+        # * Use the "super" keyword when creating sub-classes
+        super().__init__(name, gender)
+        self.country = country
+
+
+class PeruvianCat(LatinoCat):
+    #! The "__init__" method is not necessary
+    def greeting(self):
+        print(f'{self.name} is from {self.country}')
+
+
+another_cat = PeruvianCat("Mimi", "female", "Peru")
+another_cat.greeting()
