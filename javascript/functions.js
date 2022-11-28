@@ -18,6 +18,12 @@ console.log(totalSum(2, 6, 1, 5));
 
 //* __________________________ ES6 features _____________________________
 
+//* Arrow functions
+console.log(((x) => x * x)(25));
+
+const greet = () => ({ greeting: "hello" });
+console.log(greet());
+
 //* Spread operator "..." (expands array into its elements)
 const numbers = [3, 17, 2, 9, 23, 5, 14];
 function myFunction(x, y, z, w) {
