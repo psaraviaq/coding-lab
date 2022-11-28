@@ -19,3 +19,9 @@ console.log(languages.join(" "));
 //* "shift" removes at the beginning
 console.log(languages.shift());
 console.log(languages.join(" "));
+
+//* ES6 features
+
+//* Destructuring
+const [fruit, , user] = ["apple", 10, "Pedro"];
+console.log(`${user} eats ${fruit}s`);

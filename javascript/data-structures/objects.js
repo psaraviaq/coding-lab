@@ -12,3 +12,9 @@ var person = {
 console.log(person.pets);
 console.log(person["name"]);
 person.greeting();
+
+//* ES6 features
+
+//* Destructuring
+const { age } = person;
+console.log(age, "years");
