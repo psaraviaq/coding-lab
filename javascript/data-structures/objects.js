@@ -35,3 +35,7 @@ const car1 = { color: "red", fast: true };
 const car2 = { ...car1 };
 car2.color = "blue";
 console.log(car1, car2);
+
+//* Rest operator "..." (condenses elements into a single element)
+const { b, ...f } = { a: 1, b: 2, c: 3, d: 4 };
+console.log(b, f);

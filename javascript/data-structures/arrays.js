@@ -40,3 +40,7 @@ const myPets = ["cat", "dog"];
 const yourPets = [...myPets];
 yourPets.pop();
 console.log("I:", myPets, "You:", yourPets);
+
+//* Rest operator "..." (condenses elements into a single element)
+const [a, b, ...c] = [1, 2, 3, 4, 5];
+console.log(a, b, c);
