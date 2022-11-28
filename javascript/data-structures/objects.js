@@ -18,3 +18,10 @@ person.greeting();
 //* Destructuring
 const { age, job } = person;
 console.log("age:", age, "- job:", job);
+
+//! 'for...in' iterates over the object and its prototype
+//* 'for...of' only iterates over its own properties, but needs an array
+console.log("Person:");
+for (key of Object.keys(person)) {
+  console.log(`${key}: ${person[key]}`);
+}

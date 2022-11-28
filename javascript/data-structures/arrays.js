@@ -25,3 +25,8 @@ console.log(languages.join(" "));
 //* Destructuring
 const [fruit, , user, number] = ["apple", 10, "Pedro"];
 console.log(`${user} eats ${number} ${fruit}s`);
+
+//* The "for...of" loop iterates over its elements
+for (x of languages) {
+  console.log("I speak", x);
+}
