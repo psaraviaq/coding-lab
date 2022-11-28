@@ -20,7 +20,7 @@ console.log(languages.join(" "));
 console.log(languages.shift());
 console.log(languages.join(" "));
 
-//* ES6 features
+//* __________________________ ES6 features _____________________________
 
 //* Destructuring
 const [fruit, , user, number] = ["apple", 10, "Pedro"];
@@ -30,3 +30,13 @@ console.log(`${user} eats ${number} ${fruit}s`);
 for (x of languages) {
   console.log("I speak", x);
 }
+
+//* Spread operator "..." (useful for concatenating and cloning)
+let numbers = [2, 3, 4];
+numbers = [1, ...numbers, 5];
+console.log(numbers);
+
+const myPets = ["cat", "dog"];
+const yourPets = [...myPets];
+yourPets.pop();
+console.log("I:", myPets, "You:", yourPets);
