@@ -16,3 +16,8 @@ for key, value in person.items():
 # * You can delete a key
 del person["color"]
 print(person)
+
+# * Operator
+someone = {**person}
+someone["name"] = "Ava"
+print(person["name"], "&", someone["name"])

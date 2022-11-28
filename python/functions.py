@@ -27,3 +27,7 @@ def totalSum(*args):
 print(totalSum(10, 3, 8))
 
 # ? There is also "**kwargs"
+
+#! Lambda functions (only accept one expression)
+op = (lambda a, b: a**b)
+print(op(2, 8))

@@ -27,3 +27,8 @@ print(*fruits)
 # * Iterate through a list
 for x in fruits:
     print(x)
+
+# * Operator
+my_fruits = [*fruits]
+my_fruits[1] = "mango"
+print(fruits[1], "and", my_fruits[1])
