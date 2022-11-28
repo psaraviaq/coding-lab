@@ -16,5 +16,5 @@ person.greeting();
 //* ES6 features
 
 //* Destructuring
-const { age } = person;
-console.log(age, "years");
+const { age, job } = person;
+console.log("age:", age, "- job:", job);

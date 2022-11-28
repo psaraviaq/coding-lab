@@ -8,12 +8,12 @@ console.log(languages.join(" "));
 languages.push("russian");
 console.log(languages.join(" "));
 
-//* "unshift" adds at the beginning
-languages.unshift("chinese");
-console.log(languages.join(" "));
-
 //* "pop" removes at the end
 console.log(languages.pop());
+console.log(languages.join(" "));
+
+//* "unshift" adds at the beginning
+languages.unshift("chinese");
 console.log(languages.join(" "));
 
 //* "shift" removes at the beginning
@@ -23,5 +23,5 @@ console.log(languages.join(" "));
 //* ES6 features
 
 //* Destructuring
-const [fruit, , user] = ["apple", 10, "Pedro"];
-console.log(`${user} eats ${fruit}s`);
+const [fruit, , user, number] = ["apple", 10, "Pedro"];
+console.log(`${user} eats ${number} ${fruit}s`);
