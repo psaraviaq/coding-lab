@@ -18,6 +18,12 @@ console.log(totalSum(2, 6, 1, 5));
 
 //* __________________________ ES6 features _____________________________
 
+//* Default parameters
+function noParams(number = 10) {
+  return number * 9;
+}
+console.log(noParams());
+
 //* Arrow functions
 console.log(((x) => x * x)(25));
 

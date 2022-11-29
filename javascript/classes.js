@@ -1,7 +1,8 @@
 //* The "class" keyword was just introduced in ES6
 //* Class definition (methods don't have the "function" keyword)
 class Country {
-  constructor(language, currency) {
+  //* Parameters can have their default values
+  constructor(language = "english", currency = "canadian dollar") {
     this.language = language;
     this.currency = currency;
   }
@@ -25,7 +26,7 @@ class Country {
 }
 
 //* Instance of the class
-const canada = new Country("english", "canadian dollar");
+const canada = new Country();
 
 console.log(`${canada.language}: ${canada.currency}`);
 canada.talk();
