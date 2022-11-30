@@ -1,4 +1,4 @@
-//* include
+//* "includes"
 console.log("The house of cats".includes("house"));
 
 //* __________These methods don't change the original string_________
@@ -9,7 +9,7 @@ console.log(sentence.replace(/like/gi, "love"));
 console.log(sentence);
 
 //* "slice"
-console.log(sentence.slice(0, 6));
+console.log(sentence.slice(0, 10));
 console.log(sentence);
 
 //* "split"
