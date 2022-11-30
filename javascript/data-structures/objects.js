@@ -13,6 +13,9 @@ console.log(person.pets);
 console.log(person["name"]);
 person.greeting();
 
+//* Intellisense doesn't support object built-in methods on purpose
+console.log(person.hasOwnProperty("age"));
+
 //* __________________________ ES6 features _____________________________
 
 //* Destructuring
