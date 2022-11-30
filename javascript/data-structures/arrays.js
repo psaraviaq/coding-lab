@@ -1,24 +1,24 @@
-//TODO: Add more array methods
+var languages = ["english", "spanish", "french"];
 
-//* Examples and methods
-var languages = ["english", "portuguese", "spanish", "french"];
-console.log(languages.join(" "));
+//* Checks if it's actually an array
+console.log(Array.isArray(languages));
+console.log(languages);
 
 //* "push" adds at the end
 languages.push("russian");
-console.log(languages.join(" "));
+console.log(languages);
 
 //* "pop" removes at the end
 console.log(languages.pop());
-console.log(languages.join(" "));
+console.log(languages);
 
 //* "unshift" adds at the beginning
 languages.unshift("chinese");
-console.log(languages.join(" "));
+console.log(languages);
 
 //* "shift" removes at the beginning
 console.log(languages.shift());
-console.log(languages.join(" "));
+console.log(languages);
 
 //* __________________________ ES6 features _____________________________
 
