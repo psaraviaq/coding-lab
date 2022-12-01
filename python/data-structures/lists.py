@@ -8,7 +8,7 @@ print(*fruits)
 
 
 # * "append" adds directly at the end
-fruits.append("peach")
+fruits.append("lemon")
 print(*fruits)
 
 fruits.insert(2, ["coco"])
@@ -27,6 +27,10 @@ print(*fruits)
 # * Iterate through a list
 for x in fruits:
     print(x)
+
+# * List comprehensions
+print([f'{x}s' for x in fruits])
+print([x**2 for x in range(10) if x % 2])
 
 # * Operator
 my_fruits = [*fruits]

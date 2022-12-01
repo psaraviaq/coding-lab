@@ -15,3 +15,6 @@ print(my_set)
 
 #! Not a "sequence", they don't contain an ordered index of all elements
 # print(my_set[1])
+
+# * Set comprehensions
+print({x for x in range(10) if x not in [1, 3, 4, 5, 6]})
