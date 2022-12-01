@@ -1,6 +1,6 @@
 
 # * Examples and methods
-my_set = {1, 2, 3, 4, 3, 3, 3, 5}
+my_set = {4, 2, 5, 3, 3, 1, 3, 2}
 print(my_set)
 
 # * "add" is like the "append" method for lists
@@ -18,3 +18,10 @@ print(my_set)
 
 # * Set comprehensions
 print({x for x in range(10) if x not in [1, 3, 4, 5, 6]})
+
+# * There are other ways to work with sets
+set2 = set("lists")
+print(set2)
+
+print(sorted(set2))
+print("".join(set2))
