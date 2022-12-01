@@ -21,3 +21,13 @@ print(type(False))
 
 # ? 5) Set (values can't be repeated, still need more info)
 print(type({0, 'abc', True}))
+
+# * __________________________Falsy Values_________________________
+print("0:", not not 0)
+print("None:", not not None)
+print("'':", not not "")
+print("[]:", not not [])
+print("{}:", not not {})
+print("():", not not ())
+print("set():", not not set())
+print("range(0):", not not range(0))

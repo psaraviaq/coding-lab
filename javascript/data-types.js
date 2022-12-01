@@ -27,3 +27,10 @@ console.log(typeof bigNumber);
 //? 7) Symbol (I don't know much about this type)
 var sym = Symbol();
 console.log(typeof sym);
+
+//* __________________________Falsy Values_________________________
+console.log("0:", !!0);
+console.log("'':", !!"");
+console.log("undefined:", !!undefined);
+console.log("null:", !!null);
+console.log("NaN:", !!NaN);
