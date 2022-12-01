@@ -12,6 +12,5 @@ print(a, b)
 # * You can delete a variable with the "del" keyword
 the_value = 1
 print(the_value)
-
 del the_value
-print(the_value)
+# print(the_value)
