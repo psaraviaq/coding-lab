@@ -13,6 +13,9 @@ console.log(arr.find((e) => e < 0));
 //* "includes"
 console.log(arr.includes(6));
 
+//* "indexOf"
+console.log(arr.indexOf(4), arr.indexOf("number"));
+
 //* "join"
 console.log(arr.join(" "));
 

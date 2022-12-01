@@ -1,7 +1,4 @@
 
-# TODO: Add more lists methods
-# TODO: Add also the "comprehensions"
-
 # * Examples and methods
 fruits = ["apple", "banana", "watermelon", "orange"]
 print(*fruits)

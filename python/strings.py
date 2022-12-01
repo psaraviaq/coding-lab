@@ -1,6 +1,14 @@
+from re import search as test
+
+sentence = "I love pizza"
+
+# * "replace"
+print(sentence.replace("z", "s"))
+
+# * Reversing a string (with slicing)
+print(sentence[::-1])
 
 # * Regular expressions (RegExp)
-from re import search as test
 expr1 = "abcd"
 expr2 = "^abcd$"
 string = "This is the 'abcd'"
