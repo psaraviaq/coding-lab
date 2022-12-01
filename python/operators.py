@@ -19,3 +19,6 @@ print(3 > 1)
 print(11 <= 11)
 print(1 == True)  # * Equal "=="
 print(3 != "3")  # * Not equal "!="
+
+#! Do not use the "eval" function, can lead to running malicious code
+print(eval("1+2"))

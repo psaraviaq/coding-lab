@@ -24,3 +24,6 @@ console.log(7 !== 6); //* Strict Inequality "!=="
 //* "in" (hasOwnProperty?)
 //* "?." (optional chaining operator)
 //* "," (used in "for" like "i++, j--")
+
+//! Do not use the "eval" function, can lead to running malicious code
+console.log(eval("1+2"));
