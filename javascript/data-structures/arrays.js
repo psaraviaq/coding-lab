@@ -20,6 +20,9 @@ console.log(languages);
 console.log(languages.shift());
 console.log(languages);
 
+//* "from" creates an array
+console.log(Array.from({ length: 5 }, (_, i) => i));
+
 //* __________________________ ES6 features _____________________________
 
 //* Destructuring
