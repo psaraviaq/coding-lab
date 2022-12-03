@@ -2,6 +2,9 @@ from re import search as test
 
 sentence = "I love pizza"
 
+# * You can multiply strings
+print(sentence*3)
+
 # * "replace"
 print(sentence.replace("z", "s"))
 

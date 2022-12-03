@@ -1,7 +1,10 @@
+//* __________These methods don't change the original string_________
+
 //* "includes"
 console.log("The house of cats".includes("house"));
 
-//* __________These methods don't change the original string_________
+//* "repeat"
+console.log("You".repeat(4));
 
 //* "replace"
 let sentence = "    I LIKE when days go like so well";
