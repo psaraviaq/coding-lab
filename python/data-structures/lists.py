@@ -2,6 +2,8 @@
 # * Examples and methods
 fruits = ["apple", "banana", "watermelon", "orange"]
 print(*fruits)
+# * Their indexes are flexible
+print(fruits[0], fruits[-1])
 
 
 # * "append" adds directly at the end
