@@ -27,6 +27,7 @@ console.log(arr.reduce((accumulator, current) => accumulator + current, 0));
 
 //* "slice"
 console.log(arr.slice(0, 3));
+console.log("Here you can use negative index:", arr.slice(1, -1));
 
 //* "some"
 console.log(arr.some((e) => !(e % 7)));
