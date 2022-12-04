@@ -5,6 +5,8 @@ print(*fruits)
 # * Their indexes are flexible
 print(fruits[0], fruits[-1])
 
+# * To check if it contains an element
+print("banana" in fruits)
 
 # * "append" adds directly at the end
 fruits.append("lemon")
