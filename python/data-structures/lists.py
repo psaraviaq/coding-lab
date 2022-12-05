@@ -29,6 +29,8 @@ for x in fruits:
 # * List comprehensions
 print([f'{x}s' for x in fruits])
 print([x**2 for x in range(10) if x % 2])
+# * You can also use the ternary operator in comprehensions
+print([1 if x % 2 else 0 for x in [2, 5, 3, 6]])
 
 # * Operator
 my_fruits = [*fruits]
