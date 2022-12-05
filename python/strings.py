@@ -5,6 +5,12 @@ sentence = "I love pizza"
 # * You can multiply strings
 print(sentence*3)
 
+#! Be careful when working with numbers
+print("3" == 3)
+# print("3" < 3)
+print("3" > "1")
+print("3" > "22")  # * ....
+
 # * "replace"
 print(sentence.replace("z", "s"))
 
