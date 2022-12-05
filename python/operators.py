@@ -8,17 +8,26 @@ print(20 / 5)
 print(16 % 7)  # * Modulus "%"
 print(10 ** 2)  # * Exponentiation "**"
 print(74 // 10)  # * Floor division "//"
+print("_________________________________________")
 
 # *Logical
 print(True and False)  # * "and"
 print(False or True)  # * "or"
 print(not True)  # * "not"
+print("_________________________________________")
 
 # * Comparison
 print(3 > 1)
 print(11 <= 11)
 print(1 == True)  # * Equal "=="
 print(3 != "3")  # * Not equal "!="
+print("_________________________________________")
+
+# * Others
+print(3 in [1, 3, 6])  # * "in" / "not in"
+print("us" in "sushi")
+print(2 not in (2, 7, 4))
+print("_________________________________________")
 
 #! Do not use the "eval" function, can lead to running malicious code
 print(eval("1+2"))
