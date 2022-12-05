@@ -13,3 +13,7 @@ numbers = [2, 3, 1]
 print(sorted(numbers), numbers)
 print(sorted(numbers, reverse=True), numbers)
 print(numbers.sort(), numbers)
+
+# * "reverse" vs "reversed"
+print([*reversed(numbers)], numbers)
+print(numbers.reverse(), numbers)
