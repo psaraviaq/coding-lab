@@ -22,3 +22,7 @@ for i in range(12):
     for j in range(12):
         count += 1
 print(count)
+
+# * "range" can also work like this
+print(list((range(-4, 5, 2))))
+print([*range(5, 0, -1)])
