@@ -2,7 +2,7 @@ word = "EASY"
 #! "for" loops (no conditions, they use the length of a variable)
 for letter in "simple":
     print(letter, end=".\n")
-for i in range(0, len(word)):
+for i in range(len(word)):
     print(word[i])
 for index, letter in enumerate(word):
     print(f'index: {index}, letter: {letter}')

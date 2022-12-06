@@ -14,4 +14,4 @@ for e in my_tuple:
     print(e)
 
 # * Their elements are immutable
-my_tuple[1] = True
+# my_tuple[1] = True
