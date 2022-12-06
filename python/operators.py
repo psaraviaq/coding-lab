@@ -31,3 +31,10 @@ print("_________________________________________")
 
 #! Do not use the "eval" function, can lead to running malicious code
 print(eval("1+2"))
+
+# * Built-in functions that are not included in the "math" library
+print(abs(-7))                # * "abs"
+print(max([2, 9, 15, 7]))     # * "max"
+print(min([2, 9, 15, 7]))     # * "min"
+#! "round" doesn't work like in other languages
+print(round(4.5))
