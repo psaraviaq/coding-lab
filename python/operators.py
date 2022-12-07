@@ -36,5 +36,6 @@ print(eval("1+2"))
 print(abs(-7))                # * "abs"
 print(max([2, 9, 15, 7]))     # * "max"
 print(min([2, 9, 15, 7]))     # * "min"
+print(f'min: {min(["a", "b", "c"])}, max: {max("xyz")}')
 #! "round" doesn't work like in other languages
 print(round(4.5))
