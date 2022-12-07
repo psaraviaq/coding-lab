@@ -5,8 +5,9 @@ print([3, 6, 3, 3, 1, 3].count(3))
 # * "index"
 print([2, 7, 1, 9, 3].index(9))
 
-# * "join"
+# * "join" works for iterables
 print(" ".join(["I", "like", "Webtoon"]))
+print("...".join("123"))
 
 # * "sort" vs "sorted"
 numbers = [2, 3, 1]
