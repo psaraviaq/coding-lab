@@ -14,8 +14,9 @@ print("3" > "22")  # * ....
 # * "replace"
 print(sentence.replace("z", "s"))
 
-# * "split"
-print("Yes or No".split())
+#! "split" doesn't accept "" as an argument
+print("Yes or No".split())  # * default: "_"
+# print("Wow".split(""))
 
 # * Reversing a string (with slicing)
 print(sentence[::-1])
