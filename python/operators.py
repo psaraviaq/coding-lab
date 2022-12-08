@@ -29,6 +29,8 @@ print("us" in "sushi")
 print(2 not in (2, 7, 4))
 print("_________________________________________")
 
+#! Python built-in methods are lowercase instead of camelCase
+
 #! Do not use the "eval" function, can lead to running malicious code
 print(eval("1+2"))
 
