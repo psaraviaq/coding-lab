@@ -1,17 +1,23 @@
 
 # * simple function
-def factorial(n):
+def factorial(n):     # could have '...(n=0):' as a default value
     if n == 0:
         return 1
     return n * factorial(n - 1)
+
+
+print(factorial(5))
+
+#! if parameters are optional, then they should have a default value;
+#! otherwise the function will throw an error
+# factorial()
 
 
 def code():
     pass
 
 
-print(factorial(5))
-#! if a value doesn't get returned, it outputs "none"
+#! if a value doesn't get returned, it outputs "None"
 print(code())
 
 # * "args" keyword
