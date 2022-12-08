@@ -18,6 +18,10 @@ print(sentence.replace("z", "s"))
 print("Yes or No".split())  # * default: "_"
 # print("Wow".split(""))
 
+#* "swapcase", "title", "capitalize"
+emotion = "I hate you."
+print(emotion.swapcase(), emotion.title(), emotion.capitalize())
+
 # * Reversing a string (with slicing)
 print(sentence[::-1])
 
