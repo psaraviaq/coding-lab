@@ -4,6 +4,8 @@ fruits = ["apple", "banana", "watermelon", "orange"]
 print(*fruits)
 # * Their indexes are flexible
 print(fruits[0], fruits[-1])
+#! They don't work for indexes out of range, though
+# print(fruits[10])
 
 # * "append" adds directly at the end
 fruits.append("lemon")
