@@ -22,9 +22,6 @@ print("Yes or No".split())  # * default: "_"
 emotion = "I hate you."
 print(emotion.swapcase(), emotion.title(), emotion.capitalize())
 
-# * Reversing a string (with slicing)
-print(sentence[::-1])
-
 # * Regular expressions (RegExp)
 expr1 = "abcd"
 expr2 = "^abcd$"

@@ -18,3 +18,5 @@ print(numbers.sort(), numbers)
 # * "reverse" vs "reversed"
 print([*reversed(numbers)], numbers)
 print(numbers.reverse(), numbers)
+
+print(numbers[::-1])  # * You can also use slicing for reversing
