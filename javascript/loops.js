@@ -2,7 +2,8 @@
 for (var i = 0; i < 4; i++) {
   console.log(i);
 }
-for (let i = 0, j = 0; i < 5 && j > -4; i++, j--) {
+//* They can even take more variables, and increments by more than one
+for (let i = 0, j = 0; i < 10 && j > -4; i += 3, j--) {
   console.log(i, j);
 }
 
