@@ -31,3 +31,7 @@ print("{}:", not not {})
 print("():", not not ())
 print("set():", not not set())
 print("range(0):", not not range(0))
+
+# * Checking the data type
+print(isinstance("word", str))  # * Recommended
+print(type([]) is list)
