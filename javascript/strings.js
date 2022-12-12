@@ -10,6 +10,7 @@ console.log("You".repeat(4));
 let sentence = "    I LIKE when days go like so well";
 console.log(sentence.replace(/like/gi, "love"));
 console.log(sentence);
+console.log("love".replace(/./g, "$&$&")); //* use "$&" to duplicate
 
 //* "slice"
 console.log(sentence.slice(0, 10));
