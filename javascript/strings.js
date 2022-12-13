@@ -34,3 +34,12 @@ const string = "This is the 'abcd'";
 if (expr1.test(string) && !expr2.test(string)) {
   console.log("expr1: 👍, expr2: 👎");
 }
+
+//* only one ASCII alphabetic value
+console.log(/^[a-zA-Z]$/.test("w"), /^[a-z]$/i.test("R"));
+//* not digit or whitespace
+console.log(/^[\d\s]*$/.test(""));
+
+//* not "a", "b" or "c" at least once
+const letters = ["a", "b", "c", "d"].map((e) => /^[^abc]+$/.test(e));
+console.log(...letters);
