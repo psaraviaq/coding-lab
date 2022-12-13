@@ -16,7 +16,8 @@ if (high_score !== 90) {
   console.log("ok");
 }
 
-//* a lot of conditions
+//* "switch" for lots of conditions, the "break" keyword is necessary
+//*  for every case in order to stop executing the next cases
 var color = "yellow";
 switch (color) {
   case "red":

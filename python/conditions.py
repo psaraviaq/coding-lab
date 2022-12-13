@@ -17,8 +17,8 @@ else:
 
 # * a lot of conditions:
 language = "en"
-#! For multiple cases, use the "|" operator and not multiple cases
-#! There is no "break" for the cases, and the default case is "_"
+#! For multiple cases, use the "|" operator and not multiple blocks
+#! The cases don't need a "break", and the default case is "_"
 match language:
     case "es":
         print("Bueno")
