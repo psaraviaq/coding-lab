@@ -14,6 +14,9 @@ print("3" > "22")  # * ....
 # * "replace"
 print(sentence.replace("z", "s"))
 
+# * "translate" and "maketrans" for replacing more characters
+print("50Y M1LK".translate(str.maketrans("501", "SOI")))
+
 #! "split" doesn't accept "" as an argument
 print("Yes or No".split())  # * default: "_"
 # print("Wow".split(""))
