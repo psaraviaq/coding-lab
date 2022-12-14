@@ -9,7 +9,7 @@ print([2, 7, 1, 9, 3].index(9))
 print(" ".join(["I", "like", "Webtoon"]))
 print("...".join("123"))
 
-# * "sort" vs "sorted"
+# * "sort" vs "sorted" (always returns a list for any iterable)
 numbers = [2, 3, 1]
 print(sorted(numbers), numbers)
 print(sorted(numbers, reverse=True), numbers)

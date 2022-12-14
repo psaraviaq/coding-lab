@@ -34,7 +34,9 @@ print([x**2 for x in range(10) if x % 2])
 # * You can also use the ternary operator in comprehensions
 print([1 if x % 2 else 0 for x in [2, 5, 3, 6]])
 
-# * Operator
+# * Operators
 my_fruits = [*fruits]
 my_fruits[1] = "mango"
 print(fruits[1], "and", my_fruits[1])
+
+print(["a", "b"] + ["c", "d"])  # * concatenating lists
