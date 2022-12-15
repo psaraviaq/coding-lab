@@ -3,6 +3,9 @@
 //* "includes"
 console.log("The house of cats".includes("house"));
 
+//* "indexOf" (not exclusive to arrays)
+console.log("javascript".indexOf("scr"));
+
 //* "repeat"
 console.log("You".repeat(4));
 
