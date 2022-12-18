@@ -10,5 +10,6 @@
   "omnisharp.path": "",
   */
 //* Single files don't support intellisense, a project must be created
+//* using "dotnet new console" in the command line
 
 Console.WriteLine("Hello, World!");

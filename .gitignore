@@ -4,3 +4,4 @@
 # 'c#' directories
 csharp/obj
 csharp/bin
+csharp/.vscode
