@@ -1,1 +1,6 @@
+# 'java' compiled Sfiles
 *.class
+
+# 'c#' directories
+csharp/obj
+csharp/bin
