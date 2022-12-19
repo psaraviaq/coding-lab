@@ -38,5 +38,3 @@ if test(expr1, string) and (not test(expr2, string)):
 
     # * Python doesn't support emojis
     print("expr1: 'Thumbs Up', expr2: 'Thumbs Down'")
-
-print(int(str(0).strip("0")) or 0)
