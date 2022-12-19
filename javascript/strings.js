@@ -1,5 +1,3 @@
-//* __________These methods don't change the original string_________
-
 //* "includes"
 console.log("The house of cats".includes("house"));
 
@@ -28,7 +26,11 @@ console.log(sentence);
 console.log(sentence.trim());
 console.log(sentence);
 
-//* _________________________________________________________________
+console.log("_______________...________________");
+
+//* (from) character (to) ASCII
+console.log("A".charCodeAt());
+console.log(String.fromCharCode(65));
 
 //* Regular expressions (RegExp)
 const expr1 = /abcd/;

@@ -11,6 +11,8 @@ print("3" == 3)
 print("3" > "1")
 print("3" > "22")  # * ....
 
+print("_____________METHODS______________")
+
 # * "replace"
 print(sentence.replace("z", "s"))
 
@@ -28,6 +30,12 @@ print("    wow    ".strip(), "...sure".lstrip("."))
 #* "swapcase", "title", "capitalize"
 emotion = "I hate you."
 print(emotion.swapcase(), emotion.title(), emotion.capitalize())
+
+print("_______________...________________")
+
+# * ASCII values
+print(ord("A"))    # * character --> ASCII
+print(chr(65))     # * ASCII --> character
 
 # * Regular expressions (RegExp)
 expr1 = "abcd"
