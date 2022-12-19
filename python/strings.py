@@ -21,6 +21,10 @@ print("50Y M1LK".translate(str.maketrans("501", "SOI")))
 print("Yes or No".split())  # * default: "_"
 # print("Wow".split(""))
 
+# * "strip", "lstrip" and "rstrip" remove leading and trailing
+# * characters, their default argument is whitespace
+print("    wow    ".strip(), "...sure".lstrip("."))
+
 #* "swapcase", "title", "capitalize"
 emotion = "I hate you."
 print(emotion.swapcase(), emotion.title(), emotion.capitalize())
@@ -34,3 +38,5 @@ if test(expr1, string) and (not test(expr2, string)):
 
     # * Python doesn't support emojis
     print("expr1: 'Thumbs Up', expr2: 'Thumbs Down'")
+
+print(int(str(0).strip("0")) or 0)
