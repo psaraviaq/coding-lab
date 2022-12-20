@@ -32,7 +32,7 @@ console.log("_______________...________________");
 console.log("A".charCodeAt());
 console.log(String.fromCharCode(65));
 
-//* Regular expressions (RegExp)
+//* Regular expressions (Regex)
 const expr1 = /abcd/;
 const expr2 = /^abcd$/;
 const string = "This is the 'abcd'";
@@ -49,3 +49,6 @@ console.log(/^[\d\s]*$/.test(""));
 //* not "a", "b" or "c" at least once
 const letters = ["a", "b", "c", "d"].map((e) => /^[^abc]+$/.test(e));
 console.log(...letters);
+
+//* "\" for escaping and using special characters
+console.log("...wow".replace(/\./g, ""));

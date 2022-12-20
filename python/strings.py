@@ -37,7 +37,7 @@ print("_______________...________________")
 print(ord("A"))    # * character --> ASCII
 print(chr(65))     # * ASCII --> character
 
-# * Regular expressions (RegExp)
+# * Regular expressions (Regex)
 expr1 = "abcd"
 expr2 = "^abcd$"
 string = "This is the 'abcd'"
