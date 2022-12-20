@@ -15,3 +15,7 @@ for e in my_tuple:
 
 # * Their elements are immutable
 # my_tuple[1] = True
+
+# * "zip" returns an iterator of tuples based on iterable objects
+print(*zip(["x", "y", "z"], "abcde", range(10)))
+print(type(zip()))

@@ -4,10 +4,13 @@ for letter in "simple":
     print(letter, end=".\n")
 for i in range(len(word)):
     print(word[i])
-for index, letter in enumerate(word):
+# * They can take more than 1 variable
+for index, letter in enumerate(word):  # * or '(index, letter)'
     print(f'index: {index}, letter: {letter}')
 else:
     print("The loop completed without a 'break'")
+
+print("__________________________________")
 
 # * "while" loops
 count = 3
