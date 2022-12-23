@@ -28,6 +28,10 @@ console.log(sentence);
 
 console.log("_______________...________________");
 
+//* Adding decimals to numbers
+const num = 3.5;
+console.log(num.toFixed(4));
+
 //* (from) character (to) ASCII
 console.log("A".charCodeAt());
 console.log(String.fromCharCode(65));

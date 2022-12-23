@@ -11,6 +11,10 @@ print("3" == 3)
 print("3" > "1")
 print("3" > "22")  # * ....
 
+# * String formatting with numbers
+print(3.000000)
+print(f'It costs ${3:.6f}')
+
 print("_____________METHODS______________")
 
 # * "replace"
