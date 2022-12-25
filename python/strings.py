@@ -50,3 +50,9 @@ if test(expr1, string) and (not test(expr2, string)):
 
     # * Python doesn't support emojis
     print("expr1: 'Thumbs Up', expr2: 'Thumbs Down'")
+
+
+#* "isalpha", "isdigit", "isalnum"
+print("word".isalpha())
+print("123".isdigit())
+print("2morrow".isalnum())
