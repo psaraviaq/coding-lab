@@ -31,6 +31,9 @@ print("Yes or No".split())  # * default: "_"
 # * characters, their default argument is whitespace
 print("    wow    ".strip(), "...sure".lstrip("."))
 
+#* "lower", "upper"
+print("Love".lower(), "Love".upper())
+
 #* "swapcase", "title", "capitalize"
 emotion = "I hate you."
 print(emotion.swapcase(), emotion.title(), emotion.capitalize())
@@ -51,6 +54,9 @@ if test(expr1, string) and (not test(expr2, string)):
     # * Python doesn't support emojis
     print("expr1: 'Thumbs Up', expr2: 'Thumbs Down'")
 
+#* "islower", "isupper"
+print("hate".islower())
+print("HATE".isupper())
 
 #* "isalpha", "isdigit", "isalnum"
 print("word".isalpha())
