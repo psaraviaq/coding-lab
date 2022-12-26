@@ -42,5 +42,7 @@ print(min(2, 9, 15, 7))       # * "min"
 print(f'min: {min(["a", "b", "c"])}, max: {max("xyz")}')
 #! "round" doesn't work like in other languages
 print(round(4.5))
+# * but it can be used for precision too with a second argument
+print(round(15/7, 3))
 
 # ? Other operators: is, of, in, with, yield
