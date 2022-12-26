@@ -8,6 +8,7 @@ print(20 / 5)
 print(16 % 7)  # * Modulus "%"
 print(10 ** 2)  # * Exponentiation "**"
 print(74 // 10)  # * Floor division "//"
+#! Python doesn't support "++" and "--"
 print("_________________________________________")
 
 # *Logical
