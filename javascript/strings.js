@@ -4,6 +4,11 @@ console.log("The house of cats".includes("house"));
 //* "indexOf" (not exclusive to arrays)
 console.log("javascript".indexOf("scr"));
 
+//* "match" returns regex matching results in an array
+console.log("match".match(/[a-e]/g)); //* returns all matches
+console.log("match".match(/[a-e]/)); //* only first match
+console.log("¿?".match(/\d/)); //* returns null if no matches are found
+
 //* "repeat"
 console.log("You".repeat(4));
 
