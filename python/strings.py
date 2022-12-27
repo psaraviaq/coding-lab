@@ -18,7 +18,8 @@ print(f'It costs ${3:.6f}')
 print("_____________METHODS______________")
 
 # * "replace"
-print(sentence.replace("z", "s"))
+print(sentence.replace("z", "s"))     # * default 'count' value: -1,
+print("zzzzzz".replace("z", ".", 3))  # * which means 'replace all'
 
 # * "translate" and "maketrans" for replacing more characters
 print("50Y M1LK".translate(str.maketrans("501", "SOI")))
