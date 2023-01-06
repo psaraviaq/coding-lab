@@ -1,4 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   background-color: black;
   color: white;
+}
+
+code {
+  color: turquoise;
+  font-size: 17px;
+  border: 1px solid white;
+  padding: 15px 30px;
+  display: inline-block;
+}
+
+code span {
+  color: white;
+}
+
+code + div {
+  display: inline-block;
 }
