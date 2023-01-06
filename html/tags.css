@@ -4,9 +4,26 @@
   box-sizing: border-box;
 }
 
+a {
+  color: white;
+}
+
 html {
   background-color: black;
   color: white;
+}
+
+h1,
+h2,
+h3,
+code + div :is(p, a) {
+  margin: 20px;
+}
+
+body > div {
+  display: flex;
+  align-items: center;
+  margin: 20px;
 }
 
 code {
@@ -14,7 +31,6 @@ code {
   font-size: 17px;
   border: 1px solid white;
   padding: 15px 30px;
-  display: inline-block;
 }
 
 code span {
@@ -22,5 +38,10 @@ code span {
 }
 
 code + div {
-  display: inline-block;
+  display: flex;
+}
+
+code + div img {
+  height: 45px;
+  margin-inline: 20px;
 }
