@@ -16,7 +16,8 @@ html {
 h1,
 h2,
 h3,
-code + div :is(p, a) {
+code + div :is(p, a),
+pre + div :is(ul, ol, li) {
   margin: 20px;
 }
 
@@ -48,4 +49,14 @@ code + div img {
 
 .comment {
   font-style: italic;
+}
+
+pre {
+  border: 1px solid white;
+  white-space: pre-wrap;
+  padding-inline: 10px;
+}
+
+pre code {
+  border: none;
 }
