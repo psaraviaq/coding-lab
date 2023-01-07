@@ -10,9 +10,12 @@ html {
 }
 
 h1,
-h2,
-code + div {
+h2 {
   margin: 20px;
+}
+
+:is(code, pre) + div {
+  margin: 20px 0 20px 20px;
 }
 
 body > div {
@@ -30,4 +33,22 @@ code {
 
 code span {
   color: white;
+}
+
+pre {
+  border: 1px solid white;
+  padding-inline: 10px;
+}
+
+pre code {
+  border: none;
+}
+
+pre + div table {
+  border-collapse: collapse;
+}
+
+pre + div :is(th, td) {
+  padding: 10px;
+  border: 1px solid white;
 }
