@@ -15,10 +15,13 @@ html {
 
 h1,
 h2,
-h3,
+h3 {
+  margin: 20px;
+}
+
 code + div :is(p, a),
 pre + div :is(ul, ol, li) {
-  margin: 20px;
+  margin: 20px 0 20px 20px;
 }
 
 body > div {
@@ -53,7 +56,6 @@ code + div img {
 
 pre {
   border: 1px solid white;
-  white-space: pre-wrap;
   padding-inline: 10px;
 }
 
