@@ -45,3 +45,7 @@ code + div img {
   height: 45px;
   margin-inline: 20px;
 }
+
+.comment {
+  font-style: italic;
+}
