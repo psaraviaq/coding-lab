@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="forms.css">
+  <title>HTML forms</title>
+</head>
+
+<body>
+
+  <h1>HTML forms</h1>
+
+  <h2>Forms</h2>
+
+  <div>
+    <pre><code>
+  &lt;form action="<a href="https://google.com">https://google.com</a>" method="<span>get</span>"&gt;  
+    <span>
+      .
+      .       "<span class="comment">inputs and buttons</span>"
+      .
+    </span>
+  &lt;/form&gt;
+    </code></pre>
+  </div>
+
+  <h2>Labels</h2>
+
+  <div>
+    <pre><code>
+  &lt;label&gt;
+    <span>Name:</span> &lt;input&gt;  
+  &lt;/label&gt;
+    </code></pre>
+    <div>
+      <label>
+        Name: <input>
+      </label>
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;label for="<span>name</span>"&gt;<span>Name:</span>&lt;/label&gt;  
+  &lt;input id="<span>name</span>"&gt;
+    </code></pre>
+    <div>
+      <label for="name">Name:</label>
+      <input id="name">
+    </div>
+  </div>
+
+  <h2>Basic Inputs</h2>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>text</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="text" placeholder="some text">
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>number</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="number" placeholder="19">
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>email</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="email" placeholder="user@abc.com">
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>password</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="password" placeholder="••••••••">
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>tel</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="tel" placeholder="987654321">
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>date</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="date">
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>range</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="range">
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;input type="<span>submit</span>"&gt;  
+    </code></pre>
+    <div>
+      <input type="submit">
+    </div>
+  </div>
+
+  <h2>Checkboxes</h2>
+
+  <div>
+    <pre><code>
+  &lt;label&gt;
+    &lt;input type="<span>checkbox</span>"&gt;  
+    <span>Coffee</span>
+  &lt;/label&gt;  
+
+  &lt;label&gt;
+    &lt;input type="<span>checkbox</span>"&gt;  
+    <span>Milk</span>
+  &lt;/label&gt;
+    </code></pre>
+    <div>
+      <label class="option">
+        <input type="checkbox">
+        Coffee
+      </label>
+      <label class="option">
+        <input type="checkbox">
+        Milk
+      </label>
+    </div>
+  </div>
+
+  <h2>Radio buttons</h2>
+
+  <div>
+    <pre><code>
+  &lt;label&gt;
+    &lt;input type="<span>radio</span>" name="<span>fruit</span>"&gt;  
+    <span>Apple</span>
+  &lt;/label&gt;  
+  
+  &lt;label&gt;
+    &lt;input type="<span>radio</span>" name="<span>fruit</span>"&gt;  
+    <span>Banana</span>
+  &lt;/label&gt;  
+  
+  &lt;label&gt;
+    &lt;input type="<span>radio</span>" name="<span>fruit</span>"&gt;  
+    <span>Orange</span>
+  &lt;/label&gt;
+    </code></pre>
+    <div>
+      <label class="option">
+        <input type="radio" name="fruit">
+        Apple
+      </label>
+      <label class="option">
+        <input type="radio" name="fruit">
+        Banana
+      </label>
+      <label class="option">
+        <input type="radio" name="fruit">
+        Orange
+      </label>
+    </div>
+  </div>
+
+  <h2>Drop-down list</h2>
+
+  <div>
+    <pre><code>
+  &lt;label&gt;
+    <span>Select item:</span>
+    &lt;select&gt;
+      &lt;option&gt;<span>Math</span>&lt;/option&gt;        
+      &lt;option&gt;<span>Physics</span>&lt;/option&gt;     
+      &lt;option&gt;<span>Chemistry</span>&lt;/option&gt;   
+      &lt;option&gt;<span>Literature</span>&lt;/option&gt;  
+    &lt;/select&gt;
+  &lt;/label&gt;
+    </code></pre>
+
+    <div>
+      <label>
+        Select item:
+        <select>
+          <option>Math</option>
+          <option>Physics</option>
+          <option>Chemistry</option>
+          <option>Literature</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <h2>Textarea</h2>
+
+  <div>
+    <pre><code>
+  &lt;label&gt;
+    <span>Give some feedback:</span>
+    &lt;textarea&gt;&lt;/textarea&gt;  
+  &lt;/label&gt;
+    </code></pre>
+    <div>
+      <label>
+        Give some feedback:
+        <textarea rows="4" cols="23"></textarea>
+      </label>
+    </div>
+  </div>
+
+</body>
+
+</html>

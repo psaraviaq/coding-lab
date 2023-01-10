@@ -4,23 +4,17 @@
   box-sizing: border-box;
 }
 
-a {
-  color: white;
-}
-
 html {
   background-color: black;
   color: white;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   margin: 20px;
 }
 
-code + div :is(p, a),
-pre + div :is(ul, ol, li) {
+:is(code, pre) + div {
   margin: 20px 0 20px 20px;
 }
 
@@ -41,19 +35,6 @@ code span {
   color: white;
 }
 
-code + div {
-  display: flex;
-}
-
-code + div img {
-  height: 45px;
-  margin-inline: 20px;
-}
-
-.comment {
-  font-style: italic;
-}
-
 pre {
   border: 1px solid white;
   padding-inline: 10px;
@@ -61,4 +42,13 @@ pre {
 
 pre code {
   border: none;
+}
+
+pre + div table {
+  border-collapse: collapse;
+}
+
+pre + div :is(th, td) {
+  padding: 10px;
+  border: 1px solid white;
 }
