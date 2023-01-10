@@ -52,3 +52,7 @@ pre code {
   font-style: italic;
   font-size: 16px;
 }
+
+input {
+  width: 120px;
+}
