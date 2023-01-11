@@ -15,7 +15,7 @@ h2 {
 }
 
 :is(code, pre) + div {
-  margin: 20px 0 20px 20px;
+  margin-left: 20px;
 }
 
 body > div {

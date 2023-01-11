@@ -1,0 +1,14 @@
+/** Element Selector */
+p {
+  color: yellow;
+}
+
+/** ID Selector */
+#second {
+  color: red;
+}
+
+/** Class Selector */
+.latest {
+  color: lime;
+}

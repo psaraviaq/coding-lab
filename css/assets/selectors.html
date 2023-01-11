@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="_.css">
+  <link rel="stylesheet" href="../selectors.css">
+  <title>CSS selectors</title>
+</head>
+
+<body>
+  <h1>CSS selectors</h1>
+
+  <h2>Element selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;p&gt;<span>It's a paragraph.</span>&lt;/p&gt;  
+  
+  
+  <span class="comment">CSS</span>
+  
+  p <span>{</span>
+    color: <i>yellow</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <p>It's a paragraph.</p>
+    </div>
+  </div>
+
+  <h2>ID selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;p id="<span>second</span>"&gt;
+    <span>The second element.</span>  
+  &lt;/p&gt;
+  
+  
+  <span class="comment">CSS</span>
+  
+  #second <span>{</span>
+    color: <i>red</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <p id="second">The second element.</p>
+    </div>
+  </div>
+
+  <h2>Class selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;p class="<span>latest</span>"&gt;  
+    <span>Latest one.</span>
+  &lt;/p&gt;
+  
+  
+  <span class="comment">CSS</span>
+  
+  .latest <span>{</span>
+    color: <i>lime</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <p class="latest">Latest one.</p>
+    </div>
+  </div>
+</body>
+
+</html>
