@@ -12,3 +12,18 @@ p {
 .latest {
   color: lime;
 }
+
+/** Descendant Selector */
+p em {
+  color: orange;
+}
+
+/** Child Selector */
+div > span {
+  color: blue;
+}
+
+/** Pseudo-Class Selector */
+h4:hover {
+  color: grey;
+}
