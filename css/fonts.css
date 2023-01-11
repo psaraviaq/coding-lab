@@ -23,3 +23,7 @@
 .hex.simplified {
   color: #c55;
 }
+/** Predefined color names */
+.predefined {
+  color: peru;
+}
