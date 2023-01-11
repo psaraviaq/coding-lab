@@ -8,11 +8,18 @@
 .hsl {
   color: hsl(54, 88%, 39%);
 }
-
 /** +A (rgba, hsla) | "0 to 1" or "0 to 100%" */
 .rgba {
   color: rgba(5, 131, 99, 0.5);
 }
 .hsla {
   color: hsla(54, 88%, 39%, 60%);
+}
+/** Hexadecimal value */
+/** "0 to 9" and "A to F" | "6" or "3" values */
+.hex {
+  color: #17be11;
+}
+.hex.simplified {
+  color: #c55;
 }
