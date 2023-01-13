@@ -9,13 +9,17 @@ html {
   color: white;
 }
 
+a {
+  color: white;
+}
+
 h1,
 h2 {
   margin: 20px;
 }
 
 :is(code, pre) + div {
-  margin: 20px 0 20px 20px;
+  margin-left: 20px;
 }
 
 body > div {
@@ -44,11 +48,21 @@ pre code {
   border: none;
 }
 
-pre + div table {
-  border-collapse: collapse;
+.comment {
+  font-style: italic;
+  font-size: 16px;
 }
 
-pre + div :is(th, td) {
-  padding: 10px;
-  border: 1px solid white;
+pre + div input {
+  width: 120px;
+  padding: 2px 4px;
+}
+
+pre + div .option {
+  display: block;
+  margin: 10px 0;
+}
+
+pre + div .option input {
+  width: 15px;
 }

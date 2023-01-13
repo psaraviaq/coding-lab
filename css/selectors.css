@@ -1,0 +1,29 @@
+/** Element Selector */
+p {
+  color: yellow;
+}
+
+/** ID Selector */
+#second {
+  color: red;
+}
+
+/** Class Selector */
+.latest {
+  color: lime;
+}
+
+/** Descendant Selector */
+p em {
+  color: orange;
+}
+
+/** Child Selector */
+div > span {
+  color: blue;
+}
+
+/** Pseudo-Class Selector */
+h4:hover {
+  color: grey;
+}

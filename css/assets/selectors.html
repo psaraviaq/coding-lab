@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="_.css">
+  <link rel="stylesheet" href="../selectors.css">
+  <title>CSS selectors</title>
+</head>
+
+<body>
+  <h1>CSS selectors</h1>
+
+  <h2>Element selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;p&gt;<span>It's a paragraph.</span>&lt;/p&gt;  
+  
+  
+  <span class="comment">CSS</span>
+  
+  p <span>{</span>
+    color: <i>yellow</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <p>It's a paragraph.</p>
+    </div>
+  </div>
+
+  <h2>ID selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;p id="<span>second</span>"&gt;
+    <span>The second element.</span>  
+  &lt;/p&gt;
+  
+  
+  <span class="comment">CSS</span>
+  
+  #second <span>{</span>
+    color: <i>red</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <p id="second">The second element.</p>
+    </div>
+  </div>
+
+  <h2>Class selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;p class="<span>latest</span>"&gt;  
+    <span>Latest one.</span>
+  &lt;/p&gt;
+  
+  
+  <span class="comment">CSS</span>
+  
+  .latest <span>{</span>
+    color: <i>lime</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <p class="latest">Latest one.</p>
+    </div>
+  </div>
+
+  <h2>Descendant selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;p&gt;  
+    <span>This one is</span> &lt;em&gt;<span>good.</span>&lt;/em&gt;  
+  &lt;/p&gt;
+  
+  
+  <span class="comment">CSS</span>
+  
+  p em <span>{</span>
+    color: <i>orange</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <p>
+        This one is <em>good.</em>
+      </p>
+    </div>
+  </div>
+
+
+  <h2>Child selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;div&gt;  
+    &lt;span&gt;<span>This one is a child.</span>&lt;/span&gt;  
+    &lt;p&gt;
+      <span>This one is </span>&lt;span&gt;<span>not.</span>&lt;/span&gt;
+    &lt;/p&gt;  
+  &lt;/div&gt;
+  
+  
+  <span class="comment">CSS</span>
+  
+  div <span>&gt;</span> span <span>{</span>
+    color: <i>blue</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <span>This one is a child.</span>
+      <p>This one is <span>not.</span></p>
+    </div>
+  </div>
+
+  <h2>Pseudo-class selectors</h2>
+
+  <div>
+    <pre><code>
+  <span class="comment">HTML</span>
+  
+  &lt;h4&gt;<span>Hover over here</span>&lt;/h4&gt;  
+  
+  
+  <span class="comment">CSS</span>
+  
+  h4<span>:</span>hover <span>{</span>
+    color: <i>grey</i>;
+  <span>}</span>
+    </code></pre>
+    <div>
+      <h4>Hover over here</h4>
+    </div>
+  </div>
+</body>
+
+</html>
