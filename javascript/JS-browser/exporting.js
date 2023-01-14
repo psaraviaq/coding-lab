@@ -35,3 +35,14 @@ export const { pet } = { pet: "cat" };
 //! Incorrect usage
 // export [] = [];
 // export {} = {};
+
+//* Aliases
+let emotion = "excited";
+export { emotion as feeling };
+
+//* Exporting from other files
+export { time } from "./assets/index.js";
+export * from "./assets/index.js";
+//! Incorrect usage (with script type module)
+// export { time } from "./assets";
+// export { time } from "./assets/index";

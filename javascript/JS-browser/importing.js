@@ -3,6 +3,7 @@ import { color } from "./exporting.js";
 import catSound from "./exporting.js";
 //! Incorrect usage
 // import { color } from "./exporting";
+// import { time } from "./assets";
 
 //* Both default and others
 import sound, { number } from "./exporting.js";
@@ -13,6 +14,12 @@ import sound, { number } from "./exporting.js";
 import { pet as myPet } from "./exporting.js";
 //! Incorrect usage
 // import Purr as Sound from "./exporting.js"
+
+//* Importing all using "*"
+import * as items from "./exporting.js";
+
+//* Importing for side effects only
+import "./exporting.js";
 
 /* 
 
@@ -43,3 +50,6 @@ sound();
 console.log(number);
 
 console.log(myPet);
+
+console.log(items);
+console.log(items.time);
