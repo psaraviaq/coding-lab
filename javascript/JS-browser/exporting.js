@@ -19,3 +19,19 @@ export default function catSound() {
 //! Incorrect use of "default"
 // export default const country = "Peru";
 // export default language = "spanish";
+
+//* Exporting as properties
+var color = "red";
+function sayIt(it) {
+  console.log(it);
+}
+export { color, sayIt };
+//! Incorrect usage
+// export { day: 32 };
+
+//* Exporting properties with destructuring
+export const [season, hot] = ["summer", true];
+export const { pet } = { pet: "cat" };
+//! Incorrect usage
+// export [] = [];
+// export {} = {};
