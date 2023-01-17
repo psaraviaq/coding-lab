@@ -13,3 +13,10 @@ module.exports.color = "blue";
 //   number: 1,
 //   subtraction: (a, b) => a - b,
 // };
+
+//* Use "exports" as a shortcut for just properties
+/* Use this line of code */ exports = module.exports;
+/* if module.exports has already been assigned a value */
+exports.fruit = "orange";
+//! If you assign it a value, then it loses its initial reference
+exports = false;
