@@ -47,3 +47,13 @@ pre span {
 pre + div .path {
   color: orange;
 }
+
+pre + div div {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+pre + div div img {
+  width: 128px;
+}
