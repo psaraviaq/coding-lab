@@ -20,11 +20,11 @@
   cd <span>pathname</span>  
     </code></pre>
     <div>
-      <span class="path">~/Desktop/projects</span>
+      <span class="comment">~/Desktop/projects</span>
       <span>$ cd coding-lab</span>
-      <span class="path">~/Desktop/projects/coding-lab</span>
+      <span class="comment">~/Desktop/projects/coding-lab</span>
       <span>$ cd ..</span>
-      <span class="path">~/Desktop/projects</span>
+      <span class="comment">~/Desktop/projects</span>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
   mkdir <span>directory</span>  
     </code></pre>
     <div>
-      <span class="path">../coding-lab/others/git</span>
+      <span class="comment">../coding-lab/others/git</span>
       <span>$ mkdir assets</span>
       <div>
         <img src="assets/unix/mkdir1.png" alt="before">
@@ -51,7 +51,7 @@
   touch <span>filename</span>  
     </code></pre>
     <div>
-      <span class="path">../others/git/assets</span>
+      <span class="comment">../others/git/assets</span>
       <span>$ touch unix.css</span>
       <div>
         <img src="assets/unix/touch1.png" alt="before">
@@ -59,6 +59,36 @@
       </div>
     </div>
   </div>
+
+  <h2>List files and directories</h2>
+
+  <div>
+    <pre><code>
+  ls  
+    </code></pre>
+    <div>
+      <span class="comment">../coding-lab/others/git</span>
+      <span>$ ls</span>
+      <span>assets/ unix.html</span>
+      <span class="comment">"Hidden directories"</span>
+      <span>$ ls -a</span>
+      <span>.git/ node_modules/ .venv/</span>
+    </div>
+  </div>
+
+  <h2>Directory path</h2>
+
+  <div>
+    <pre><code>
+  pwd  
+    </code></pre>
+    <div>
+      <span class="comment">~/Desktop/projects/coding-lab</span>
+      <span>$ pwd</span>
+      <span>/c/Users/User/Desktop/projects/coding-lab</span>
+    </div>
+  </div>
+
 </body>
 
 </html>
