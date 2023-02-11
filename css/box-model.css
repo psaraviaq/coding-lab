@@ -1,0 +1,6 @@
+/** Box Model */
+
+/** BORDER (color, style, width) */
+.box-1 {
+  border: 3px solid blue;
+}
