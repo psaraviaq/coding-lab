@@ -1,4 +1,7 @@
-# 'java' compiled Sfiles
+# "python" compiled files
+__pycache__/
+
+# 'java' compiled files
 *.class
 
 # 'c#' directories
