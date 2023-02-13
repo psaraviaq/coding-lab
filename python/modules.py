@@ -21,3 +21,14 @@ from math import *
 print(pi)
 #! Incorrect
 # import math as *
+
+# * relative imports (execute this one outside parent directory with
+# * "py -m dirName.fileName", otherwise it'll throw an error)
+print("****** useless logs ******")
+from . import loops
+from .loops import count
+print("****** useless logs ******")
+print(loops.word)
+print(count)
+#! Incorrect
+# import .loops
