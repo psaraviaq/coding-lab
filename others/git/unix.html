@@ -10,8 +10,55 @@
 </head>
 
 <body>
-
   <h1>Unix commands</h1>
+
+  <h2>Help / Manual</h2>
+
+  <div>
+    <pre><code>
+  man <span>command</span>
+
+  <span>command</span> --help  
+    </code></pre>
+    <div>
+      <span>$ man pwd</span>
+      <span>$ ls --help</span>
+    </div>
+  </div>
+
+  <h2>Directory path</h2>
+
+  <div>
+    <pre><code>
+  pwd  
+    </code></pre>
+    <div>
+      <span class="comment">~/Desktop/projects/coding-lab</span>
+      <span>$ pwd</span>
+      <span>/c/Users/User/Desktop/projects/coding-lab</span>
+    </div>
+  </div>
+
+  <h2>List files and directories</h2>
+
+  <div>
+    <pre><code>
+  ls  
+    </code></pre>
+    <div>
+      <span class="comment">../coding-lab/others/git</span>
+      <span>$ ls</span>
+      <span>assets/ unix.html</span>
+      <span>$ ls assets/</span>
+      <span>unix/</span>
+      <span class="comment">(a) Doesn't ignore entries starting with "." </span>
+      <span>$ ls -a</span>
+      <span>.git/ .gitignore .venv/</span>
+      <span class="comment">(l) Additional information</span>
+      <span>$ ls -l</span>
+      <span>-rw-r--r-- 1 Pedro 197121 2311 Feb 16 18:20 unix.html</span>
+    </div>
+  </div>
 
   <h2>Change directory</h2>
 
@@ -64,38 +111,31 @@
     </div>
   </div>
 
-  <h2>List files and directories</h2>
+  <h2>Remove entries</h2>
 
   <div>
     <pre><code>
-  ls  
+  rm <span>entry</span>  
     </code></pre>
     <div>
-      <span class="comment">../coding-lab/others/git</span>
-      <span>$ ls</span>
-      <span>assets/ unix.html</span>
-      <span>$ ls assets/</span>
-      <span>unix/</span>
-      <span class="comment">(a) Doesn't ignore entries starting with "." </span>
-      <span>$ ls -a</span>
-      <span>.git/ .gitignore .venv/</span>
-      <span class="comment">(l) Additional information</span>
-      <span>$ ls -l</span>
-      <span>-rw-r--r-- 1 Pedro 197121 2311 Feb 16 18:20 unix.html</span>
+      <span class="comment">../git/assets/Unix/</span>
+      <span>$ rm Unix.css</span>
+      <span class="comment">(r) dirs and their contents</span>
+      <span>$ rm -r Unix/</span>
+      <span class="comment">(f) force delete</span>
     </div>
   </div>
 
-  <h2>Directory path</h2>
+  <h2>Open entries</h2>
 
   <div>
     <pre><code>
-  pwd  
+  <span>(Linux)</span> xdg-open <span>entry</span>  
+  <span>(Mac)</span> open <span>entry</span>
+
+  <span>(Windows)</span> start <span>entry</span>
     </code></pre>
-    <div>
-      <span class="comment">~/Desktop/projects/coding-lab</span>
-      <span>$ pwd</span>
-      <span>/c/Users/User/Desktop/projects/coding-lab</span>
-    </div>
+  </div>
   </div>
 
 </body>
