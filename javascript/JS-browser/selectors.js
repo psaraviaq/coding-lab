@@ -1,3 +1,4 @@
+console.log("------------------ SELECTORS ------------------");
 //! NodeJS doesn't support the DOM
 
 //* "getElementById" is an ID selector, outputs null if not found

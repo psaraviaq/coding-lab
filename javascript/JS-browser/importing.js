@@ -1,3 +1,5 @@
+console.log("---------------- IMPORT / EXPORT ----------------");
+
 //* "import" examples
 import { color } from "./exporting.js";
 import catSound from "./exporting.js";
