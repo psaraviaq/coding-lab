@@ -21,10 +21,12 @@
     </code></pre>
     <div>
       <span class="comment">~/Desktop/projects</span>
-      <span>$ cd coding-lab</span>
+      <span>$ cd coding-lab/</span>
       <span class="comment">~/Desktop/projects/coding-lab</span>
       <span>$ cd ..</span>
       <span class="comment">~/Desktop/projects</span>
+      <span>$ cd ~</span>
+      <span class="comment">~</span>
     </div>
   </div>
 
@@ -41,6 +43,8 @@
         <img src="assets/unix/mkdir1.png" alt="before">
         <img src="assets/unix/mkdir2.png" alt="after">
       </div>
+      <span class="comment">(p) make as needed without errors</span>
+      <span>$ mkdir -p assets/unix</span>
     </div>
   </div>
 
@@ -70,9 +74,14 @@
       <span class="comment">../coding-lab/others/git</span>
       <span>$ ls</span>
       <span>assets/ unix.html</span>
-      <span class="comment">"Hidden directories"</span>
+      <span>$ ls assets/</span>
+      <span>unix/</span>
+      <span class="comment">(a) Doesn't ignore entries starting with "." </span>
       <span>$ ls -a</span>
-      <span>.git/ node_modules/ .venv/</span>
+      <span>.git/ .gitignore .venv/</span>
+      <span class="comment">(l) Additional information</span>
+      <span>$ ls -l</span>
+      <span>-rw-r--r-- 1 Pedro 197121 2311 Feb 16 18:20 unix.html</span>
     </div>
   </div>
 
