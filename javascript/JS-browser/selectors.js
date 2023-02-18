@@ -1,6 +1,9 @@
 console.log("------------------ SELECTORS ------------------");
 //! NodeJS doesn't support the DOM
 
+//* These selectors are not exclusive to "document", they also
+//* work for other elements, they just search inside them.
+
 //* "getElementById" is an ID selector, outputs null if not found
 const unique = document.getElementById("p-unique");
 console.log(unique);

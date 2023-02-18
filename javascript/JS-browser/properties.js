@@ -1,4 +1,4 @@
-console.log("------------------- PROPERTIES -------------------");
+console.log("------------------ PROPERTIES ------------------");
 
 //* "textContent" returns the content of all elements inside the node,
 //* including also "script" and "style" elements.
@@ -13,3 +13,7 @@ console.log(h2.innerText);
 const p_s = document.querySelector("h1+div");
 p_s.innerHTML += "<p>This one's an extra paragraph.</p>";
 console.log(p_s.innerHTML);
+
+//* "cloneNode" creates a copy, in order to also clone its nested
+//* content, it should have "true" as its argument.
+const clone_h2 = h2.cloneNode(true);
