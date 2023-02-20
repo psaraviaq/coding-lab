@@ -8,3 +8,6 @@ __pycache__/
 csharp/obj
 csharp/bin
 csharp/.vscode
+
+# "txt" random files
+draft.txt
