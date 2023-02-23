@@ -28,3 +28,7 @@ console.log(important);
 //* a NodeList, also similar to an array
 const div_children = document.querySelectorAll(".title + div p");
 console.log(div_children);
+
+//* You can also use "forms" to just select those.
+const forms = document.forms;
+console.log(forms);
