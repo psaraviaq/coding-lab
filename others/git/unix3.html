@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/unix.css">
+  <title>Unix commands 3</title>
+</head>
+
+<body>
+  <h1>Unix commands 3</h1>
+
+  <h2>Look for differences</h2>
+
+  <div>
+    <pre><code>
+  diff <span>entry entry</span>  
+    </code></pre>
+    <div>
+      <span class="comment">(y) both simultaneously</span>
+      <span class="comment">(u) different output, used by git with versions</span>
+    </div>
+  </div>
+
+  <h2>Search for entries recursively</h2>
+
+  <div>
+    <pre><code>
+  find <span>dir</span>  
+    </code></pre>
+    <div>
+      <span class="comment">(name), (iname) insensitive</span>
+      <span class="comment">(type) "f" and "d"</span>
+      <span class="comment">(or, not) more options</span>
+      <span class="comment">(size), (mtime), ...</span>
+      <span>$ find . -name "unix*" -type d</span>
+      <span>./git/assets/unix</span>
+      <span>./git/assets/unix2</span>
+    </div>
+  </div>
+
+  <h2>Search for words in entries</h2>
+
+  <div>
+    <pre><code>
+  grep <span>string entry</span>  
+    </code></pre>
+    <div>
+      <span class="comment">(n) line number</span>
+      <span class="comment">(C _) extra _ lines</span>
+      <span class="comment">(r) dir as entry</span>
+      <span class="comment">(E) regex as string</span>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
