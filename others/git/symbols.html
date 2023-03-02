@@ -16,11 +16,11 @@
 
   <div>
     <pre><code>
- <span>command</span> > <span>file</span> 
+ <span>command</span> &gt; <span>file</span> 
     </code></pre>
     <div>
       <span class="comment">../others/git</span>
-      <span>$ pwd > assets/draft.txt</span>
+      <span>$ pwd &gt; assets/draft.txt</span>
       <img src="assets/symbols/redirect1.png" alt="override" width="250">
     </div>
   </div>
@@ -29,11 +29,11 @@
 
   <div>
     <pre><code>
- <span>command</span> >> <span>file</span> 
+ <span>command</span> &gt;&gt; <span>file</span> 
     </code></pre>
     <div>
       <span class="comment">../others/git</span>
-      <span>$ ls -l >> assets/draft.txt</span>
+      <span>$ ls -l &gt;&gt; assets/draft.txt</span>
       <img src="assets/symbols/redirect2.png" alt="override" width="250">
     </div>
   </div>
@@ -48,6 +48,25 @@
       <span class="comment">../others/git</span>
       <span>$ ls assets/unix | wc -l</span>
       <span>4</span>
+    </div>
+  </div>
+
+  <h2>Name selection</h2>
+
+  <div>
+    <pre><code>
+  * <span>(any)</span>  
+  ? <span>(one)</span>  
+  {} <span>(multiple)</span>  
+    </code></pre>
+    <div>
+      <span>$ echo unix{1,2,3}.py</span>
+      <span>unix1.py unix2.py unix3.py</span>
+      <span class="comment">../others/git/assets</span>
+      <span>$ find . -name "unix*"</span>
+      <span>./unix ./unix.css ./unix2</span>
+      <span>$ find . -name "unix?"</span>
+      <span>./unix2</span>
     </div>
   </div>
 
