@@ -66,4 +66,3 @@ class Types {
     System.out.println(def6);
   }
 }
-
