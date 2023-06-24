@@ -1,6 +1,8 @@
 class Types {
   public static void main(String[] args) {
     numbers();
+    strings();
+    booleans();
     defaults();
   }
 
@@ -22,16 +24,46 @@ class Types {
     System.out.println("float: " + num6 + ", double: " + num7);
   }
 
+  // * Strings
+  static void strings() {
+    // * char (only one character)
+    // ! only single quotes, mutable
+    // ! concatenating with another char will sum their unicode values
+    // ! concatenating with a String will convert it into that
+    char letter = 'f';
+    // * String (more than one)
+    // ! only double quotes, immutable
+    String word = "java";
+    System.out.println("char: " + letter + ", String: " + word);
+  }
+
+  // * Booleans
+  static void booleans() {
+    // * true, false
+    boolean fact1 = true;
+    boolean fact2 = false;
+    System.out.println("boolean: " + fact1 + " or " + fact2);
+  }
+
   // * Default values:
   static int def1;
   static float def2;
   static double def3;
+  static char def4;
+  static String def5;
+  static boolean def6;
 
   static void defaults() {
+    System.out.println("--- Default Values ---");
     // * byte, short, int, long: 0
     System.out.println(def1);
     // * float, double: 0.0
     System.out.println(def2 + " " + def3);
+    // * char: nothing, String: null
+    System.out.println(def4);
+    System.out.println(def5);
+    // * boolean: false
+    System.out.println(def6);
   }
 }
 
