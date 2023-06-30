@@ -45,7 +45,7 @@ class Types {
     System.out.println("boolean: " + fact1 + " or " + fact2);
   }
 
-  //* Default values:
+  //* Default values of instance variables:
   static int def1;
   static float def2;
   static double def3;
