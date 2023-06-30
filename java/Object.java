@@ -18,5 +18,8 @@ public class Object {
         objects[0]=new Object();
         objects[0].name="My Object";
         System.out.println(objects[0].name);
+
+        //* Use "equals" to compare if two objects are equal
+        System.out.println(obj1.name.equals("Peter"));
     }
 }
