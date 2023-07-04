@@ -18,9 +18,10 @@ class Types {
         // int num5;
         // System.out.println(num5);
 
-        //* float, double
+        //* float, double (by default, all decimals are doubles)
+        //! "f" is required for floats and "d" is optional for doubles
         float num6 = 21.25f;
-        double num7 = 2435.2323354354353;
+        double num7 = 2435.2323354354353d;
         System.out.println("float: " + num6 + ", double: " + num7);
     }
 
