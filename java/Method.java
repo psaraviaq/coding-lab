@@ -1,6 +1,6 @@
 public class Method {
-    int num=6;
-    
+    int num = 6;
+
     public static void main(String[] args) {
 
         //* Void methods don't return any value
@@ -8,9 +8,9 @@ public class Method {
         //! When calling a method, you must provide the same number of arguments as there are parameters.
         // printName();
 
-        Method object=new Method();
+        Method object = new Method();
         //* The variable type must match the method's return type
-        int num2=object.doubleNum();
+        int num2 = object.doubleNum();
         System.out.println(num2);
     }
 
@@ -19,7 +19,7 @@ public class Method {
     }
 
     int doubleNum() {
-        num*=2;
+        num *= 2;
         return num;
     }
 }

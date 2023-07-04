@@ -6,13 +6,13 @@ public class Loops {
         }
 
         //* Enhanced for loop (uses an array)
-        String[] arr={"red", "blue", "yellow"};
+        String[] arr = {"red", "blue", "yellow"};
         for (String color : arr) {
             System.out.println(color);
         }
 
         //* While loop
-        int i=3;
+        int i = 3;
         while (i > 0) {
             System.out.println(i);
             i--;

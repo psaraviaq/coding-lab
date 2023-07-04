@@ -1,7 +1,7 @@
 public class Conditionals {
     public static void main(String[] args) {
         //* If statement
-        int num1=5;
+        int num1 = 5;
         if (num1 > 0) {
             System.out.println("Positive");
         } else if (num1 < 0) {
@@ -11,8 +11,8 @@ public class Conditionals {
         }
 
         //* Ternary operator
-        int num2=7;
-        String result=(num2%2 == 0) ? "Even" : "Odd";
+        int num2 = 7;
+        String result = (num2 % 2 == 0) ? "Even" : "Odd";
         System.out.println(result);
     }
 }

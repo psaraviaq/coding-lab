@@ -1,12 +1,12 @@
-class DogExample{
+class DogExample {
     String breed;
     private int weight;
 
-    public void setWeight(int w){
+    public void setWeight(int w) {
         weight = w;
     }
 
-    public int getWeight(){
+    public int getWeight() {
         return weight;
     }
 }
