@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/linking.css">
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Linking files in HTML</title>
+</head>
+
+<body>
+  <h1>Linking files in HTML</h1>
+
+  <h2>Script tag</h2>
+
+  <div>
+    <pre><code>
+  &lt;script type="<span>text/javascript</span>"&gt;  
+  
+    <span>console</span>.<span>log</span>("<span>Hello World!</span>")
+  
+  &lt;/script&gt;
+      </code></pre>
+    <div>
+      <script>
+        <!--* same as <script type="text/javascript"> -->
+        console.log("Hello World!")
+      </script>
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;script type="<span>module</span>"&gt;  
+
+    <span>import</span> { <span>greeting</span> } <span>from</span> "<span>./assets/linking.js</span>"  
+    
+    <span>greeting</span>()
+
+  &lt;/script&gt;
+      </code></pre>
+    <div>
+      <script type="module">
+        import { greeting } from "./assets/linking.js"
+        greeting()
+      </script>
+    </div>
+  </div>
+
+  <div>
+    <pre><code>
+  &lt;script async
+
+  src="<span>https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js</span>"&gt;  
+  
+  &lt;/script&gt;
+      </code></pre>
+  </div>
+
+</body>
+
+</html>

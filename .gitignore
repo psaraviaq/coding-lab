@@ -1,7 +1,17 @@
-# 'java' compiled Sfiles
+# "python" compiled files
+__pycache__/
+
+# 'java' compiled files and directories
 *.class
+out/
+*.iml
+.idea/
+
 
 # 'c#' directories
 csharp/obj
 csharp/bin
 csharp/.vscode
+
+# "txt" random files
+draft.txt

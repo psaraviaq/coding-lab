@@ -1,0 +1,16 @@
+/** Box Model */
+
+/** BORDER (color, style, width) */
+.box-1 {
+  border: 3px solid blue;
+}
+
+/** PADDING */
+.box-2 {
+  padding: 30px;
+}
+
+/** MARGIN */
+.box-3 {
+  margin: 25px;
+}

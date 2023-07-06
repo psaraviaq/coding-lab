@@ -27,3 +27,30 @@
 .predefined {
   color: peru;
 }
+
+/** Text */
+
+/** FONT FAMILY */
+.text-1 {
+  font-family: "Comic Sans MS";
+}
+
+/** FONT SIZE */
+.text-2 {
+  font-size: 32px;
+}
+
+/** TEXT DECORATION */
+.text-3 {
+  text-decoration: underline;
+}
+
+/** TEXT TRANSFORM */
+.text-4 {
+  text-transform: capitalize;
+}
+
+/** TEXT ALIGN */
+.text-5 {
+  text-align: center;
+}

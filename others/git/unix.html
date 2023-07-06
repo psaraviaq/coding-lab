@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/unix.css">
+  <title>Unix commands</title>
+</head>
+
+<body>
+  <h1>Unix commands</h1>
+
+  <h2>Help / Manual</h2>
+
+  <div>
+    <pre><code>
+  man <span>command</span>
+
+  <span>command</span> --help  
+    </code></pre>
+    <div>
+      <span>$ man pwd</span>
+      <span>$ ls --help</span>
+    </div>
+  </div>
+
+  <h2>Directory path</h2>
+
+  <div>
+    <pre><code>
+  pwd  
+    </code></pre>
+    <div>
+      <span class="comment">~/Desktop/projects/coding-lab</span>
+      <span>$ pwd</span>
+      <span>/c/Users/User/Desktop/projects/coding-lab</span>
+    </div>
+  </div>
+
+  <h2>List files and directories</h2>
+
+  <div>
+    <pre><code>
+  ls  
+    </code></pre>
+    <div>
+      <span class="comment">../coding-lab/others/git</span>
+      <span>$ ls</span>
+      <span>assets/ unix.html</span>
+      <span>$ ls assets/</span>
+      <span>unix/</span>
+      <span class="comment">(a) Doesn't ignore entries starting with "." </span>
+      <span>$ ls -a</span>
+      <span>.git/ .gitignore .venv/</span>
+      <span class="comment">(l) Additional information</span>
+      <span>$ ls -l</span>
+      <span>-rw-r--r-- 1 Pedro 197121 2311 Feb 16 18:20 unix.html</span>
+    </div>
+  </div>
+
+  <h2>Change directory</h2>
+
+  <div>
+    <pre><code>
+  cd <span>path</span>  
+    </code></pre>
+    <div>
+      <span class="comment">~/Desktop/projects</span>
+      <span>$ cd coding-lab/</span>
+      <span class="comment">~/Desktop/projects/coding-lab</span>
+      <span>$ cd ..</span>
+      <span class="comment">~/Desktop/projects</span>
+      <span>$ cd ~</span>
+      <span class="comment">~</span>
+    </div>
+  </div>
+
+  <h2>Create directory</h2>
+
+  <div>
+    <pre><code>
+  mkdir <span>dir(+)</span>  
+    </code></pre>
+    <div>
+      <span class="comment">../coding-lab/others/git</span>
+      <span>$ mkdir assets</span>
+      <div>
+        <img src="assets/unix/mkdir1.png" alt="before">
+        <img src="assets/unix/mkdir2.png" alt="after">
+      </div>
+      <span class="comment">(p) make as needed without errors</span>
+      <span>$ mkdir -p assets/unix</span>
+    </div>
+  </div>
+
+  <h2>Create (update) file</h2>
+
+  <div>
+    <pre><code>
+  touch <span>file(+)</span>  
+    </code></pre>
+    <div>
+      <span class="comment">../others/git/assets</span>
+      <span>$ touch unix.css</span>
+      <div>
+        <img src="assets/unix/touch1.png" alt="before">
+        <img src="assets/unix/touch2.png" alt="after">
+      </div>
+    </div>
+  </div>
+
+  <h2>Remove entries</h2>
+
+  <div>
+    <pre><code>
+  rm <span>entry(+)</span>  
+    </code></pre>
+    <div>
+      <span class="comment">../git/assets/Unix/</span>
+      <span>$ rm Unix.css</span>
+      <span class="comment">(r) dirs and their contents</span>
+      <span>$ rm -r Unix/</span>
+      <span class="comment">(f) force delete</span>
+    </div>
+  </div>
+
+  <h2>Open entries</h2>
+
+  <div>
+    <pre><code>
+  <span>(Linux)</span> xdg-open <span>entry</span>  
+  <span>(Mac)</span> open <span>entry</span>
+
+  <span>(Windows)</span> start <span>entry</span>
+    </code></pre>
+  </div>
+  </div>
+
+</body>
+
+</html>

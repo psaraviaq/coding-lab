@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+h1,
+h2 {
+  margin: 20px;
+}
+
+body > div {
+  display: flex;
+  align-items: start;
+  margin: 20px;
+}
+
+pre {
+  color: turquoise;
+  border: 1px solid white;
+  padding-inline: 10px;
+  font-size: 20px;
+}
+
+pre span {
+  color: white;
+}
+
+:is(code, pre) + div {
+  font-family: Consolas;
+  font-size: 17px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+pre + div .comment {
+  color: orange;
+}
+
+pre + div div {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+pre + div div img {
+  width: 128px;
+}
