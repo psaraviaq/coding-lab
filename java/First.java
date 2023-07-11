@@ -3,7 +3,7 @@
 // * "public": it can be accessed from anywhere,
 // * not required when working in the same package
 // * The name must match the filename (compiler rules)
-public class first {
+public class First {
 
     // * "public" is required here
     // * "static": doesn't need to create an instance to run
