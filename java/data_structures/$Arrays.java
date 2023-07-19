@@ -11,7 +11,8 @@ public class $Arrays {
         // {1, 2, 3, 4, 5};
 
         //* You can also initialize an array with a specific size
-        //* Type "new", specify the type of elements, and the size in []
+        //* First, specify the type of elements, write [], and then its name
+        //* Then type "new", specify the same type of elements, and the size in []
         String[] myStrings = new String[3];
         //* You can also create an array of objects by specifying the class
         MyFavoriteClass[] myClasses = new MyFavoriteClass[2];
@@ -22,7 +23,7 @@ public class $Arrays {
         myStrings[2] = "!";
         System.out.println(myStrings[0] + myStrings[1] + myStrings[2]);
 
-        //* You can use "length" here as a property
+        //* "length" here works as an instance variable of the array object
         System.out.println(nums.length);
 
         //! The default "equals" method compares the references of two objects
