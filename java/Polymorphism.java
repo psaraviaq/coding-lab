@@ -14,10 +14,15 @@ public class Polymorphism {
         //* And loop through them.
         for (Animal a : animals) {
             System.out.println(a);
+
             //* With their overridden methods.
             a.sleep();
             //! But the methods must be defined in the superclass.
             // a.speak();
+            
+            //* When calling a method, the compiler will look for the reference type,
+            //* Then at runtime, the JVM will look for the object type and match the most specific method.
+            a.print(new Dog());
         }
 
         getAnimal();
@@ -40,6 +45,18 @@ class Animal {
     void sleep() {
         System.out.println("Sleeping...");
     }
+
+    //* When overriding methods, the return type can be also a subclass
+    Animal eat() {
+        System.out.println("Eating...");
+        return new Animal();
+    }
+
+    //! If the method is implemented in the subclass but with a subclass parameter,
+    //! it will not be overridden but overloaded.
+    void print(Animal animal) {
+        System.out.println("Animal");
+    }
 }
 
 class Dog extends Animal {
@@ -49,6 +66,17 @@ class Dog extends Animal {
 
     void speak() {
         System.out.println("Woof!");
+    }
+
+    //* Overriding method with a subclass return type
+    Dog eat() {
+        System.out.println("Eating like a dog...");
+        return new Dog();
+    }
+
+    //! Overloading method with a subclass parameter
+    void print(Dog dog) {
+        System.out.println("Dog");
     }
 }
 
