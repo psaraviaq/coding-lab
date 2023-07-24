@@ -31,7 +31,8 @@ class SuperClass {
     String message;
     private int id = 1234;
 
-    int getId() {
+    //* With the "final" keyword, the method cannot be overridden
+    final int getId() {
         return id;
     }
 
@@ -44,7 +45,8 @@ class SuperClass {
     }
 }
 
-class SubClass extends SuperClass {
+//* By using the "final" keyword, the class cannot be extended
+final class SubClass extends SuperClass {
     void printWorld() {
         System.out.println("World");
     }
@@ -72,4 +74,10 @@ class SubClass extends SuperClass {
 
     //! Overloading method by changing return type
     // int printHello()  { return 0; }
+
+    //! Method cannot be overridden because it is final
+    // int getId() { return id; }
 }
+
+//! Class cannot be extended because its superclass is final
+// class SubSubClass extends SubClass { }
