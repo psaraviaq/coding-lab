@@ -20,7 +20,8 @@ public class Inheritance {
         System.out.println(sub.getId());
 
         //* You can also overload methods in the class (or subclass and so on)
-        //* by using the same name but different parameters, they can have different return types.
+        //* by using the same name but different parameter types or different order of parameters
+        //* (parameter names don't matter), and they can have the same or different return types.
         //! But you cannot overload methods by just changing the return type, it will cause an error
         //* When calling the method, it will look for the first method that matches the parameters
         sub.printHello("John");
