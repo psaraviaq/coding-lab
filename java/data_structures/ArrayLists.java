@@ -1,10 +1,13 @@
 import java.util.ArrayList;
 
+//* With ArrayLists, you don't need to specify the size
+//* You have to import it from the "java.util.ArrayList" class
 public class ArrayLists {
-    //* With ArrayLists, you don't need to specify the size
-    //* You have to import it from the "java.util.ArrayList" class
+    //* As an instance variable, it's initialized to null as well
+    static ArrayList<String> fruits;
 
     public static void main(String[] args) {
+        System.out.println(fruits);
 
         //* To initialize it, write "ArrayList", specify the type of elements in <>, and then its name
         //* Then type "new", write "ArrayList" again, specify the same type of elements in <> again, and then ()

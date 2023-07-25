@@ -1,8 +1,11 @@
 import java.util.Arrays;
 
 public class $Arrays {
+    //* As an instance variable, it's initialized to null
+    static String[] months;
 
     public static void main(String[] args) {
+        System.out.println(months);
 
         //* First, specify the type of elements and then write []
         //! The elements are enclosed in {} instead of []
