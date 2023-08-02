@@ -8,7 +8,6 @@ public class Abstraction {
         Shape shape = new Circle();
 
         //* There's also abstract methods, which are methods without a body (no curly braces) and end with a semicolon.
-        //! Remember that polymorphism rules apply here as well.
     }
 }
 
@@ -58,7 +57,7 @@ abstract class Rectangle extends Shape {
 }
 
 class Square extends Rectangle {
-    //* And methods here can return a subclass of the superclass method's return type too.
+    //! But if you don't implement all abstract methods, the concrete subclass must do it.
     public Rectangle draw(Shape shape) {
         System.out.println("Drawing square");
         return new Square();
