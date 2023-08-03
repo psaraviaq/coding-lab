@@ -5,13 +5,19 @@ public class Polymorphism {
         Animal animal = new Dog();
         //! But the opposite is not true.
         // Dog dog = new Animal();
+        //* Although you can downcast it by casting the reference type inside parentheses.
+        // animal.speak();
+        Dog dog = (Dog) animal;
+        dog.speak();
 
         //* You can even use them in arrays.
         Animal[] animals = new Animal[2];
         animals[0] = new Dog();
         animals[1] = new Cat();
+        //! But you can't assign a member back to a subclass reference; even if the object is a subclass.
+        // Dog myDog = animals[0];
 
-        //* And loop through them.
+        //* You can loop through them.
         for (Animal a : animals) {
             System.out.println(a);
 
@@ -19,10 +25,17 @@ public class Polymorphism {
             a.sleep();
             //! But the methods must be defined in the superclass.
             // a.speak();
-            
+
             //* When calling a method, the compiler will look for the reference type,
             //* Then at runtime, the JVM will look for the object type and match the most specific method.
             a.print(new Dog());
+
+            //* All classes in Java are subclasses of Object.
+            //* You can use them in arrays and put any type of object in them.
+            Object[] objects = new Object[3];
+            objects[0] = new Dog();
+            objects[1] = 2;
+            objects[2] = "Hello";
         }
 
         getAnimal();
