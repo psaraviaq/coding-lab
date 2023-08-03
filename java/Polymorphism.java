@@ -5,7 +5,8 @@ public class Polymorphism {
         Animal animal = new Dog();
         //! But the opposite is not true.
         // Dog dog = new Animal();
-        //* Although you can downcast it by casting the reference type inside parentheses.
+        //* Although you can downcast it by casting the reference type inside parentheses,
+        //* so that you can access the subclass methods.
         // animal.speak();
         Dog dog = (Dog) animal;
         dog.speak();
@@ -16,6 +17,11 @@ public class Polymorphism {
         animals[1] = new Cat();
         //! But you can't assign a member back to a subclass reference; even if the object is a subclass.
         // Dog myDog = animals[0];
+
+        //* To check the class of the actual object, you can use the "instanceof" operator.
+        System.out.println(animals[0] instanceof Dog);
+        //* But it can also be used to check superclasses.
+        System.out.println(animals[0] instanceof Animal);
 
         //* You can loop through them.
         for (Animal a : animals) {
@@ -29,14 +35,14 @@ public class Polymorphism {
             //* When calling a method, the compiler will look for the reference type,
             //* Then at runtime, the JVM will look for the object type and match the most specific method.
             a.print(new Dog());
-
-            //* All classes in Java are subclasses of Object.
-            //* You can use them in arrays and put any type of object in them.
-            Object[] objects = new Object[3];
-            objects[0] = new Dog();
-            objects[1] = 2;
-            objects[2] = "Hello";
         }
+
+        //* All classes in Java are subclasses of Object.
+        //* For example, you can use them in arrays and put any type of object in them.
+        Object[] objects = new Object[3];
+        objects[0] = new Dog();
+        objects[1] = 2;
+        objects[2] = "Hello";
 
         getAnimal();
         feedAnimal(new Cat());
