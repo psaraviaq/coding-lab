@@ -14,6 +14,8 @@ class Movie {
 
 
 // * Tester class
+//! In Java, there can be more than one class in a file
+//! But only one of them can be public (or not) and that one must match the filename
 public class Tester {
 
     // * The main method here will test the real class
