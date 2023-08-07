@@ -8,14 +8,24 @@ public class Super {
         //* call the constructor of the superclass, and so on until Object.
         Fruit fruit = new Fruit();
 
-        //* Also used when overriding methods to call the superclass method
+        //* But it can take arguments as well.
+        Fruit myFruit = new Fruit("orange");
+        System.out.println(myFruit.name);
+
+        //* It can also be used when overriding methods to call the superclass method
         fruit.eat();
     }
 }
 
 class Food {
+    String name;
+
     public Food() {
         System.out.println("I am the food constructor");
+    }
+
+    public Food(String foodName) {
+        name = foodName;
     }
 
     void eat() {
@@ -29,20 +39,22 @@ class Fruit extends Food {
     public Fruit() {
         super();
     }
-
     //* So this is valid as well.
-    public Fruit(int number) {
-    }
-
+    // public Fruit() {}
     //* And this too.
-    public Fruit(String name) {
-        System.out.println("valid");
-    }
+    // public Fruit() {
+    //     System.out.println("valid");
+    // }
     //! But this is not, because it's not the first statement.
     // public Fruit(String name) {
     //     System.out.println("not valid"");
     //     super();
     // }
+
+    //* When "super" takes arguments, it will call the constructor that matches them.
+    public Fruit(String name) {
+        super(name);
+    }
 
     void eat() {
         System.out.println("This fruit is great");
