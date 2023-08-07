@@ -1,7 +1,7 @@
-//* Use interfaces when you want to define a role that other classes can play,
-//* no matter where they live in the inheritance tree
-
 public class Interfaces {
+    
+    //* Use interfaces when you want to define a role that other classes can play,
+    //* no matter where they live in the inheritance tree
 
     //* Instead of "class", we use "interface" to define an interface
     //* The "implements" keyword is used for a class to implement an interface
