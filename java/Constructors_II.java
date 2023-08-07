@@ -1,6 +1,9 @@
-public class Super {
+public class Constructors_II {
 
     //* "super" is a keyword that refers to the superclass.
+    //* "this" is a keyword that refers to the current object.
+    //! super() and this() can only be used in constructors.
+    //! while super. and this. can be used anywhere in the class.
 
     public static void main(String[] args) {
 
@@ -13,12 +16,17 @@ public class Super {
         System.out.println(myFruit.name);
 
         //* It can also be used when overriding methods to call the superclass method
-        fruit.eat();
+        myFruit.eat();
+
+        //* You can also use "this" to call another constructor.
+        Fruit healthyFruit = new Fruit(true);
+        System.out.println(healthyFruit.name);
     }
 }
 
 class Food {
     String name;
+    boolean healthy;
 
     public Food() {
         System.out.println("I am the food constructor");
@@ -54,6 +62,17 @@ class Fruit extends Food {
     //* When "super" takes arguments, it will call the constructor that matches them.
     public Fruit(String name) {
         super(name);
+    }
+
+    //* If you don't want duplicate code, you can use "this" to call another constructor.
+    public Fruit(boolean healthy) {
+        this("apple", healthy);
+    }
+
+    //* You can also use "this" when the parameter names matches the instance variables.
+    public Fruit(String name, boolean healthy) {
+        this.name = name;
+        this.healthy = healthy;
     }
 
     void eat() {
