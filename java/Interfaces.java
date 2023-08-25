@@ -1,10 +1,15 @@
 public class Interfaces {
-    
+
     //* Use interfaces when you want to define a role that other classes can play,
     //* no matter where they live in the inheritance tree
 
     //* Instead of "class", we use "interface" to define an interface
     //* The "implements" keyword is used for a class to implement an interface
+    //! Interfaces can't have constructors
+
+    //* If the file is for an interface, the names must match
+    //* It's also compiled into a ".class" file
+    //* They also can be used in packages and imported like classes.
 
     public static void main(String[] args) {
         Bird bird = new Bird();
