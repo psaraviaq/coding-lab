@@ -1,13 +1,18 @@
 # "python" compiled files
 __pycache__/
 
-# 'java' compiled files and directories
-*.class
-out/
-*.iml
+# 'java' and 'kotlin' compiled files and directories
 .idea/
+.gradle/
+out/
+*.class
+*.iml
+local.properties
 
 
 # 'c#' directories
-**/bin
-**/obj
+bin/
+obj/
+
+# general dirs
+build/
