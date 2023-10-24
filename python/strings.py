@@ -1,21 +1,20 @@
-from re import search as test
-
 sentence = "I love pizza"
 
 # * You can multiply strings
-print(sentence*3)
+print("string*3: " + sentence*3)
+
+#* f-strings: Place "f" before the string and inside, put braces around python code
+print(f'f-string: {sentence} (length: {len(sentence)})')
 
 #! Be careful when working with numbers
-print("3" == 3)
-# print("3" < 3)
-print("3" > "1")
-print("3" > "22")  # * ....
+print("3" == 3)   #* False
 
 # * String formatting with numbers
 print(3.000000)
 print(f'It costs ${3:.6f}')
 
-print("_____________METHODS______________")
+print("\n_____________METHODS______________")
+print("Strings are immutable, they return a new string\n")
 
 # * "replace"
 print(sentence.replace("z", "s"))     # * default 'count' value: -1,
@@ -30,16 +29,20 @@ print("Yes or No".split())  # * default: "_"
 
 # * "strip", "lstrip" and "rstrip" remove leading and trailing
 # * characters, their default argument is whitespace
-print("    wow    ".strip(), "...sure".lstrip("."))
+print("strip: \"  wow  \" --> " + "  wow  ".strip(), "\tlstrip(\".\"): \"...sure\" --> " + "...sure".lstrip("."))
 
 # * "lower", "upper"
-print("Love".lower(), "Love".upper())
+print("\nstring: \"Love\"")
+print("lower: " + "Love".lower(), "\tupper: " + "Love".upper())
 
 # * "swapcase", "title", "capitalize"
 emotion = "I hate you."
-print(emotion.swapcase(), emotion.title(), emotion.capitalize())
+print("\nstring: \"I hate you.\"")
+print("swapcase: " + emotion.swapcase(), "\ttitle: " + emotion.title(), "\tcapitalize: "+ emotion.capitalize())
 
-print("_______________...________________")
+print("\n_______________...________________")
+
+from re import search as test
 
 # * ASCII values
 print(ord("A"))    # * character --> ASCII
