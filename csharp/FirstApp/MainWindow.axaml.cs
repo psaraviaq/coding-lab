@@ -60,8 +60,8 @@ public partial class MainWindow : Window {
     TextBlock lastTextBlockClicked;
     bool findingMatch = false;
 
-    private void TextBlock_MouseDown(object sender, PointerPressedEventArgs e) {
-        TextBlock textBlock = (TextBlock) sender;
+    private void TextBlock_PointerPressed(object sender, PointerPressedEventArgs e) {
+        TextBlock textBlock = sender as TextBlock;
         if (findingMatch == false) {
             textBlock.IsVisible = false;
             lastTextBlockClicked = textBlock;
@@ -78,7 +78,7 @@ public partial class MainWindow : Window {
         }
     }
 
-    private void TimeTextBlock_MouseDown(object sender, PointerPressedEventArgs e) {
+    private void TimeTextBlock_PointerPressed(object sender, PointerPressedEventArgs e) {
         if (matchesFound == 8) {
             SetUpGame();
         }

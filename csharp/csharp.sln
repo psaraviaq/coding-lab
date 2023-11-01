@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "first", "first\first.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstApp", "FirstApp\FirstApp.csproj", "{8FE13A3D-98F6-45DF-BFF1-3D1DA8E64747}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\DataTypes.csproj", "{57E9556F-D957-4B3C-82F5-79619EEBD12F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{8FE13A3D-98F6-45DF-BFF1-3D1DA8E64747}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FE13A3D-98F6-45DF-BFF1-3D1DA8E64747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FE13A3D-98F6-45DF-BFF1-3D1DA8E64747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E9556F-D957-4B3C-82F5-79619EEBD12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E9556F-D957-4B3C-82F5-79619EEBD12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E9556F-D957-4B3C-82F5-79619EEBD12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E9556F-D957-4B3C-82F5-79619EEBD12F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
