@@ -4,6 +4,7 @@ fun main() {
     //* "Better Comments" plugin doesn't work here
     //* "println" instead of "System.out.println"
     println("Hello World!")
+    //* Semicolons are optional in Kotlin
 
     //* Variables use "var" keyword for mutable variables
     var num = 2
@@ -17,7 +18,9 @@ fun main() {
     // name = "Miles"
 
     //* You can insert variables into strings using "$"
-    println("My number is $num")
+    println("I'm $name")
+    //* But you must use curly braces if you want to use expressions
+    println("I'm ${name.uppercase()}!")
 
     //* Instead of the ternary operator, Kotlin uses "if-else" expressions
     println(if (num > 0) "\"num\" is positive" else "\"num\" is negative")
