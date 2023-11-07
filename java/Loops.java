@@ -7,7 +7,7 @@ public class Loops {
         
         //* Enhanced "for" loop (uses an array)
         String[] arr = {"red", "blue", "yellow"};
-        //* First goes the element type, then its variable name, then the array after a colon
+        //* First goes the data type, then the variable name, then the array
         for (String color : arr) {
             System.out.println(color);
         }
