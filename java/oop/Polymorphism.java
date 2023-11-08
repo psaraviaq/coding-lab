@@ -1,5 +1,7 @@
 package oop;
 
+import java.util.ArrayList;
+
 public class Polymorphism {
     public static void main(String[] args) {
         
@@ -13,8 +15,12 @@ public class Polymorphism {
         //* But if the method is also implemented in the subclass, it will call the subclass method.
         animal.sleep();
         
+        //! If you store subclass objects in a superclass array, you can't assign them to a subclass variable.
+        ArrayList<Animal> dogs = new ArrayList<>();
+        dogs.add(new Dog());
+        // Dog dog = dogs.get(0);
         //* If you want to access subclass methods that are not in the superclass, you must cast the object.
-        Dog dog = (Dog) animal;
+        Dog dog = (Dog) dogs.get(0);
         dog.speak();
         
         //* To check the class (or superclass) of the object, you can use the "instanceof" operator.
