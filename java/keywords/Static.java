@@ -1,5 +1,9 @@
 package keywords;
 
+//* You can import static fields and methods by using the "static" keyword
+
+import static java.lang.Math.*;
+
 public class Static {
     public static void main(String[] args) {
         //* Static fields and methods can be accessed by just using the class name
@@ -10,6 +14,9 @@ public class Static {
         Calculator c2 = new Calculator("Wolfram");
         
         System.out.println(Calculator.calculatorCount);
+        
+        //* You don't need to write the whole class name if you imported the static fields and methods
+        sqrt(4);
     }
 }
 
