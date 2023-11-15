@@ -8,11 +8,15 @@ out/
 *.class
 *.iml
 local.properties
-
+java/**/bin
+kotlin/**/bin
 
 # 'c#' directories
-bin/
+csharp/**/bin
 obj/
 
 # general dirs
 build/
+
+# 'dart' packages
+.dart_tool/
