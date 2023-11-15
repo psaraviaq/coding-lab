@@ -12,7 +12,7 @@ java/**/bin
 kotlin/**/bin
 
 # 'c#' directories
-csharp/**/bin
+c#/**/bin
 obj/
 
 # general dirs
