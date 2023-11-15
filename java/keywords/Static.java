@@ -4,6 +4,7 @@ package keywords;
 
 import static java.lang.Math.*;
 
+@SuppressWarnings("unused")
 public class Static {
     public static void main(String[] args) {
         //* Static fields and methods can be accessed by just using the class name

@@ -28,8 +28,8 @@ public class Final {
         // class FinalFinalClass extends FinalClass {}
         
         //! 3. Final methods can't be overridden
-        class FinalClass extends Final {
-            // void finalMethod() {}
-        }
+        // class FinalClass extends Final {
+        //     void finalMethod() {}
+        // }
     }
 }

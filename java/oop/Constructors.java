@@ -37,8 +37,7 @@ class Device {
     // public Device() {}
     
     //* You can still have a method with the same name as the class, but it's not a constructor.
-    public void Device() {
-    }
+    // public void Device() {}
 }
 
 class Soda {

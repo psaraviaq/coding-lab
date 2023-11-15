@@ -1,5 +1,6 @@
 package oop;
 
+@SuppressWarnings("unused")
 public class Constructors_II {
     
     //* "super" is a keyword that refers to the superclass.

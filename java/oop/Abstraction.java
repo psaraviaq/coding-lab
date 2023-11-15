@@ -1,5 +1,6 @@
 package oop;
 
+@SuppressWarnings("unused")
 public class Abstraction {
     public static void main(String[] args) {
         //* Abstract classes can't be instantiated
