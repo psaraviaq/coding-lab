@@ -20,3 +20,7 @@ build/
 
 # 'dart' packages
 .dart_tool/
+
+# 'c' compiled files
+.temp/
+.vscode/
