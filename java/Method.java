@@ -1,25 +1,22 @@
+//* Methods can have parameters and return values
 public class Method {
-    int num = 6;
-
-    public static void main(String[] args) {
-
-        //* Void methods don't return any value
-        printName("Peter");
-        //! When calling a method, you must provide the same number of arguments as there are parameters.
-        // printName();
-
-        Method object = new Method();
-        //* The variable type must match the method's return type
-        int num2 = object.doubleNum();
-        System.out.println(num2);
-    }
-
-    static void printName(String name) {
-        System.out.println("Hello " + name + "!");
-    }
-
-    int doubleNum() {
+    
+    //! You must include the types of both the parameters and the return value
+    static int doubleNumber(int num) {
+        
         num *= 2;
         return num;
+    }
+    
+    //* If a method doesn't return anything, its return type is "void"
+    static void printName(String name) {
+        
+        System.out.println("Hello " + name + "!");
+    }
+    
+    public static void main(String[] args) {
+        int num = doubleNumber(2);
+        System.out.println(num);
+        printName("Peter");
     }
 }

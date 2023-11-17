@@ -1,17 +1,22 @@
 # "python" compiled files
 __pycache__/
 
-# 'java' compiled files and directories
-*.class
-out/
-*.iml
+# 'java' and 'kotlin' compiled files and directories
 .idea/
-
+.gradle/
+out/
+*.class
+*.iml
+local.properties
+java/**/bin
+kotlin/**/bin
 
 # 'c#' directories
-csharp/obj
-csharp/bin
-csharp/.vscode
+c#/**/bin
+obj/
 
-# "txt" random files
-draft.txt
+# general dirs
+build/
+
+# 'dart' packages
+.dart_tool/
