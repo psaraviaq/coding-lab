@@ -15,7 +15,7 @@ print("Strings are immutable, they return a new string\n")
 
 # * "replace"
 print("replace(\"z\", \"s\"): " + sentence.replace("z", "s"))
-print("replace(\"z\", \"s\", 3): \"zzzzzz\" --> " + "zzzzzz".replace("z", ".", 3))
+print("replace(\"z\", \".\", 3): \"zzzzzz\" --> " + "zzzzzz".replace("z", ".", 3))
 
 # * "translate" and "maketrans" for replacing more characters
 print("\n50Y M1LK".translate(str.maketrans("501", "SOI")))
