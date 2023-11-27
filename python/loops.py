@@ -23,4 +23,16 @@ count = 3
 while count > 0:
     print(count)
     count -= 1
-print("Go!")
+
+#* "break" is used to exit a loop
+while True:
+    answer = input("What's the password? ")
+    if answer == "fish":
+        break
+    print("Wrong password")
+
+#* "continue" is used to skip an iteration
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
