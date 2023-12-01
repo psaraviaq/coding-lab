@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cs50.h>
 
 int main(void)
 {
@@ -14,4 +15,22 @@ int main(void)
     {
         printf("c1 and c2 are not equal\n");
     }
+
+    //* The "switch" statement is available in C
+    switch (c1)
+    {
+    case 'a':
+        printf("c1 is a\n");
+        break;
+    case 'b':
+        printf("c1 is b\n");
+        break;
+    default:
+        printf("c1 is neither a nor b\n");
+    }
+
+    //* The "ternary" operator is also available in C
+    int x = 5;
+    string number = (x % 2 == 0) ? "even" : "odd";
+    printf("x is %s\n", number);
 }
