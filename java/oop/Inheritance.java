@@ -1,9 +1,6 @@
 package oop;
 
 public class Inheritance {
-    
-    //* The subclass "extends" the superclass
-    
     public static void main(String[] args) {
         SubClass sub = new SubClass();
         
@@ -19,7 +16,6 @@ public class Inheritance {
 }
 
 class SuperClass {
-    
     void printHello() {
         System.out.println("Hello");
     }
@@ -27,15 +23,10 @@ class SuperClass {
     void printBye() {
         System.out.println("Bye");
     }
-    
-    //! With the "final" keyword, the method cannot be overridden
-    final int getId() {
-        return 1;
-    }
 }
 
-//! By using the "final" keyword, the class cannot be extended
-final class SubClass extends SuperClass {
+//* The subclass "extends" the superclass
+class SubClass extends SuperClass {
     
     //* Overriding method
     void printBye() {
