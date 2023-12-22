@@ -1,25 +1,25 @@
 package datastructures;
 
-//* ArrayLists are a more flexible version of arrays
+//* Lists are collections that are more flexible than arrays
 
-//* You have to import it from the "java.util.ArrayList" class
-
+//* You have to import them from "java.util"
 import java.util.ArrayList;
+import java.util.List;
 
-public class ArrayLists {
+public class Lists {
     
     public static void main(String[] args) {
-        
-        //* To initialize it, write "ArrayList", specify the type of elements inside <>, and then its name
-        //* Then type "new", write "ArrayList" again, specify the same type of elements inside <> again, and then ()
-        // ArrayList<String> names = new ArrayList<String>();
+
+        //* To initialize it, write "List", specify the type of elements inside <>, and then its name
+        //* Then type "new", write "ArrayList", specify the same type of elements inside <> again, and then ()
+        // List<String> names = new ArrayList<String>();
         //* They don't have a fixed size, so you don't have to specify it
         //* You can omit the second type if you're using Java 7 or later
-        ArrayList<String> names = new ArrayList<>();
+        List<String> names = new ArrayList<>();
         
         //! ArrayLists can't store primitive types, you have to use their wrapper classes
-        // ArrayList<int> nums = new ArrayList<>();             BAD
-        // ArrayList<Integer> nums = new ArrayList<>();         GOOD
+        // ArrayList<int> numbers = new ArrayList<>();             BAD
+        // ArrayList<Integer> numbers = new ArrayList<>();         GOOD
         
         //* To add elements, use the "add" method
         names.add("Jack");
@@ -29,7 +29,7 @@ public class ArrayLists {
         
         //* To access elements, use the "get" method
         System.out.println("get(0): " + names.get(0));
-        //* But you can also print the ArrayList directly
+        //* When printing a list, each element will call its "toString" method
         System.out.println("names: " + names);
         
         //* To get the number of elements, use the "size" method instead of "length"
