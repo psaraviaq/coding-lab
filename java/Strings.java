@@ -4,6 +4,11 @@ public class Strings {
     //! They are immutable, they can't be changed with any method
     
     public static void main(String[] args) {
+        //* The "String" class overrides the "toString" method of the "Object" class
+        //* So it prints the content of the string instead of the reference
+        System.out.println("Hello World!");
+
+        //* Methods
         length();
         charAt();
         equals();

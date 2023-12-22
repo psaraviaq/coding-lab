@@ -10,6 +10,11 @@ public class Tester {
         movie.rating = 5;
         System.out.println(movie.title + " is a " + movie.genre + " movie with a rating of " + movie.rating);
         movie.playIt();
+
+        //* Whenever you print an object, the "toString" method from the "Object" class is called
+        System.out.println(new Tester());
+        //! However, you can override it to print something else
+        System.out.println(movie);
     }
     
 }
@@ -25,5 +30,10 @@ class Movie {
     //* Methods
     void playIt() {
         System.out.println("Playing the movie");
+    }
+
+    //* Override the "toString" method
+    public String toString() {
+        return title;
     }
 }
