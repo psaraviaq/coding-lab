@@ -8,7 +8,7 @@ public class Sorting {
         //* There are different ways to sort a list of objects
         List<Word> words = new ArrayList<>();
         words.add(new Word("cold"));
-        words.add(new Word("old"));
+        words.add(new Word("Old"));
         words.add(new Word("ld"));
         words.add(new Word("d"));
         System.out.println(words);
@@ -25,7 +25,8 @@ public class Sorting {
         System.out.println(words);
         
         //* Or you could just pass a lambda expression to the "sort" method of the list
-        words.sort((w1, w2) -> w2.title.compareTo(w1.title));
+        //! You can use "compareToIgnoreCase" to make the sorting case-insensitive
+        words.sort((w1, w2) -> w2.title.compareToIgnoreCase(w1.title));
         System.out.println(words);
     }
 }
@@ -46,6 +47,7 @@ class Word implements Comparable<Word> {
     //* It should return a negative integer, zero, or a positive integer
     public int compareTo(Word w) {
         //* If you're comparing string instances, you can use the "compareTo" method of the "String" class
+        //! With "compareTo", uppercase letters come before lowercase ones
         return title.compareTo(w.title);
     }
 }
