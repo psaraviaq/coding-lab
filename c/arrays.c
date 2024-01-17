@@ -21,6 +21,12 @@ int main(void)
     //* "strlen" returns the length of a string (<string.h>)
     printf("%lu\n", strlen(abc) + strlen(def));
 
+    //* "strcmp" compares two strings and returns 0 if they are equal (<string.h>)
+    if (strcmp(abc, "abc") == 0)
+    {
+        printf("%s\n", "Equal strings");
+    }
+
     //* "isupper" checks if a character is uppercase, "tolower" converts it to lowercase (<ctype.h>)
     if (isupper(def[0]))
     {
