@@ -2,11 +2,10 @@ package miscellaneous;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Sequencer;
 
-//* EXCEPTIONS
-
 public class Exceptions {
 
-    //* Methods can throw exceptions
+    //* Exceptions are objects that represent an error or unexpected situation
+    //* They are thrown by methods that can't guarantee success
 
     public static void main(String[] args) {
         Exceptions midi = new Exceptions();
@@ -21,6 +20,9 @@ public class Exceptions {
     public int play() {
         //* try/catch for unexpected situations (that can't guarantee success), not for flaws in code
         //* You can optionally use "finally" to run code after try/catch, even if it returns something
+        //* You can have multiple catch blocks for different exceptions
+        //! Exceptions are polymorphic, so you can catch a superclass for its subclasses
+        //! But you can't catch a superclass and then a subclass, because it will never reach the subclass, and it won't compile either
         try {
             Sequencer sequencer = MidiSystem.getSequencer();
             System.out.println("Success");
@@ -38,7 +40,8 @@ public class Exceptions {
         }
     }
 
-    //* if method might throw exception, declare in the method, use "throws" keyword with the exception class
+    //* if method might throw exception, declare in the method, use "throws" keyword with the exception class (or more separated by comma)
+    //* also you can declare superclass and throw subclasses
     public void myMethod() throws Exception {
         if (true) {
             //? you don't have to declare runtime either, but good practice?
@@ -47,4 +50,6 @@ public class Exceptions {
             throw new Exception();
         }
     }
+
+    //* you can also duck exception by declaring again the exception thrown by method (even main)
 }
