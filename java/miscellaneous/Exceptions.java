@@ -2,6 +2,7 @@ package miscellaneous;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Sequencer;
 
+@SuppressWarnings("unused")
 public class Exceptions {
 
     //* Exceptions are objects that represent an error or unexpected situation

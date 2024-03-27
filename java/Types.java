@@ -1,4 +1,4 @@
-class Types {
+public class Types {
     public static void main(String[] args) {
         numbers();
         strings();
@@ -39,7 +39,7 @@ class Types {
         System.out.println("boolean: " + fact1 + " or " + fact2);
     }
     
-    //* Default values of instance variables:
+    //* Default values of class and instance variables:
     static int default1;
     static double default2;
     static boolean default3;

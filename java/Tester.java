@@ -1,6 +1,6 @@
 //* Main class (tester)
 //! In Java, there can be more than one class (or interface) in a file
-//! But only one of them can be public (or not) and that is the main class
+//! But only one of them can be public and that's the main class
 public class Tester {
     
     public static void main(String[] args) {
