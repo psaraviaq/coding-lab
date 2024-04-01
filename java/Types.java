@@ -26,7 +26,7 @@ public class Types {
     static void strings() {
         //* char (only one character and single quotes)
         char letter = 'f';
-        //* String (more than zero and double quotes)
+        //* String (zero or more characters and double quotes)
         String word = "java";
         System.out.println("char: '" + letter + "', String: \"" + word + "\"");
     }
@@ -53,7 +53,7 @@ public class Types {
         //* boolean: false
         System.out.println("booleans: " + default3);
         //* String: null (because it's an object)
-        System.out.println("Strings: " + default4);
+        System.out.println("strings: " + default4);
         
         //! Unassigned values can't be used inside methods
         // int num5;
