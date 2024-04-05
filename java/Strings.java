@@ -36,8 +36,9 @@ public class Strings {
         //! In java, you can't use == to compare two strings
         String str1 = "peter";
         String str2 = "Peter";
-        System.out.println("\"peter\".equals(\"Peter\"): " + str1.equals("Peter"));
         System.out.println("\"Peter\".equals(\"Peter\"): " + str2.equals("Peter"));
+        //* You can use "equalsIgnoreCase" to ignore the case
+        System.out.println("\"peter\".equalsIgnoreCase(\"Peter\"): " + str1.equalsIgnoreCase("Peter"));
     }
     
     static void toLowerCase() {
