@@ -24,5 +24,8 @@ public class Encapsulation {
         //* But they can be accessed through public methods
         dog.setWeight(30);
         System.out.println("Weight: " + dog.getWeight());
+
+        //* If there's no access modifier (default), it's package-private (same level directory)
+        //* This means that only classes in the same package can access it (classes, variables, methods, etc.)
     }
 }
