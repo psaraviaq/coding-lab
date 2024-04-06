@@ -1,7 +1,5 @@
 //* You need the main function to run the code
 void main() {
-  //* Dart is very similar to Java
-
-  //* Print function
+  //* The "print" function
   print("Hello World");
 }
