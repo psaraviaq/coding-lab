@@ -4,12 +4,15 @@ class DogExample {
     String breed;
     private int weight;
     
-    public void setWeight(int w) {
-        weight = w;
-    }
-    
+    //* Use getters to access private variables
     public int getWeight() {
         return weight;
+    }
+    
+    //* Use setters to modify private variables
+    public void setWeight(int weight) {
+        //* "this" is used to differentiate between the instance variable and the parameter
+        this.weight = weight;
     }
 }
 
