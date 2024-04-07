@@ -28,7 +28,8 @@ class SuperClass {
 //* The subclass "extends" the superclass
 class SubClass extends SuperClass {
     
-    //* Overriding method
+    //* Overriding method (it's good practice to add the "Override" annotation)
+    @Override
     void printBye() {
         System.out.println("Bye Bye");
     }
