@@ -30,5 +30,7 @@ public class Encapsulation {
 
         //* If there's no access modifier (default), it's package-private (same level directory)
         //* This means that only classes in the same package can access it (classes, variables, methods, etc.)
+
+        //* Use "protected" to allow subclasses (anywhere) and classes in the same package to access it
     }
 }
