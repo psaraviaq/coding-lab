@@ -14,6 +14,11 @@ class DogExample {
         //* "this" is used to differentiate between the instance variable and the parameter
         this.weight = weight;
     }
+
+    //! To automatically generate getters and setters:
+    //* 1. Click inside the class
+    //* 2. Right click or type "Source Action".
+    //* 3. Choose "Generate Getters and Setters"
 }
 
 public class Encapsulation {
