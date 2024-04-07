@@ -65,15 +65,15 @@ class Dog extends Animal {
     void speak() {
         System.out.println("Woof!");
     }
-    
-    //* When overriding a method, arguments must be the SAME, and return types must be COMPATIBLE.
-    //* That means the return type can be a subclass, and the argument names can be different.
+     
+    //* When overriding a method, parameters must be the SAME, and return types must be COMPATIBLE.
+    //* That means the return type can be a subclass, and the parameter names can be different.
     Dog eat() {
         System.out.println("Eating like a dog...");
         return new Dog();
     }
     
-    //! But making the argument type a subclass is not overriding, it's overloading.
+    //! But making the parameter type a subclass is not overriding, it's overloading.
     void print(Dog dog) {
         System.out.println("Dog");
     }
