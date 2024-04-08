@@ -13,17 +13,18 @@ interface Pet {
 
 //* A class "implements" an interface
 class Bird implements Pet {
+    @Override
     public void beFriendly() {
         System.out.println("I'm a friendly bird");
     }
 }
 
-//* An interface "extends" an interface
+//* An interface can extend an interface
 interface Flyable extends Pet {
     void fly();
 }
 
-//! A class can both "extend" a class and "implement" one or more interfaces at the same time
+//! And a class can both "extend" a class and "implement" one or more interfaces at the same time
 class RobotBird extends Animal implements Flyable, Robot {
     public void beFriendly() {
         System.out.println("I'm a friendly robot bird");
