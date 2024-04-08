@@ -29,6 +29,10 @@ public class Polymorphism {
         
         getAnimal();
         feedAnimal(new Dog());
+
+        //* Different methods will be called depending on the argument type.
+        dog.print(new Animal());
+        dog.print(new Dog());
     }
     
     //* You can return a subclass object from a method that expects a superclass.
