@@ -23,10 +23,6 @@ public class Polymorphism {
         Dog dog = (Dog) dogs.get(0);
         dog.speak();
         
-        //* To check the class (or superclass) of the object, you can use the "instanceof" operator.
-        System.out.println(animal instanceof Dog);
-        System.out.println(animal instanceof Animal);
-        
         getAnimal();
         feedAnimal(new Dog());
 
