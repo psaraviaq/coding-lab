@@ -22,5 +22,14 @@ public class Maps {
 
         //* You can access the value of a key by using "get" and passing it as an argument
         System.out.println(scores.get("math"));
+
+        //* Use "remove" with the key as an argument
+        scores.remove("math");
+        System.out.println(scores);
+
+        //* You can iterate over a map using a for-each loop
+        for (String key : scores.keySet()) {
+            System.out.println(key + ": " + scores.get(key));
+        }
     }
 }
