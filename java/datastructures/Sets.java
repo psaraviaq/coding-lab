@@ -39,16 +39,19 @@ class Unique {
         this.title = title;
     }
 
+    @Override
     public String toString() {
         return title;
     }
 
     //* For "hashCode", you could simply use the one from the "String" class
+    @Override
     public int hashCode() {
         return title.hashCode();
     }
 
     //! The "equals" method must use "Object" as the parameter type in order to override it
+    @Override
     public boolean equals(Object object) {
         //* You can just cast the object back to the class you want to compare
         Unique m = (Unique) object;
