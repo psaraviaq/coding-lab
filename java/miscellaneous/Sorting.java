@@ -39,12 +39,14 @@ class Word implements Comparable<Word> {
         this.title = title;
     }
 
+    @Override
     public String toString() {
         return title;
     }
 
     //! You must implement the "compareTo" method of the "Comparable" interface
     //* It should return a negative integer, zero, or a positive integer
+    @Override
     public int compareTo(Word w) {
         //* If you're comparing string instances, you can use the "compareTo" method of the "String" class
         //! With "compareTo", uppercase letters come before lowercase ones
@@ -55,6 +57,7 @@ class Word implements Comparable<Word> {
 //* Create a comparator class, and pass the sortable class to "Comparator" as a type argument
 class WordComparator implements Comparator<Word> {
     //! You must implement the "compare" method of the "Comparator" interface
+    @Override
     public int compare(Word w1, Word w2) {
         //* Its logic is similar to the "compareTo" method
         //* You can define other ways to sort the objects

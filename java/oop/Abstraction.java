@@ -26,6 +26,7 @@ abstract class Shape {
 abstract class Rectangle extends Shape {
     
     //* But if you do implement them, the next subclass doesn't have to
+    @Override
     public boolean erase() {
         System.out.println("Erasing rectangle");
         return true;
@@ -34,6 +35,7 @@ abstract class Rectangle extends Shape {
 
 //* The concrete subclass must implement all abstract methods that are not implemented by its superclass
 class Square extends Rectangle {
+    @Override
     public Rectangle draw(Shape shape) {
         System.out.println("Drawing square");
         return new Square();

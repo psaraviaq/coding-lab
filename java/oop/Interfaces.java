@@ -26,10 +26,12 @@ interface Flyable extends Pet {
 
 //! And a class can both "extend" a class and "implement" one or more interfaces at the same time
 class RobotBird extends Animal implements Flyable, Robot {
+    @Override
     public void beFriendly() {
         System.out.println("I'm a friendly robot bird");
     }
     
+    @Override
     public void fly() {
         System.out.println("I'm flying");
     }

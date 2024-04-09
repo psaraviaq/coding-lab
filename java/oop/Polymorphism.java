@@ -58,6 +58,7 @@ class Animal {
 }
 
 class Dog extends Animal {
+    @Override
     void sleep() {
         System.out.println("Sleeping like a dog...");
     }
@@ -68,6 +69,7 @@ class Dog extends Animal {
      
     //* When overriding a method, parameters must be the SAME, and return types must be COMPATIBLE.
     //* That means the return type can be a subclass, and the parameter names can be different.
+    @Override
     Dog eat() {
         System.out.println("Eating like a dog...");
         return new Dog();
