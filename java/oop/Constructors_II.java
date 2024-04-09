@@ -19,25 +19,6 @@ public class Constructors_II {
     }
 }
 
-class Food {
-    String name;
-    boolean healthy;
-    
-    //* super()
-    public Food() {
-        System.out.println("1. I am the food constructor");
-    }
-    
-    //* super(name)
-    public Food(String foodName) {
-        name = foodName;
-    }
-    
-    void eat() {
-        System.out.println("This food is great");
-    }
-}
-
 class Fruit extends Food {
     
     //* ------------------ super() and super ------------------
@@ -59,8 +40,9 @@ class Fruit extends Food {
     //     super();
     // }
     
+    @Override
     void eat() {
-        //* "super" can be used to call a method from the superclass when you still want to use its implementation.
+        //* "super." can be used to call a method from the superclass when you still want to use its implementation.
         //! But this call is not required (the compiler won't even insert it), and doesn't have to be the first statement.
         super.eat();
     }
@@ -73,9 +55,28 @@ class Fruit extends Food {
         this("apple", healthy);
     }
     
-    //* "this" is mainly used to avoid name conflicts between instance variables and parameters.
+    //* "this." is mainly used to avoid name conflicts between instance variables and parameters.
     public Fruit(String name, boolean healthy) {
         this.name = name;
         this.healthy = healthy;
+    }
+}
+
+class Food {
+    String name;
+    boolean healthy;
+    
+    //* super()
+    public Food() {
+        System.out.println("1. I am the food constructor");
+    }
+    
+    //* super(name)
+    public Food(String foodName) {
+        name = foodName;
+    }
+    
+    void eat() {
+        System.out.println("This food is great");
     }
 }
