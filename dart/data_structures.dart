@@ -23,4 +23,7 @@ void main() {
   //* You can use most of the same methods as lists
   unique.add(3);
   print(unique);
+
+  //* You also have iterators
+  unique.where((e) => e > 4).forEach(print);
 }
