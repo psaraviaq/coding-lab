@@ -24,6 +24,22 @@ void main() {
   unique.add(3);
   print(unique);
 
+  //* Maps are created using curly brackets with key-value pairs
+  //* You can as well use the "Map" class to specify the types
+  var person = {
+    "name": "Alice",
+    "age": 25,
+    "isStudent": false,
+  };
+  //* You can easily access and modify elements by using the key
+  print(person["name"]);
+  person["name"] = "Bob";
+  //* You can add new key-value pairs with ease
+  person["height"] = 1.75;
+  //* And remove them
+  person.remove("isStudent");
+  print(person);
+
   //* You also have iterators
   unique.where((e) => e > 4).forEach(print);
 }
