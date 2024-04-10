@@ -41,4 +41,6 @@ class SubClass extends SuperClass {
     
     //! You can't weaken the access modifier of the method when overriding
     // private void printHello() { System.out.println("Hello"); }
+
+    //* You can also automatically override and implement methods with "Source Action"
 }
