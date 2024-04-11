@@ -10,11 +10,64 @@
 <body>
     <!--* Introduction to the page or a section or article that usually appears at the beginning. -->
     <!--! There's no specific rule about what it should contain, but you can't nest another header inside it. -->
-    <header></header>
+    <header>
+
+        <!--* Links that provide navigation within the page, or a section or article. -->
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
     <!--* The primary content, its content should be unique across the site. -->
     <!--! There should be only one per page, and you shouldn't nest it. -->
-    <main></main>
+    <main>
+
+        <!--* Sections group related content, while articles are independent, self-contained content. -->
+        <!--* Sections can have articles, for example, news articles in a news section. -->
+        <section>
+            <article>
+                <h2>Article 1</h2>
+                <p>Content of the article 1.</p>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <p>Content of the article 2.</p>
+            </article>
+        </section>
+
+        <!--* Articles can have sections too, for example, a blog post with different sections. -->
+        <article>
+            <section>
+                <h2>Section 1</h2>
+                <p>Content of the section 1.</p>
+            </section>
+            <section>
+                <h2>Section 2</h2>
+                <p>Content of the section 2.</p>
+            </section>
+        </article>
+
+        <!--* "Aside" is a section that is related to the content around it, like lists of links, background information, etc. -->
+        <aside>
+            <h2>List of links</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+
+        <!-- "Address" is used to provide contact information for the author -->
+        <address>
+            <p>Author: John Doe</p>
+            <a href="#">Contact</a>
+        </address>
+
+    </main>
 
     <!--* Information about the author, copyright, etc. -->
     <!--* It can apply to the whole page or just a part of it (section, article, nav, aside). -->
