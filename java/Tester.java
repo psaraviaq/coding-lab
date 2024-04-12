@@ -33,6 +33,7 @@ class Movie {
     }
 
     //* Override the "toString" method
+    @Override
     public String toString() {
         return title;
     }
