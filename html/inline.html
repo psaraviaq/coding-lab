@@ -68,6 +68,27 @@
     <!--* "sup" is to display text above the baseline. -->
     <p>The area is 10 m<sup>2</sup>.</p>
 
+
+
+
+
+    <!--* "time" is for dates and times, the "datetime" attribute is for machine-readable data. -->
+    <p>The event starts at <time datetime="20:00">8:00 PM</time>.</p>
+    <p>The event starts at <time datetime="2020-10-01">October 1, 2020</time>.</p>
+    <p>The event starts at <time datetime="2020-10-01T20:00">October 1, 2020, 8:00 PM</time>.</p>
+
+    <!--* "data" is for numerical data, the "value" attribute is for machine-readable data. -->
+    <p>The temperature is <data value="25">25°C</data>.</p>
+
+    <!--* "del" is for text that has been deleted, and "ins" is for text that has been inserted. -->
+    <p>The price was $20, but now it's <del>$25</del> <ins>$15</ins>.</p>
+
+    <!--* "br" is for line breaks, like in addresses or poems. -->
+    <p>John Doe<br>123 Main Street<br>AnyTown, USA</p>
+
+    <!--* "wbr" is for word breaks, it doesn't add a hyphen when the text wraps though. -->
+    <p>LongWordThatWillBreakAtTheEndOfTheLineLongWordThatWillBreakAtTheEndOfTheLine<wbr>LongWordThatWillBreakAtTheEndOfTheLineLongWordThatWillBreakAtTheEndOfTheLine<wbr>LongWordThatWillBreakAtTheEndOfTheLine</p>
+
 </body>
 
 </html>
