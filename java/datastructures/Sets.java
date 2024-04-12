@@ -7,10 +7,11 @@ import java.util.TreeSet;
 public class Sets {
 
     //* Sets have unique elements, and they are not ordered.
-    //! For elements to be unique, they must implement "hashCode" and "equals"
+    //! For elements to be unique, they must override "equals" and "hashCode" from the "Object" class
 
     public static void main(String[] args) {
         //* "HashSet" is the most common implementation of a set
+        //! Strings already override "equals" and "hashCode", so you don't have to.
         Set<String> words = new HashSet<>();
         words.add("Peter");
         words.add("Jessica");
@@ -44,12 +45,6 @@ class Unique {
         return title;
     }
 
-    //* For "hashCode", you could simply use the one from the "String" class
-    @Override
-    public int hashCode() {
-        return title.hashCode();
-    }
-
     //! The "equals" method must use "Object" as the parameter type in order to override it
     @Override
     public boolean equals(Object object) {
@@ -57,5 +52,11 @@ class Unique {
         Unique m = (Unique) object;
         //* And then again, take advantage of the "String" class
         return title.equals(m.title);
+    }
+
+    //* For "hashCode", you could simply use the one from the "String" class
+    @Override
+    public int hashCode() {
+        return title.hashCode();
     }
 }

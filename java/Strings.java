@@ -54,7 +54,7 @@ public class Strings {
     }
     
     static void trim() {
-        //* For removing whitespaces from the beginning and the end of a string
+        //* For removing white-spaces from the beginning and the end of a string
         String str = "   Hello World!   ";
         System.out.println("\"   Hello World!   \" --> " + "trim(): " + str.trim());
     }

@@ -10,8 +10,7 @@ public class Lists {
     
     public static void main(String[] args) {
 
-        //* To initialize it, write "List", specify the type of elements inside <>, and then its name
-        //* Then type "new", write "ArrayList", specify the same type of elements inside <> again, and then ()
+        //* This is how you create an ArrayList, which is a type of List
         // List<String> names = new ArrayList<String>();
         //* They don't have a fixed size, so you don't have to specify it
         //* You can omit the second type if you're using Java 7 or later

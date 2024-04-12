@@ -41,11 +41,11 @@ class Generic<T> {
 //* With methods, put the type parameter before the return type
 class Method {
 
-    //* Which can be used in the return type, parameters, and body
+    //* Which can be used in the return type, parameters, and body. This is useful because...
     static public <T extends Number> void global(List<T> numbers) {
     }
 
-    //! With specific type parameters, you can't pass subclasses of it in the class when calling the method
+    //! ... with specific type parameters, you can't pass subclasses of it in the class when calling the method
     static void specific(Generic<Object> generic) {
     }
 
