@@ -12,7 +12,7 @@ public class InstanceOf {
         System.out.println(pet instanceof Rabbit);
 
         //* You can automatically cast the object, if it meets the condition, by adding a variable name after the class.
-        //! You can use the variable, but only inside the block.
+        //! You can only use the variable inside the block.
         if (pet instanceof Rabbit rabbit) {
             System.out.println("Hi " + rabbit.name + "!");
         }

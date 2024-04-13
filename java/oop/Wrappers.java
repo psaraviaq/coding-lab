@@ -22,7 +22,7 @@ public class Wrappers {
         //? "String" was already an object
         
         
-        //* -------------------- Autoboxing --------------------
+        //* -------------------- Auto-boxing --------------------
         //* When converting a primitive type to a wrapper and vice versa automatically
         int num = i;
         
