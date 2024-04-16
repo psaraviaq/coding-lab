@@ -7,6 +7,8 @@ void main() {
 
   var worker = Worker("Developer", "Jane", 25);
   print("${worker.name} - ${worker.age} years old - ${worker.job}");
+
+  print("User: $user");
 }
 
 class User {
@@ -16,6 +18,12 @@ class User {
   //* You can directly assign the properties in the constructor by using "this." in the parameters
   //! Add a semicolon after the constructor in this case
   User(this.name, this.age);
+
+  //* You can use the "@override" annotation when overriding a method
+  @override
+  String toString() {
+    return name;
+  }
 }
 
 class Worker extends User {
