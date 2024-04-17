@@ -10,6 +10,7 @@ out/
 local.properties
 java/**/bin
 kotlin/**/bin
+*.ser
 
 # 'c#' directories
 c#/**/bin
