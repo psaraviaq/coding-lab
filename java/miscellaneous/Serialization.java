@@ -6,11 +6,12 @@ import java.io.*;
 public class Serialization {
     public static void main(String[] args) {
         
-        Product product = new Product(20);
+        Product product = new Product("Laptop", 1000);
 
         //! I/O operations are prone to exceptions, so we need to handle them
         try {
             //* To connect to a file, we need to create a "FileOutputStream" object, pass the filename as an argument
+            //* It will create a file with the given name if it doesn't exist
             FileOutputStream fs = new FileOutputStream("Products.ser");
 
             //* To write objects to the file, create an "ObjectOutputStream" object, and pass the previous object
@@ -38,10 +39,19 @@ public class Serialization {
     }
 }
 
+//* Use the "Serializable" interface in order to serialize objects
+//! You don't need to implement any methods, it's just a marker interface
 class Product implements Serializable {
+
+    // * When serializing objects, the fields are serialized, but the methods are not
+    String name;
     int price;
 
-    public Product(int price) {
+    //* If some fields aren't or can't be serialized, use the "transient" keyword
+    // transient Sample sample;
+
+    public Product(String name, int price) {
+        this.name = name;
         this.price = price;
     }
 }
