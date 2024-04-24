@@ -5,6 +5,7 @@ void main() {
 }
 
 //! If somewhere inside the function you use "await", you have to mark the function with "async"
+//^ All async functions return their result wrapped in a "Future" object, whether you specify it or not
 futureCall() async {
   //* Because the function returns a Future<?>, you can use the "then" method
   //* to get the return value of the future's function
