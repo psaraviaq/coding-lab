@@ -1,0 +1,8 @@
+name: my_project
+
+environment:
+  sdk: "^3.3.0"
+
+#* Add the "http" package with the command "dart pub add http"
+dependencies:
+  http: ^1.2.1
