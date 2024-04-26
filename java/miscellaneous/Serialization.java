@@ -84,6 +84,7 @@ class Product implements Serializable {
     //* Because it compares the ID of the class with the ID of the serialized object
     //* To avoid this, provide a "serialVersionUID" field with a unique value
     //* You can get the value by running the command "serialver" with the compiled class
+    //! However, there are still changes that can't be handled, so setting the ID would be useless for them
     static final long serialVersionUID = 1L;
 
     public Product(String name, int price) {
