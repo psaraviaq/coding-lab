@@ -80,6 +80,12 @@ class Product implements Serializable {
     //! When deserialized, the fields will be initialized with their default values (null, 0, etc.)
     // transient Sample sample;
 
+    //! Serialization also fails if you change the class structure after serializing objects
+    //* Because it compares the ID of the class with the ID of the serialized object
+    //* To avoid this, provide a "serialVersionUID" field with a unique value
+    //* You can get the value by running the command "serialver" with the compiled class
+    static final long serialVersionUID = 1L;
+
     public Product(String name, int price) {
         this.name = name;
         this.price = price;
