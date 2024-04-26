@@ -58,15 +58,19 @@ public class Serialization {
     }
 }
 
-//* Use the "Serializable" interface in order to serialize objects
+//* Use the "Serializable" interface in order to be able to serialize objects
 //! You don't need to implement any methods, it's just a marker interface
+//* If a superclass of a class is serializable, the subclass is also serializable
 class Product implements Serializable {
 
-    // * When serializing objects, the fields are serialized, but the methods are not
+    //* When serializing objects, the entire object is serialized, including its fields,
+    //* and the fields of the fields (if they're serializable), and so on
+    //! If a single field isn't serializable in the entire object, the serialization will fail
     String name;
     int price;
 
     //* If some fields aren't or can't be serialized, use the "transient" keyword
+    //! When deserialized, the fields will be initialized with their default values (null, 0, etc.)
     // transient Sample sample;
 
     public Product(String name, int price) {
