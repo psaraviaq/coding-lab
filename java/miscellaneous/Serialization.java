@@ -61,6 +61,10 @@ public class Serialization {
 //* Use the "Serializable" interface in order to be able to serialize objects
 //! You don't need to implement any methods, it's just a marker interface
 //* If a superclass of a class is serializable, the subclass is also serializable
+
+//* The constructor of a serializable class is not called when deserialized
+//! But if a superclass isn't serializable, its constructor will be called
+//! And once that constructor is called, all the superclass constructors will be called
 class Product implements Serializable {
 
     //* When serializing objects, the entire object is serialized, including its fields,
@@ -68,6 +72,9 @@ class Product implements Serializable {
     //! If a single field isn't serializable in the entire object, the serialization will fail
     String name;
     int price;
+
+    //! Static fields aren't serialized, as they belong to the class, not the object
+    static int count = 0;
 
     //* If some fields aren't or can't be serialized, use the "transient" keyword
     //! When deserialized, the fields will be initialized with their default values (null, 0, etc.)
