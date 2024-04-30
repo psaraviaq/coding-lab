@@ -16,6 +16,7 @@ public class Strings {
         toUpperCase();
         trim();
         indexOf();
+        split();
     }
     
     static void length() {
@@ -64,5 +65,13 @@ public class Strings {
         //* Or returns -1 if the string is not found
         String str = "Hello World!";
         System.out.println("\"Hello World!\" --> " + "indexOf(\"World\"): " + str.indexOf("World"));
+    }
+
+    static void split() {
+        //* For splitting a string into an array of strings
+        String str = "Hello, World!";
+        //! The method returns an array of strings
+        String[] arr = str.split(", ");
+        System.out.println("\"Hello, World!\" --> " + "split(\", \"): [\"" + arr[0] + "\", \"" + arr[1] + "\"]");
     }
 }
