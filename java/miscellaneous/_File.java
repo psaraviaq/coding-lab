@@ -1,8 +1,6 @@
 package miscellaneous;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
+import java.io.*;
 
 public class _File {
 
@@ -35,6 +33,26 @@ public class _File {
 
             //* You can also pass the classes directly to their constructors
             // BufferedWriter writer = new BufferedWriter(new FileWriter(new File("example.txt")));
+        } catch (Exception e) {
+        }
+
+        try {
+            //* To read a file, you follow a similar process
+            File file = new File("file_example.txt");
+            //* You can use a "FileReader" to read the file
+            FileReader fr = new FileReader(file);
+            //* And a "BufferedReader" to read it in chunks
+            BufferedReader br = new BufferedReader(fr);
+
+            //* You can read the file line by line with the "readLine" method
+            String line = br.readLine();
+            //! The method returns "null" when there are no more lines to read
+            while (line != null) {
+                System.out.println(line);
+                line = br.readLine();
+            }
+
+            br.close();
         } catch (Exception e) {
         }
     }
