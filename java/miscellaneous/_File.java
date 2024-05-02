@@ -7,7 +7,7 @@ public class _File {
     public static void main(String[] args) {
         try {
             //* The "File" class is a more versatile way to create files
-            //* You can also create directories with it, delete files, etc.
+            //* You can create directories with it, delete files, etc.
             File file = new File("file_example.txt");
             //* You can even provide a path as an argument instead of just the file name
             // File example = new File("./miscellaneous/example.txt");

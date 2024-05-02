@@ -88,6 +88,7 @@ class Product implements Serializable {
     static final long serialVersionUID = 1L;
 
     public Product(String name, int price) {
+        System.out.println("This only runs when the object is created");
         this.name = name;
         this.price = price;
     }
