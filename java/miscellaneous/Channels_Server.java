@@ -1,13 +1,12 @@
 package miscellaneous;
 
+import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Writer;
-import java.net.InetSocketAddress;
-import java.nio.channels.*;
-import java.nio.charset.StandardCharsets;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 public class Channels_Server {
-    public static void main(String[] args) {
+    /* public static void main(String[] args) {
         try {
             //! On the server side, we have to create a "ServerSocketChannel" object with the "open" method.
             //* The method here doesn't take any arguments.
@@ -64,6 +63,36 @@ public class Channels_Server {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        } */
+        }
+    } */
+
+    //* You could also just use sockets here too.
+    public static void main(String[] args) {
+        try {
+            //! "ServerSocket" directly starts the server on the specified port number as an argument.
+            ServerSocket serverSocket = new ServerSocket(5000);
+            
+            //! Use the "isClosed" method to check if the server is still running.
+            while (!serverSocket.isClosed()) {
+                System.out.println("Waiting...");
+
+                //! Calling the "accept" method of the server object creates the connection object.
+                Socket socket = serverSocket.accept();
+
+                System.out.println("Connected!");
+
+                //! Create a "PrintWriter" object by passing the "getOutputStream" method of the socket.
+                PrintWriter pw = new PrintWriter(socket.getOutputStream());
+                
+                //* And the rest of the code is the same.
+                pw.println("Hello!");
+
+                pw.close();
+                socket.close();
+            }
+            serverSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

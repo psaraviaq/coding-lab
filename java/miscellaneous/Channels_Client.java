@@ -1,14 +1,10 @@
 package miscellaneous;
 
-import java.io.BufferedReader;
-import java.io.Reader;
-import java.net.InetSocketAddress;
-import java.nio.channels.Channels;
-import java.nio.channels.SocketChannel;
-import java.nio.charset.StandardCharsets;
+import java.io.*;
+import java.net.Socket;
 
 public class Channels_Client {
-    public static void main(String[] args) {
+    /* public static void main(String[] args) {
         //! The "InetSocketAddress" creates an address object.
         //* We pass the IP address (or even "localhost") and the port number of the server we want to connect to.
         InetSocketAddress serverAddress = new InetSocketAddress("localhost", 5000);
@@ -44,6 +40,30 @@ public class Channels_Client {
             writer.println("Hello back!");
         } catch (Exception e) {
             e.printStackTrace();
-        } */
+        }
+    } */
+    
+    //* You could also just use sockets.
+    public static void main(String[] args) {
+        try {
+            //! "Socket" creates directly a connection with the address and port number as arguments.
+            Socket socket = new Socket("localhost", 5000);
+
+            //! Create an "InputStreamReader" object to read the data from the server.
+            //* Call the "getInputStream" method of the socket object and pass it as an argument.
+            InputStreamReader reader = new InputStreamReader(socket.getInputStream());
+            
+            //* And the rest of the code is the same.
+            BufferedReader br = new BufferedReader(reader);
+
+            String line = br.readLine();
+
+            System.out.println(line);
+
+            br.close();
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
