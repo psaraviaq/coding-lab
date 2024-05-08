@@ -9,16 +9,21 @@ import java.nio.charset.StandardCharsets;
 public class Channels_Server {
     public static void main(String[] args) {
         try {
+            //! On the server side, we have to create a "ServerSocketChannel" object with the "open" method.
+            //* The method here doesn't take any arguments.
             ServerSocketChannel serverChannel = ServerSocketChannel.open();
 
-            //! The "bind" method starts the server on the specified address object.
+            //! Use the "bind" method to start the server on the specified address object.
             //* The address uses the port number as the only argument.
             serverChannel.bind(new InetSocketAddress(5000));
 
+            //! Use the "isOpen" method of the server object to check if it's still running.
+            //* Use a loop to keep listening for a new client when the old one disconnects.
             while (serverChannel.isOpen()) {
                 System.out.println("Waiting...");
 
-                //* Create the connection object when a client connects.
+                //! Now you create the connection object with the "accept" method of the server object.
+                //* The method blocks the program until a client connects and returns the connection object.
                 SocketChannel socketChannel = serverChannel.accept();
 
                 System.out.println("Connected!");
