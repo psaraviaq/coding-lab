@@ -13,7 +13,7 @@ public class Channels_Client {
             //! The "InetSocketAddress" creates an address object.
             //* We pass the IP address (or even "localhost") and the port number of the server we want to connect to.
             InetSocketAddress serverAddress = new InetSocketAddress("localhost", 5000);
-        
+
             //! The "SocketChannel" object represents a network connection between two machines.
             //* Pass the address object to the "open" method to create the connection object.
             SocketChannel socketChannel = SocketChannel.open(serverAddress);
@@ -25,13 +25,16 @@ public class Channels_Client {
 
             //* To make the reading easier, wrap it in a "BufferedReader".
             BufferedReader br = new BufferedReader(reader);
-            
+
             //* And you can use the same methods as with a file to read the data.
             String line = br.readLine();
 
             System.out.println(line);
+
+            //! Don't forget to close the connection.
+            br.close();
         } catch (Exception e) {
-            System.out.println(":(");
+            e.printStackTrace();
         }
     }
 }
