@@ -37,5 +37,13 @@ public class Channels_Client {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        //* You could also write messages to the server.
+        /* try (SocketChannel socketChannel = SocketChannel.open(serverAddress);
+        PrintWriter writer = new PrintWriter(Channels.newWriter(socketChannel, StandardCharsets.UTF_8))) {
+            writer.println("Hello back!");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } */
     }
 }

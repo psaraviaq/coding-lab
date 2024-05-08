@@ -49,5 +49,21 @@ public class Channels_Server {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        //* You could also read messages from a client.
+        /* try (ServerSocketChannel serverChannel = ServerSocketChannel.open().bind(new InetSocketAddress(5000))) {
+            while (serverChannel.isOpen()) {
+                System.out.println("Waiting...");
+                try (SocketChannel socketChannel = serverChannel.accept();
+                BufferedReader br = new BufferedReader(Channels.newReader(socketChannel, StandardCharsets.UTF_8))) {
+                    String line = br.readLine();
+                    System.out.println(line);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } */
     }
 }
