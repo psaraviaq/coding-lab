@@ -36,9 +36,11 @@ public class Channels_Server {
                 //! And now you use other methods like "print" and "println".
                 pw.println("Hello");
 
-                //* Don't forget to close it again.
+                //* Don't forget to close them again.
                 pw.close();
+                socketChannel.close();
             }
+            serverChannel.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
