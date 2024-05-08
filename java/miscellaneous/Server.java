@@ -1,12 +1,12 @@
 package miscellaneous;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.io.*;
+import java.net.*;
+import java.nio.channels.*;
+import java.nio.charset.StandardCharsets;
 
-public class Channels_Server {
-    /* public static void main(String[] args) {
+public class Server {
+    public static void main(String[] args) {
         try {
             //! On the server side, we have to create a "ServerSocketChannel" object with the "open" method.
             //* The method here doesn't take any arguments.
@@ -45,7 +45,7 @@ public class Channels_Server {
                 socketChannel.close();
             }
             serverChannel.close();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -61,13 +61,13 @@ public class Channels_Server {
                     e.printStackTrace();
                 }
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-    } */
+        } */
+    }
 
     //* You could also just use sockets here too.
-    public static void main(String[] args) {
+    public static void _main(String[] args) {
         try {
             //! "ServerSocket" directly starts the server on the specified port number as an argument.
             ServerSocket serverSocket = new ServerSocket(5000);

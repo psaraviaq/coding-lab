@@ -1,10 +1,14 @@
 package miscellaneous;
 
 import java.io.*;
+import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.nio.channels.Channels;
+import java.nio.channels.SocketChannel;
+import java.nio.charset.StandardCharsets;
 
-public class Channels_Client {
-    /* public static void main(String[] args) {
+public class Client {
+    public static void main(String[] args) {
         //! The "InetSocketAddress" creates an address object.
         //* We pass the IP address (or even "localhost") and the port number of the server we want to connect to.
         InetSocketAddress serverAddress = new InetSocketAddress("localhost", 5000);
@@ -30,7 +34,7 @@ public class Channels_Client {
             //! Don't forget to close the connections.
             br.close();
             socketChannel.close();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -38,13 +42,13 @@ public class Channels_Client {
         /* try (SocketChannel socketChannel = SocketChannel.open(serverAddress);
         PrintWriter writer = new PrintWriter(Channels.newWriter(socketChannel, StandardCharsets.UTF_8))) {
             writer.println("Hello back!");
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-    } */
+        } */
+    }
     
     //* You could also just use sockets.
-    public static void main(String[] args) {
+    public static void _main(String[] args) {
         try {
             //! "Socket" creates directly a connection with the address and port number as arguments.
             Socket socket = new Socket("localhost", 5000);
