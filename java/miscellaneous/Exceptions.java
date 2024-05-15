@@ -1,6 +1,5 @@
 package miscellaneous;
-import javax.sound.midi.MidiSystem;
-import javax.sound.midi.Sequencer;
+import javax.sound.midi.*;
 
 @SuppressWarnings("unused")
 public class Exceptions {
@@ -55,4 +54,7 @@ public class Exceptions {
     }
 
     //* You can duck exceptions by declaring again the exception in the method that calls the method that throws
+    public void duckException() throws MidiUnavailableException {
+        Sequencer sequencer = MidiSystem.getSequencer();
+    }
 }
