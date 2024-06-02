@@ -83,7 +83,7 @@ public class Server {
 
                 //! Create a "PrintWriter" object by passing the "getOutputStream" method of the socket.
                 PrintWriter pw = new PrintWriter(socket.getOutputStream());
-                
+
                 //* And the rest of the code is the same.
                 pw.println("Hello!");
 
