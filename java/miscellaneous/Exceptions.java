@@ -23,10 +23,19 @@ public class Exceptions {
             Sequencer sequencer = MidiSystem.getSequencer();
             System.out.println("Success");
             // throw new Exception();
+
+            // var x = 4/0;
+            // Integer.parseInt("hello");
+            
             return 0;
             //* You can have multiple "catch" blocks for different types of exceptions
             //! Exceptions are polymorphic too, so you can declare a superclass and catch subclasses
             //! But you can't declare a superclass, and then a subclass, because the subclass will never be reached, and it will give a compilation error
+            
+            //* You can also use multi-catch to catch multiple exceptions in the same block
+        } catch (ArithmeticException | NumberFormatException e) {
+            System.out.println("One of the two exceptions happened: " + e.getClass());
+            return 3;
         } catch (Exception e) {
             System.out.println(":(");
             //* "printStackTrace" prints the exception and also where it happened
