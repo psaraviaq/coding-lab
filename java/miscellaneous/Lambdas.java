@@ -11,7 +11,7 @@ public class Lambdas {
     public static void main(String[] args) {
 
         //* Lambda expressions are implementations of interfaces with a single abstract method
-        //! So a lambda expression is an object too, its type is the interface it implements
+        //! A lambda expression is an object too, its type is the interface it implements
         Consumer<String> consumer = s -> System.out.println(s);
 
         //* Because they are treated as instances, you can pass them as arguments
@@ -28,6 +28,7 @@ public class Lambdas {
 
         //* Method references are a shorthand for lambda expressions when they're just a method call
         //* First, you put the class name, then instead of ".", you put "::", and then the method name
+        // Consumer<String> consumer = System.out::println;
         List<String> VOWELS = vowels.stream().map(String::toUpperCase).collect(Collectors.toList());
         System.out.println(VOWELS);
     }
