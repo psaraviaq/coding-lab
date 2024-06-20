@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!--* The "form" element is just a container for form elements, but it could also contain other block elements -->
+    <!--! A form shouldn't contain another form, same goes for the form elements -->
+
+    <!--* "action" specifies where to send the form-data when it is submitted -->
+
+    <!--* "method" specifies the HTTP method to use when sending the data -->
+    <!--! The options are: GET and POST, it is optional, and the default is GET -->
+    <form>
+        <!--* The "name" attribute identifies the form data when sent, all form elements must include it -->
+
+        <!--* "input" is the basic form element, the "type" attribute defines its purpose -->
+        <!--! The default value is "text", if not specified -->
+
+        <!--* "minlength" and "maxlength" specify the number of characters allowed when submitting the form -->
+        <!--* "placeholder" displays a hint that describes the expected value, "value" sets a default value -->
+        <input type="text" name="color">
+
+        <!--* "textarea" is a multi-line field for text input -->
+        <!--* You could use the "cols" and "rows" attributes to specify the size, but it's more common to use CSS -->
+        <!--! It has a closing tag, and the text between the tags is the default value -->
+        <textarea name="information"></textarea>
+
+        <!--* Both the "disabled" and "readonly" attributes won't let you interact with the element -->
+        <!--! But "disabled" won't send the data when submitting the form -->
+        <input name="disabled" value="disabled" disabled>
+        <input name="readonly" value="readonly" readonly>
+
+        <button>x</button>
+    </form>
+</body>
+
+</html>
