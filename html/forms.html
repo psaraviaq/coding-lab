@@ -12,18 +12,47 @@
     <!--! A form shouldn't contain another form, same goes for the form elements -->
 
     <!--* "action" specifies where to send the form-data when it is submitted -->
-
     <!--* "method" specifies the HTTP method to use when sending the data -->
     <!--! The options are: GET and POST, it is optional, and the default is GET -->
     <form>
-        <!--* The "name" attribute identifies the form data when sent, all form elements must include it -->
-
         <!--* "input" is the basic form element, the "type" attribute defines its purpose -->
         <!--! The default value is "text", if not specified -->
 
+        <!--* The "name" attribute identifies the form data when sent, most of the time it is required -->
         <!--* "minlength" and "maxlength" specify the number of characters allowed when submitting the form -->
         <!--* "placeholder" displays a hint that describes the expected value, "value" sets a default value -->
-        <input type="text" name="color">
+        <input type="text" name="animal">
+
+        <!--^ Additional input types -->
+        <!--* "password" hides the text, but it doesn't encrypt it when the form is submitted -->
+        <input type="password" name="password" placeholder="Your password">
+        <!--* "email" is for email addresses, it has built-in validation -->
+        <input type="email" name="email" placeholder="Your email">
+        <!--TODO "search", "tel", "url" are mostly used for semantic reasons, they provide different keyboard layouts -->
+
+        <!--* "submit" sends the form data to the server -->
+        <input type="submit">
+        <!--* "reset" returns the form to its initial state -->
+        <input type="reset">
+        <!--! You can customize their content with "value", and they don't require a "name" attribute -->
+
+        <!--* With the type "button", you can define your own function with JavaScript, it has no default behavior -->
+        <input type="button" value="Input button">
+        <!--* But there's also a "button" element, which is more flexible -->
+        <!--* It can even contain other elements like images, and have the "type" attribute set to "submit" or "reset" -->
+        <!--! By default, it acts like a submit button -->
+        <button>Default button</button>
+
+        <!--* "datalist" displays a list of suggestions for an input field -->
+        <!--* To link them, match the "list" attribute of the input with the "id" attribute of the datalist -->
+        <!--! It is not supported in all browsers, as a fallback it will be a normal text input -->
+        <input name="datalist" list="my_list">
+        <datalist id="my_list">
+            <!--* Inside the datalist, use "option" elements to define the suggestions with the "value" attribute -->
+            <option value="apple">
+            <option value="banana">
+            <option value="orange">
+        </datalist>
 
         <!--* "textarea" is a multi-line field for text input -->
         <!--* You could use the "cols" and "rows" attributes to specify the size, but it's more common to use CSS -->
@@ -34,8 +63,6 @@
         <!--! But "disabled" won't send the data when submitting the form -->
         <input name="disabled" value="disabled" disabled>
         <input name="readonly" value="readonly" readonly>
-
-        <button>x</button>
     </form>
 </body>
 
