@@ -63,7 +63,24 @@
         <!--! But "disabled" won't send the data when submitting the form -->
         <input name="disabled" value="disabled" disabled>
         <input name="readonly" value="readonly" readonly>
+
+        <!--* With type "radio", you can select one option from a group -->
+        <!--! The group must have the same "name" attribute, but different "value" attributes -->
+        <!--* You can add a "checked" attribute to set a default value -->
+        <ol>
+            <li><input type="radio" name="pet" value="cat" checked>Cat</li>
+            <li><input type="radio" name="pet" value="dog">Dog</li>
+        </ol>
+
+        <!--* With type "checkbox", you can select multiple options -->
+        <!--* The "name", "value", and "checked" attributes work the same way as with radio buttons -->
+        <ul>
+            <li><input type="checkbox" name="color" value="red">Red</li>
+            <li><input type="checkbox" name="color" value="green">Green</li>
+            <li><input type="checkbox" name="color" value="blue">Blue</li>
+        </ul>
     </form>
+
 </body>
 
 </html>
