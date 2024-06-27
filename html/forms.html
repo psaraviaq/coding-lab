@@ -29,6 +29,10 @@
         <!--* "email" is for email addresses, it has built-in validation -->
         <input type="email" name="email" placeholder="Your email">
         <!--TODO "search", "tel", "url" are mostly used for semantic reasons, they provide different keyboard layouts -->
+        <!--* "number" and "range" are for numbers, "min" and "max" set the limits, "step" sets the increment -->
+        <!--! These two lack support in some browsers -->
+        <input type="number" name="quantity" min="1" max="10" step="1">
+        <input type="range" name="volume" min="0" max="100" step="10">
 
         <!--* "submit" sends the form data to the server -->
         <input type="submit">
@@ -55,6 +59,8 @@
         <input type="datetime-local" name="event" value="2020-01-01T12:00">
         <input type="month" name="budget" value="2020-01">
         <input type="week" name="schedule" value="2020-W01">
+        <!--* "color" displays a color picker, the value is a hexadecimal color -->
+        <input type="color" name="theme" value="#ff00ff">
 
         <!--* "datalist" displays a list of suggestions for an input field -->
         <!--* To link them, match the "list" attribute of the input with the "id" attribute of the datalist -->
