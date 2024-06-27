@@ -43,6 +43,19 @@
         <!--! By default, it acts like a submit button -->
         <button>Default button</button>
 
+        <!--* "file" allows users to upload files -->
+        <!--! You should add enctype="multipart/form-data" to the form element -->
+        <input type="file" name="photo">
+        <!--* With type "hidden", the field is not visible, but the data is sent when submitting the form -->
+        <input type="hidden" name="secret" value="MyBiggestSecret">
+        <!--* You also have types for dates and times, and they have different formats -->
+        <!--! Not all browsers support them all, by default they will be text inputs -->
+        <input type="date" name="birthday" value="2020-01-01">
+        <input type="time" name="appointment" value="12:00">
+        <input type="datetime-local" name="event" value="2020-01-01T12:00">
+        <input type="month" name="budget" value="2020-01">
+        <input type="week" name="schedule" value="2020-W01">
+
         <!--* "datalist" displays a list of suggestions for an input field -->
         <!--* To link them, match the "list" attribute of the input with the "id" attribute of the datalist -->
         <!--! It is not supported in all browsers, as a fallback it will be a normal text input -->
