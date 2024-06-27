@@ -122,6 +122,32 @@
         </select>
     </form>
 
+    <hr>
+
+    <form id="form-login">
+        <!--* The "label" element associates a description with a form element, there are two ways to do it -->
+
+        <!--* Associate the attributes "for"(label) and "id"(input) with the same value -->
+        <!--^ This way is useful when applying alignment or styling -->
+        <label for="form-login-name">Your name:</label>
+        <input type="text" name="name" id="form-login-name">
+
+        <!--* Wrap the input element inside the label element -->
+        <!--^ This is also used mainly for radio buttons and checkboxes -->
+        <label>Your password: <input type="password" name="password"></label>
+
+        <!--* The "fieldset" element groups related elements in a form -->
+        <fieldset>
+            <!--* The "legend" element provides a caption for the group -->
+            <!--! You can style them to change the appearance, but you should be careful with the layout -->
+            <legend>Personal information</legend>
+            <ul>
+                <li><label>Your email: <input type="email" name="email"></label></li>
+                <li><label>Your phone: <input type="tel" name="phone"></label></li>
+            </ul>
+        </fieldset>
+    </form>
+
 </body>
 
 </html>
