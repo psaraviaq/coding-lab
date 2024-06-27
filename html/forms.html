@@ -79,6 +79,28 @@
             <li><input type="checkbox" name="color" value="green">Green</li>
             <li><input type="checkbox" name="color" value="blue">Blue</li>
         </ul>
+
+        <!--* The "select" element creates a drop-down list of options -->
+        <!--* You also have the "size" and "multiple" attributes to change the appearance -->
+        <select name="genre">
+            <!--* The content of "option" is the value that will be sent when submitting the form -->
+            <option>Rock</option>
+            <!--! The "selected" attribute chooses a default value -->
+            <option selected>Pop</option>
+            <!--! However, you can use the "value" attribute to set a different value -->
+            <option value="R&B">Rhythm and Blues</option>
+        </select>
+        <select name="flavor">
+            <!--* Use the "optgroup" element to separate the options into groups, "label" defines the group name -->
+            <optgroup label="Traditional">
+                <option>Vanilla</option>
+                <option>Chocolate</option>
+            </optgroup>
+            <optgroup label="Premium">
+                <option>Brownie</option>
+                <option>Oreo</option>
+            </optgroup>
+        </select>
     </form>
 
 </body>
