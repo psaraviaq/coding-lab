@@ -1,3 +1,5 @@
+
+#! Strings are not mutable, you can't change a character in a string
 sentence = "I love pizza"
 
 #* f-strings: "f" prefix before the string, code inside curly braces
