@@ -6,25 +6,23 @@ sentence = "I love pizza"
 print(f'f"...": {sentence} (length: {len(sentence)})')
 
 #* "lower", "upper"
-print("\noriginal: \"Love\"")
-print("lower(): " + "Love".lower(), "\tupper(): " + "Love".upper())
+print("\nog: \"Love\"")
+print(".lower(): " + "Love".lower(), "\t\t.upper(): " + "Love".upper())
 
 #* "swapcase", "title", "capitalize"
-print("\noriginal: \"I hate you.\"")
-print("swapcase(): " + "I hate you.".swapcase(), "\ttitle(): " + "I hate you.".title(), "\tcapitalize(): "+ "I hate you.".capitalize())
+print("\nog: \"I hate you.\"")
+print(".swapcase(): " + "I hate you.".swapcase(), "\t.title(): " + "I hate you.".title(), "\t\t.capitalize(): "+ "I hate you.".capitalize())
 
 #* "strip", "lstrip", "rstrip"
-print("\nstrip(): \"  wow  \" --> " + "  wow  ".strip(), "\tlstrip(\".\"): \"...sure\" --> " + "...sure".lstrip("."))
-#* "removeprefix", "removesuffix"
+print("\n.strip(): \"  wow  \" --> " + "  wow  ".strip(), "\t.lstrip(\".\"): \"...sure\" --> " + "...sure".lstrip("."))
 
 #* "split" (default: " ")
-print("\nsplit(): Yes or No\" --> " + str("Yes or No".split()))
-print("split(\"a\"): \"array\" --> " + str("array".split("a")))
+print("\n.split(): Yes or No\" --> " + str("Yes or No".split()))
+# print(".split(\"a\"): \"array\" --> " + str("array".split("a")))
 print("list(\"abc\"): " + str(list("abc"))) #* You can split a string individually with "list"
 
 #* "replace"
-print("\nreplace(\"z\", \"s\"): " + sentence.replace("z", "s"))
-print("replace(\"z\", \".\", 3): \"zzzzzz\" --> " + "zzzzzz".replace("z", ".", 3))
+print("\n.replace(\"z\", \"s\"): " + sentence.replace("z", "s"))
 
 print("\n----- ADVANCED -----")
 
