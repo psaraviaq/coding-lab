@@ -1,13 +1,31 @@
 
-#* "for" loops (they don't use conditions, they iterate over a sequence)
-#* First the names of the variables, then the keyword "in", and finally the sequence
-#! Use ":" to start a block of code, and indent the block
+#* "for" loops
 for letter in "LOOP":
     print(letter)
 
-#* To work with numbers, you can use "range"
 for i in range(4):
     print(f'int: {i}')
+
+#* "while" loops
+count = 3
+while count > 0:
+    print(f"{count}...")
+    count -= 1
+
+#* "continue" is used to skip an iteration
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+#* "break" is used to exit the whole loop
+animal = "fish"
+while True:
+    if animal == "fish":
+        break
+    print("Wrong animal")
+
+print("------------ ADVANCED ------------")
 
 #* "enumerate" is used when you need the index and the element of a sequence
 for index, value in enumerate(['a', 'b', 'c']):
@@ -15,24 +33,3 @@ for index, value in enumerate(['a', 'b', 'c']):
 #* The "else" block is executed when the loop is completed without a "break"
 else:
     print("The loop completed without a 'break'")
-
-print("\n-------- while --------")
-
-#* "while" loops
-count = 3
-while count > 0:
-    print(count)
-    count -= 1
-
-#* "break" is used to exit a loop
-while True:
-    answer = input("What's the password? ")
-    if answer == "fish":
-        break
-    print("Wrong password")
-
-#* "continue" is used to skip an iteration
-for i in range(10):
-    if i % 2 == 0:
-        continue
-    print(i)
