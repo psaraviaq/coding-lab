@@ -44,3 +44,10 @@ print("\n-------- Additional methods --------")
 #* "extend" adds multiple elements
 fruits.extend(["strawberry", "mango"])
 print("\n.extend([\"strawberry\", \"mango\"]):\t", fruits)
+
+numbers = [7, 4, 7, 7, 1]
+print("\nnumbers:", numbers)
+#* "count" returns the number of occurrences of the specified element
+print(".count(7):", numbers.count(7))
+#* "index" returns the index of the first occurrence of the specified element
+print(".index(1):", numbers.index(1))
