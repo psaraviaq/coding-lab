@@ -3,7 +3,7 @@
 sentence = "I love pizza"
 
 #* f-strings: "f" prefix before the string, code inside curly braces
-print(f'f"...": {sentence} (length: {len(sentence)})')
+print(f'f"...{{x}}...": {sentence}      len(...): {len(sentence)}')
 
 #* "lower", "upper"
 print("\nog: \"Love\"")
