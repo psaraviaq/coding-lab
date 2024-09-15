@@ -17,7 +17,7 @@ print(".swapcase(): " + "I hate you.".swapcase(), "\t.title(): " + "I hate you."
 print("\n.strip(): \"  wow  \" --> " + "  wow  ".strip(), "\t.lstrip(\".\"): \"...sure\" --> " + "...sure".lstrip("."))
 
 #* "split" (default: " ")
-print("\n.split(): Yes or No\" --> " + str("Yes or No".split()))
+print("\n.split(): \"Yes or No\" --> " + str("Yes or No".split()))
 # print(".split(\"a\"): \"array\" --> " + str("array".split("a")))
 print("list(\"abc\"): " + str(list("abc"))) #* You can split a string individually with "list"
 
@@ -28,3 +28,6 @@ print("\n----- ADVANCED -----")
 
 #* "translate" and "maketrans" for replacing more characters
 print("\n50Y M1LK".translate(str.maketrans("501", "SOI")))
+
+#? raw string
+r""
