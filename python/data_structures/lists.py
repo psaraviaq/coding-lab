@@ -1,9 +1,20 @@
 fruits = ["apple", "banana", "pear", "banana"]
-print("\nfruits:\t\t\t\t\t", fruits)
+print("fruits:\t\t\t\t\t", fruits)
 
 #* In Python, negative indexes start from the end
 # print("fruits[-1]:", fruits[-1])
 # print(fruits[10]) #! You can't use indexes out of range
+
+#? Other lists exceptions in python
+
+
+
+
+
+
+
+
+
 
 #* "append"
 fruits.append("lemon")
@@ -47,7 +58,7 @@ print("\n.extend([\"strawberry\", \"mango\"]):\t", fruits)
 
 numbers = [7, 4, 7, 7, 1]
 print("\nnumbers:", numbers)
-#* "count" returns the number of occurrences of the specified element
+#* "count"
 print(".count(7):", numbers.count(7))
-#* "index" returns the index of the first occurrence of the specified element
+#* "index"
 print(".index(1):", numbers.index(1))
