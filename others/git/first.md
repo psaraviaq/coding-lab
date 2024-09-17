@@ -1,0 +1,1 @@
+<!--* "git init" creates a Git repository inside the folder -->
