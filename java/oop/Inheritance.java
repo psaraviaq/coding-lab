@@ -1,9 +1,6 @@
 package oop;
 
 public class Inheritance {
-    
-    //* The subclass "extends" the superclass
-    
     public static void main(String[] args) {
         SubClass sub = new SubClass();
         
@@ -19,7 +16,6 @@ public class Inheritance {
 }
 
 class SuperClass {
-    
     void printHello() {
         System.out.println("Hello");
     }
@@ -27,17 +23,13 @@ class SuperClass {
     void printBye() {
         System.out.println("Bye");
     }
-    
-    //! With the "final" keyword, the method cannot be overridden
-    final int getId() {
-        return 1;
-    }
 }
 
-//! By using the "final" keyword, the class cannot be extended
-final class SubClass extends SuperClass {
+//* The subclass "extends" the superclass
+class SubClass extends SuperClass {
     
-    //* Overriding method
+    //* Overriding method (it's good practice to add the "Override" annotation)
+    @Override
     void printBye() {
         System.out.println("Bye Bye");
     }
@@ -49,4 +41,6 @@ final class SubClass extends SuperClass {
     
     //! You can't weaken the access modifier of the method when overriding
     // private void printHello() { System.out.println("Hello"); }
+
+    //* You can also automatically override and implement methods with "Source Action"
 }

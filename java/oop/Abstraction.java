@@ -15,16 +15,18 @@ public class Abstraction {
 abstract class Shape {
     
     //* An abstract method doesn't have a body (no curly braces) and ends with a semicolon
+    //* But you can still have a method signature with parameters
     public abstract boolean erase();
     
     //! If the class is extended by a concrete subclass, the abstract method must be implemented
     public abstract Shape draw(Shape shape);
 }
 
-//* It it's extended by an abstract subclass, the abstract methods doesn't have to be implemented
+//* It it's extended by an abstract subclass, the abstract methods don't have to be implemented
 abstract class Rectangle extends Shape {
     
-    //* But if you do implement it, the next subclass doesn't have to
+    //* But if you do implement them, the next subclass doesn't have to
+    @Override
     public boolean erase() {
         System.out.println("Erasing rectangle");
         return true;
@@ -33,6 +35,7 @@ abstract class Rectangle extends Shape {
 
 //* The concrete subclass must implement all abstract methods that are not implemented by its superclass
 class Square extends Rectangle {
+    @Override
     public Rectangle draw(Shape shape) {
         System.out.println("Drawing square");
         return new Square();

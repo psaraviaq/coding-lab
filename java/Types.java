@@ -1,4 +1,4 @@
-class Types {
+public class Types {
     public static void main(String[] args) {
         numbers();
         strings();
@@ -26,7 +26,7 @@ class Types {
     static void strings() {
         //* char (only one character and single quotes)
         char letter = 'f';
-        //* String (more than zero and double quotes)
+        //* String (zero or more characters and double quotes)
         String word = "java";
         System.out.println("char: '" + letter + "', String: \"" + word + "\"");
     }
@@ -39,7 +39,7 @@ class Types {
         System.out.println("boolean: " + fact1 + " or " + fact2);
     }
     
-    //* Default values of instance variables:
+    //* Default values of class and instance variables:
     static int default1;
     static double default2;
     static boolean default3;
@@ -53,7 +53,7 @@ class Types {
         //* boolean: false
         System.out.println("booleans: " + default3);
         //* String: null (because it's an object)
-        System.out.println("Strings: " + default4);
+        System.out.println("strings: " + default4);
         
         //! Unassigned values can't be used inside methods
         // int num5;

@@ -1,34 +1,18 @@
-# autopep8: off
 
-# * importing modules
+#* Modules are just .py files which can be imported to use their functions and variables
 import math
-print(math.exp(2))
+print(math.sqrt(36))
 
-# * importing submodules
-from math import e, log
+#* But you can also import them directly
+from math import log, e
 print(log(e))
-#! Incorrect
-# import math.e
 
-# * importing with aliases
+#* Use aliases to avoid name conflicts
 import math as m
-from math import factorial as f
-print(m.sqrt(256))
-print(f(5))
+print(f'cos(0): {m.cos(0)}')
+from math import factorial as fact
+print(f'4!: {fact(4)}')
 
-# * importing every submodule
-from math import *
-print(pi)
-#! Incorrect
-# import math as *
-
-# * relative imports (execute this one outside parent directory with
-# * "py -m dirName.fileName", otherwise it'll throw an error)
-print("****** useless logs ******")
-from . import loops
-from .loops import count
-print("****** useless logs ******")
-print(loops.word)
-print(count)
-#! Incorrect
-# import .loops
+#* With "*" you can import directly all the functions and variables
+#! But it's not recommended because it can cause name conflicts
+# from math import *

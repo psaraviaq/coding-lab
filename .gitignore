@@ -10,6 +10,8 @@ out/
 local.properties
 java/**/bin
 kotlin/**/bin
+*.ser
+java/**/*.txt
 
 # 'c#' directories
 c#/**/bin
@@ -20,3 +22,7 @@ build/
 
 # 'dart' packages
 .dart_tool/
+
+# 'c' compiled files
+.temp/
+.vscode/

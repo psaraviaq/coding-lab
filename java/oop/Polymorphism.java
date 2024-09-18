@@ -23,12 +23,12 @@ public class Polymorphism {
         Dog dog = (Dog) dogs.get(0);
         dog.speak();
         
-        //* To check the class (or superclass) of the object, you can use the "instanceof" operator.
-        System.out.println(animal instanceof Dog);
-        System.out.println(animal instanceof Animal);
-        
         getAnimal();
         feedAnimal(new Dog());
+
+        //* Different methods will be called depending on the argument type.
+        dog.print(new Animal());
+        dog.print(new Dog());
     }
     
     //* You can return a subclass object from a method that expects a superclass.
@@ -58,6 +58,7 @@ class Animal {
 }
 
 class Dog extends Animal {
+    @Override
     void sleep() {
         System.out.println("Sleeping like a dog...");
     }
@@ -65,15 +66,16 @@ class Dog extends Animal {
     void speak() {
         System.out.println("Woof!");
     }
-    
-    //* When overriding a method, arguments must be the SAME, and return types must be COMPATIBLE.
-    //* That means the return type can be a subclass, and the argument names can be different.
+     
+    //* When overriding a method, parameters must be the SAME, and return types must be COMPATIBLE.
+    //* That means the return type can be a subclass, and the parameter names can be different.
+    @Override
     Dog eat() {
         System.out.println("Eating like a dog...");
         return new Dog();
     }
     
-    //! But making the argument type a subclass is not overriding, it's overloading.
+    //! But making the parameter type a subclass is not overriding, it's overloading.
     void print(Dog dog) {
         System.out.println("Dog");
     }

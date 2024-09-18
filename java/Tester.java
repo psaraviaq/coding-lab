@@ -1,6 +1,6 @@
 //* Main class (tester)
 //! In Java, there can be more than one class (or interface) in a file
-//! But only one of them can be public (or not) and that is the main class
+//! But only one of them can be public and that's the main class
 public class Tester {
     
     public static void main(String[] args) {
@@ -10,6 +10,11 @@ public class Tester {
         movie.rating = 5;
         System.out.println(movie.title + " is a " + movie.genre + " movie with a rating of " + movie.rating);
         movie.playIt();
+
+        //* Whenever you print an object, the "toString" method from the "Object" class is called
+        System.out.println(new Tester());
+        //! However, you can override it to print something else
+        System.out.println(movie);
     }
     
 }
@@ -25,5 +30,11 @@ class Movie {
     //* Methods
     void playIt() {
         System.out.println("Playing the movie");
+    }
+
+    //* Override the "toString" method
+    @Override
+    public String toString() {
+        return title;
     }
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        .block {
+            display: block;
+            width: 50px;
+        }
+
+        .box {
+            background: red;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--* The "a" element creates a hyperlink with its "href" attribute. -->
+    <!--! For absolute URLs, you must include the protocol (http:// or https://). -->
+    <a href="https://code.visualstudio.com">Visual Studio Code</a>
+
+    <!--* You can actually put anything inside the "a" element. -->
+    <a href="https://www.youtube.com" class="block">
+        <div class="box"></div>
+    </a>
+
+    <!--* You can also link to relative files. -->
+    <a href="first.html">My First HTML file</a>
+
+    <!--! But you can't use "/" at the beginning of the path because it'll look from the root directory. -->
+    <!--* It could work on a server, but not on your local machine. -->
+    <!-- <a href="/first.html">My First HTML file</a> -->
+
+    <!--* Use "#" with the id of an element to link to a specific part of the page. -->
+    <!-- <a href="#section">Go to Section</a> -->
+    <!--* You can even link to a specific part of another page. -->
+    <!-- <a href="first.html#section">Go to Section</a> -->
+    <a href="https://code.visualstudio.com#alt-downloads">Alternative Downloads</a>
+
+    <!--* Use the "target" attribute to open the link in a new tab with "_blank". -->
+    <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+    <!--* Tables are used to arrange data in rows and columns -->
+    <!--! A cell can contain text, images, and even tables. -->
+
+    <!--* The "table" element is used to create a table -->
+    <table>
+        <!--* The "tr" element creates a row -->
+        <!--* You can either use "th" (for titles) or "td" (for data) to create cells -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Amanda</td>
+            <td>21</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Jacques</td>
+            <td>32</td>
+            <td>France</td>
+        </tr>
+    </table>
+
+    <!--* You can span cells across multiple rows or columns with "rowspan" and "colspan" -->
+    <table>
+        <tr>
+            <th colspan="2">Weekend</th>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Sunday</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th rowspan="3">Serving Size</th>
+            <td>Small</td>
+        </tr>
+        <tr>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>Large</td>
+        </tr>
+    </table>
+
+    <!--* Some accessibility features -->
+    <table>
+        <!--* The "caption" element is used to provide a title or description for the table -->
+        <!--! It should be the first child of the "table", but you could put it at the end with CSS -->
+        <!--* For longer descriptions, you could use instead "figure" and "figcaption" -->
+        <caption>Favorite Fruits</caption>
+        <tr>
+            <!--* "th" elements use the "scope" attribute to associate cells no matter where they are -->
+            <!--! The "headers" attribute is another option but it's not widely supported -->
+            <th scope="col">Name</th>
+            <th scope="col">Calories</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>52</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>89</td>
+        </tr>
+    </table>
+
+
+    <!--TODO You can also use other row group and column group elements for advanced features -->
+</body>
+
+</html>

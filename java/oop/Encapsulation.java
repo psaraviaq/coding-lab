@@ -4,13 +4,21 @@ class DogExample {
     String breed;
     private int weight;
     
-    public void setWeight(int w) {
-        weight = w;
-    }
-    
+    //* Use getters to access private variables
     public int getWeight() {
         return weight;
     }
+    
+    //* Use setters to modify private variables
+    public void setWeight(int weight) {
+        //* "this" is used to differentiate between the instance variable and the parameter
+        this.weight = weight;
+    }
+
+    //! To automatically generate getters and setters:
+    //* 1. Click inside the class
+    //* 2. Right click or type "Source Action".
+    //* 3. Choose "Generate Getters and Setters"
 }
 
 public class Encapsulation {
@@ -24,5 +32,10 @@ public class Encapsulation {
         //* But they can be accessed through public methods
         dog.setWeight(30);
         System.out.println("Weight: " + dog.getWeight());
+
+        //* If there's no access modifier (default), it's package-private (same level directory)
+        //* This means that only classes in the same package can access it (classes, variables, methods, etc.)
+
+        //* Use "protected" to allow subclasses (anywhere) and classes in the same package to access it
     }
 }

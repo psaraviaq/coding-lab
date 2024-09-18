@@ -6,7 +6,7 @@ public class JavaArrays {
         
         //* First, specify the type of elements and then write []
         //! The elements are enclosed in {} instead of []
-        int[] nums = {1, 2, 3, 4, 5};
+        int[] numbers = {1, 2, 3, 4, 5};
         //! You can't use an array without initializing
         // System.out.println({1, 2, 3, 4, 5});
         
@@ -24,6 +24,6 @@ public class JavaArrays {
         System.out.println(myStrings);
         
         //* For arrays, length works as an instance variable instead of a method
-        System.out.println(nums.length);
+        System.out.println(numbers.length);
     }
 }

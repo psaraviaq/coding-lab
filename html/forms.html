@@ -2,236 +2,151 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/forms.css">
-  <title>HTML forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
 </head>
 
 <body>
+    <!--* The "form" element is just a container for form elements, but it could also contain other block elements -->
+    <!--! A form shouldn't contain another form, same goes for the form elements -->
 
-  <h1>HTML forms</h1>
+    <!--* "action" specifies where to send the form-data when it is submitted -->
+    <!--* "method" specifies the HTTP method to use when sending the data -->
+    <!--! The options are: GET and POST, it is optional, and the default is GET -->
+    <form>
+        <!--* "input" is the basic form element, the "type" attribute defines its purpose -->
+        <!--! The default value is "text", if not specified -->
 
-  <h2>Forms</h2>
+        <!--* The "name" attribute identifies the form data when sent, most of the time it is required -->
+        <!--* "minlength" and "maxlength" specify the number of characters allowed when submitting the form -->
+        <!--* "placeholder" displays a hint that describes the expected value, "value" sets a default value -->
+        <input type="text" name="animal">
 
-  <div>
-    <pre><code>
-  &lt;form action="<a href="https://google.com">https://google.com</a>" method="<span>get</span>"&gt;  
-    <span>
-      .
-      .       "<span class="comment">inputs and buttons</span>"
-      .
-    </span>
-  &lt;/form&gt;
-    </code></pre>
-  </div>
+        <!--^ Additional input types -->
+        <!--* "password" hides the text, but it doesn't encrypt it when the form is submitted -->
+        <input type="password" name="password" placeholder="Your password">
+        <!--* "email" is for email addresses, it has built-in validation -->
+        <input type="email" name="email" placeholder="Your email">
+        <!--TODO "search", "tel", "url" are mostly used for semantic reasons, they provide different keyboard layouts -->
+        <!--* "number" and "range" are for numbers, "min" and "max" set the limits, "step" sets the increment -->
+        <!--! These two lack support in some browsers -->
+        <input type="number" name="quantity" min="1" max="10" step="1">
+        <input type="range" name="volume" min="0" max="100" step="10">
 
-  <h2>Labels</h2>
+        <!--* "submit" sends the form data to the server -->
+        <input type="submit">
+        <!--* "reset" returns the form to its initial state -->
+        <input type="reset">
+        <!--! You can customize their content with "value", and they don't require a "name" attribute -->
 
-  <div>
-    <pre><code>
-  &lt;label&gt;
-    <span>Name:</span> &lt;input&gt;  
-  &lt;/label&gt;
-    </code></pre>
-    <div>
-      <label>
-        Name: <input>
-      </label>
-    </div>
-  </div>
+        <!--* With the type "button", you can define your own function with JavaScript, it has no default behavior -->
+        <input type="button" value="Input button">
+        <!--* But there's also a "button" element, which is more flexible -->
+        <!--* It can even contain other elements like images, and have the "type" attribute set to "submit" or "reset" -->
+        <!--! By default, it acts like a submit button -->
+        <button>Default button</button>
 
-  <div>
-    <pre><code>
-  &lt;label for="<span>name</span>"&gt;<span>Name:</span>&lt;/label&gt;  
-  &lt;input id="<span>name</span>"&gt;
-    </code></pre>
-    <div>
-      <label for="name">Name:</label>
-      <input id="name">
-    </div>
-  </div>
+        <!--* "file" allows users to upload files -->
+        <!--! You should add enctype="multipart/form-data" to the form element -->
+        <input type="file" name="photo">
+        <!--* With type "hidden", the field is not visible, but the data is sent when submitting the form -->
+        <input type="hidden" name="secret" value="MyBiggestSecret">
+        <!--* You also have types for dates and times, and they have different formats -->
+        <!--! Not all browsers support them all, by default they will be text inputs -->
+        <input type="date" name="birthday" value="2020-01-01">
+        <input type="time" name="appointment" value="12:00">
+        <input type="datetime-local" name="event" value="2020-01-01T12:00">
+        <input type="month" name="budget" value="2020-01">
+        <input type="week" name="schedule" value="2020-W01">
+        <!--* "color" displays a color picker, the value is a hexadecimal color -->
+        <input type="color" name="theme" value="#ff00ff">
 
-  <h2>Basic Inputs</h2>
+        <!--* "datalist" displays a list of suggestions for an input field -->
+        <!--* To link them, match the "list" attribute of the input with the "id" attribute of the datalist -->
+        <!--! It is not supported in all browsers, as a fallback it will be a normal text input -->
+        <input name="datalist" list="my_list">
+        <datalist id="my_list">
+            <!--* Inside the datalist, use "option" elements to define the suggestions with the "value" attribute -->
+            <option value="apple">
+            <option value="banana">
+            <option value="orange">
+        </datalist>
 
-  <div>
-    <pre><code>
-  &lt;input type="<span>text</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="text" placeholder="some text">
-    </div>
-  </div>
+        <!--* "textarea" is a multi-line field for text input -->
+        <!--* You could use the "cols" and "rows" attributes to specify the size, but it's more common to use CSS -->
+        <!--! It has a closing tag, and the text between the tags is the default value -->
+        <textarea name="information"></textarea>
 
-  <div>
-    <pre><code>
-  &lt;input type="<span>number</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="number" placeholder="19">
-    </div>
-  </div>
+        <!--* Both the "disabled" and "readonly" attributes won't let you interact with the element -->
+        <!--! But "disabled" won't send the data when submitting the form -->
+        <input name="disabled" value="disabled" disabled>
+        <input name="readonly" value="readonly" readonly>
 
-  <div>
-    <pre><code>
-  &lt;input type="<span>email</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="email" placeholder="user@abc.com">
-    </div>
-  </div>
+        <!--* With type "radio", you can select one option from a group -->
+        <!--! The group must have the same "name" attribute, but different "value" attributes -->
+        <!--* You can add a "checked" attribute to set a default value -->
+        <ol>
+            <li><input type="radio" name="pet" value="cat" checked>Cat</li>
+            <li><input type="radio" name="pet" value="dog">Dog</li>
+        </ol>
 
-  <div>
-    <pre><code>
-  &lt;input type="<span>password</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="password" placeholder="••••••••">
-    </div>
-  </div>
+        <!--* With type "checkbox", you can select multiple options -->
+        <!--* The "name", "value", and "checked" attributes work the same way as with radio buttons -->
+        <ul>
+            <li><input type="checkbox" name="color" value="red">Red</li>
+            <li><input type="checkbox" name="color" value="green">Green</li>
+            <li><input type="checkbox" name="color" value="blue">Blue</li>
+        </ul>
 
-  <div>
-    <pre><code>
-  &lt;input type="<span>tel</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="tel" placeholder="987654321">
-    </div>
-  </div>
-
-  <div>
-    <pre><code>
-  &lt;input type="<span>date</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="date">
-    </div>
-  </div>
-
-  <div>
-    <pre><code>
-  &lt;input type="<span>range</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="range">
-    </div>
-  </div>
-
-  <div>
-    <pre><code>
-  &lt;input type="<span>submit</span>"&gt;  
-    </code></pre>
-    <div>
-      <input type="submit">
-    </div>
-  </div>
-
-  <h2>Checkboxes</h2>
-
-  <div>
-    <pre><code>
-  &lt;label&gt;
-    &lt;input type="<span>checkbox</span>"&gt;  
-    <span>Coffee</span>
-  &lt;/label&gt;  
-
-  &lt;label&gt;
-    &lt;input type="<span>checkbox</span>"&gt;  
-    <span>Milk</span>
-  &lt;/label&gt;
-    </code></pre>
-    <div>
-      <label class="option">
-        <input type="checkbox">
-        Coffee
-      </label>
-      <label class="option">
-        <input type="checkbox">
-        Milk
-      </label>
-    </div>
-  </div>
-
-  <h2>Radio buttons</h2>
-
-  <div>
-    <pre><code>
-  &lt;label&gt;
-    &lt;input type="<span>radio</span>" name="<span>fruit</span>"&gt;  
-    <span>Apple</span>
-  &lt;/label&gt;  
-  
-  &lt;label&gt;
-    &lt;input type="<span>radio</span>" name="<span>fruit</span>"&gt;  
-    <span>Banana</span>
-  &lt;/label&gt;  
-  
-  &lt;label&gt;
-    &lt;input type="<span>radio</span>" name="<span>fruit</span>"&gt;  
-    <span>Orange</span>
-  &lt;/label&gt;
-    </code></pre>
-    <div>
-      <label class="option">
-        <input type="radio" name="fruit">
-        Apple
-      </label>
-      <label class="option">
-        <input type="radio" name="fruit">
-        Banana
-      </label>
-      <label class="option">
-        <input type="radio" name="fruit">
-        Orange
-      </label>
-    </div>
-  </div>
-
-  <h2>Drop-down list</h2>
-
-  <div>
-    <pre><code>
-  &lt;label&gt;
-    <span>Select item:</span>
-    &lt;select&gt;
-      &lt;option&gt;<span>Math</span>&lt;/option&gt;        
-      &lt;option&gt;<span>Physics</span>&lt;/option&gt;     
-      &lt;option&gt;<span>Chemistry</span>&lt;/option&gt;   
-      &lt;option&gt;<span>Literature</span>&lt;/option&gt;  
-    &lt;/select&gt;
-  &lt;/label&gt;
-    </code></pre>
-
-    <div>
-      <label>
-        Select item:
-        <select>
-          <option>Math</option>
-          <option>Physics</option>
-          <option>Chemistry</option>
-          <option>Literature</option>
+        <!--* The "select" element creates a drop-down list of options -->
+        <!--* You also have the "size" and "multiple" attributes to change the appearance -->
+        <select name="genre">
+            <!--* The content of "option" is the value that will be sent when submitting the form -->
+            <option>Rock</option>
+            <!--! The "selected" attribute chooses a default value -->
+            <option selected>Pop</option>
+            <!--! However, you can use the "value" attribute to set a different value -->
+            <option value="R&B">Rhythm and Blues</option>
         </select>
-      </label>
-    </div>
-  </div>
+        <select name="flavor">
+            <!--* Use the "optgroup" element to separate the options into groups, "label" defines the group name -->
+            <optgroup label="Traditional">
+                <option>Vanilla</option>
+                <option>Chocolate</option>
+            </optgroup>
+            <optgroup label="Premium">
+                <option>Brownie</option>
+                <option>Oreo</option>
+            </optgroup>
+        </select>
+    </form>
 
-  <h2>Textarea</h2>
+    <hr>
 
-  <div>
-    <pre><code>
-  &lt;label&gt;
-    <span>Give some feedback:</span>
-    &lt;textarea&gt;&lt;/textarea&gt;  
-  &lt;/label&gt;
-    </code></pre>
-    <div>
-      <label>
-        Give some feedback:
-        <textarea rows="4" cols="23"></textarea>
-      </label>
-    </div>
-  </div>
+    <form id="form-login">
+        <!--* The "label" element associates a description with a form element, there are two ways to do it -->
+
+        <!--* Associate the attributes "for"(label) and "id"(input) with the same value -->
+        <!--^ This way is useful when applying alignment or styling -->
+        <label for="form-login-name">Your name:</label>
+        <input type="text" name="name" id="form-login-name">
+
+        <!--* Wrap the input element inside the label element -->
+        <!--^ This is also used mainly for radio buttons and checkboxes -->
+        <label>Your password: <input type="password" name="password"></label>
+
+        <!--* The "fieldset" element groups related elements in a form -->
+        <fieldset>
+            <!--* The "legend" element provides a caption for the group -->
+            <!--! You can style them to change the appearance, but you should be careful with the layout -->
+            <legend>Personal information</legend>
+            <ul>
+                <li><label>Your email: <input type="email" name="email"></label></li>
+                <li><label>Your phone: <input type="tel" name="phone"></label></li>
+            </ul>
+        </fieldset>
+    </form>
 
 </body>
 

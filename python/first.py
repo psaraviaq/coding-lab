@@ -1,8 +1,7 @@
 # comment
 
 """
-a
-weird
+multi-line
 comment
 """
 

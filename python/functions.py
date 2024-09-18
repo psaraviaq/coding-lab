@@ -1,39 +1,31 @@
 
-# * simple function
-def factorial(n):     # could have '...(n=0):' as a default value
-    if n == 0:
-        return 1
-    return n * factorial(n - 1)
+#* Functions use the keyword "def"
+#* When you don't return anything, it returns "None"
+def double(x):
 
+    #* Docstrings add documentation to functions
+    """This function multiplies a number by 2"""
 
-print(factorial(5))
+    return x * 2
 
-#! if parameters are optional, then they should have a default value;
-#! otherwise the function will throw an error
-# factorial()
+print(double(5))
+#! Parameter values are required unless you set a default value
+# print(double())
 
+#* You can pass an arbitrary number of arguments using a "*" before the parameter
+#* It converts the arguments into a tuple (iterable)
+def pizza(*toppings):
+    print(toppings)
 
-def code():
+pizza("pepperoni", "mushrooms", "onions")
+
+#* You can pass an arbitrary number of keyword arguments using a "**" before the parameter
+#* It converts the arguments into a dictionary
+def info(**person):
+    print(person)
+
+info(name="John", age=22, height=1.80)
+
+#* If you want to have a function that doesn't do anything yet, use the "pass" keyword
+def test_code():
     pass
-
-
-#! if a value doesn't get returned, it outputs "None"
-print(code())
-
-# * "args" keyword
-
-
-def totalSum(*args):
-    sum = 0
-    for x in args:
-        sum += x
-    return sum
-
-
-print(totalSum(10, 3, 8))
-
-# ? There is also "**kwargs"
-
-#! Lambda functions (only accept one expression)
-op = (lambda a, b: a**b)
-print(op(2, 8))
