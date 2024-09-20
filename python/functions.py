@@ -1,18 +1,24 @@
 
 #* "def"
-def double(x):
-    return x * 2
+def sum(x, y):
+    return x + y
+print(sum(5, 3))
 
-print(double(5))
 #! Arguments are required
-# print(double())
-
+# print(sum())
+#* Keyword arguments
+print(sum(y=2, x=7))
 
 #* "None"
 def no_return():
     pass
-
 print(no_return())
+
+#* Default parameters
+def multiply(x, y=1):
+    return x * y
+print(multiply(5))
+
 
 
 
