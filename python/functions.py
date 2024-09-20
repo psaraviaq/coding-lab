@@ -19,24 +19,14 @@ def multiply(x, y=1):
     return x * y
 print(multiply(5))
 
-
-
-
-
-
-
-
-
-#* You can pass an arbitrary number of arguments using a "*" before the parameter
-#* It converts the arguments into a tuple (iterable)
+#* "*args" (tuple)
 def pizza(*toppings):
-    print(toppings)
-
+    for topping in toppings:
+        print(f"- {topping}")
 pizza("pepperoni", "mushrooms", "onions")
 
-#* You can pass an arbitrary number of keyword arguments using a "**" before the parameter
-#* It converts the arguments into a dictionary
-def info(**person):
-    print(person)
-
-info(name="John", age=22, height=1.80)
+#* "**kwargs" (dictionary)
+def user_data(**person):
+    for key, value in person.items():
+        print(f"{key}: {value}")
+user_data(name="Pedro", age=24)
