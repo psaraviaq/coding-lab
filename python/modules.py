@@ -1,18 +1,17 @@
 
-#* Modules are just .py files which can be imported to use their functions and variables
+#* "Modules" are files that contain Python code
 import math
-print(math.sqrt(36))
+print(f'sqrt(36): {math.sqrt(36)}')
 
-#* But you can also import them directly
+#* from "___" import "___"
 from math import log, e
-print(log(e))
+print(f'ln(e): {log(e)}')
 
-#* Use aliases to avoid name conflicts
+#* Alias
 import math as m
+from math import factorial as f
 print(f'cos(0): {m.cos(0)}')
-from math import factorial as fact
-print(f'4!: {fact(4)}')
+print(f'4!: {f(4)}')
 
-#* With "*" you can import directly all the functions and variables
-#! But it's not recommended because it can cause name conflicts
+#! "*" (not recommended)
 # from math import *
