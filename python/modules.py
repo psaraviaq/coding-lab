@@ -15,3 +15,8 @@ print(f'4!: {f(4)}')
 
 #! "*" (not recommended)
 # from math import *
+
+#* Only runs when the module is run directly, not imported
+#! When you import a module, all the code in it is executed
+if __name__ == "__main__":
+    print("...")
