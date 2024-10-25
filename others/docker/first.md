@@ -31,3 +31,13 @@
 
 <!--^ docker restart "___" -->
 <!--* Restart a container -->
+
+<!--^ docker logs "___" (-t) -->"
+<!--* Fetch the logs of a container -->
+<!--~ The "-t" flag shows the timestamps -->
+
+<!--^ docker rm "___" -->
+<!--* Remove a container -->
+
+<!--^ docker rmi "___" -->
+<!--* Remove an image -->
