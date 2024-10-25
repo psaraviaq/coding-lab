@@ -18,3 +18,12 @@
 
 <!--^ docker port "___" -->
 <!--* Display the public-facing port of a container -->
+
+<!--^ docker exec -it "___" "___" -->
+<!--* Run a command in a running container -->
+
+<!--^ docker stop "___" -->
+<!--* Stop a running container -->
+
+<!--^ docker restart "___" -->
+<!--* Restart a container -->
