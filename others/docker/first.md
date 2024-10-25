@@ -1,4 +1,4 @@
-<!--^ docker ps  -->
+<!--^ docker ps (-a) -->
 <!--* List all running containers -->
 <!--~ Use the "-a" flag to list all containers, including stopped ones -->
 
