@@ -4,6 +4,7 @@
 
 <!--^ docker run (-p "___:__") (-d) "___" -->
 <!--* Run a container (if not found locally, it will be pulled from the registry) -->
+<!--! It creates a new container from the image every time it is run -->
 <!--~ The "-p" flag maps a port on the host to a port on the container -->
 <!--~ The "-d" flag runs the container in detached mode -->
 
@@ -21,6 +22,9 @@
 
 <!--^ docker exec -it "___" "___" -->
 <!--* Run a command in a running container -->
+
+<!--^ docker start "___" -->
+<!--* Start a stopped container -->
 
 <!--^ docker stop "___" -->
 <!--* Stop a running container -->
