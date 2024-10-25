@@ -14,11 +14,12 @@ print("[:]:", nums[:])
 print(".copy():", nums.copy())
 print("[*nums]:", [*nums])
 
-print("\n---------- ADVANCED ----------")
+#* "join" (iterables)
+#! Only works if items are strings
+print('\n"...".join(["I", "like", "comics"]: ', "...".join(["I", "like", "comics"]))
+print('" + ".join("123"): ', " + ".join("123"))
 
-#* "join" works for iterables
-# print(" ".join(["I", "like", "Webtoon"]))
-# print("...".join("123"))
+print("\n---------- ADVANCED ----------")
 
 #* "map" (can take multiple iterables) and "filter" return iterables
 # print([*map(int, ["2", "6", "7"])])
