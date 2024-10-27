@@ -6,7 +6,7 @@
   /*~ Use "repeat" when you have multiple columns with the same size */
   /* grid-template-rows: 20% 30% 50%; */
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   /** "auto" will automatically adjust the size */
   /*~ Use "minmax" whn you don't know one of the sizes */
@@ -16,4 +16,19 @@
   /* column-gap: 10px; */
   /* row-gap: 20px; */
   gap: 20px;
+}
+
+/** Use grid lines to define the position of the items */
+/*~ After the first element, all the other elements will sort themselves */
+.one {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 4; */
+  grid-column: 1/4;
+}
+.four {
+  grid-row: 3;
+}
+.nine {
+  grid-row: 2/4;
+  grid-column: 3;
 }
