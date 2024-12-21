@@ -25,10 +25,25 @@
   /* grid-column-end: 4; */
   grid-column: 1/4;
 }
-.four {
-  grid-row: 3;
-}
 .nine {
   grid-row: 2/4;
   grid-column: 3;
+}
+
+/*~ With "span" you can define the size of the element */
+.four {
+  grid-row: 2 / span 3;
+}
+
+/*! Missing: Aligning and Justifying items */
+/*! Transparent Whole Grid */
+
+/** grid-template-areas */
+.area {
+  grid-template-areas: "two";
+}
+
+/** grid-area */
+._two {
+  grid-area: two;
 }
