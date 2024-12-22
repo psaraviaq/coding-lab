@@ -1,3 +1,4 @@
+//? What if nothing is assigned to a variable?
 // // Initial value is "undefined"
 // var myName;
 // console.log(myName);
@@ -13,26 +14,26 @@
 //~ ES6 introduced the block scope
 
 //* With "let" you can reassign values with but not redeclare the variable.
-let color = "red";
-// let color;
+let favoriteColor = "red";
+// let favoriteColor;
 if (true) {
-  let color = "blue";
-  console.log(color);
-  color = "yellow";
-  console.log(color);
+  let favoriteColor = "blue";
+  console.log(favoriteColor);
+  favoriteColor = "yellow";
+  console.log(favoriteColor);
 }
-console.log(color);
+console.log(favoriteColor);
 //?...
 let person;
 console.log(person);
 
 //* With "const" you can't reassign nor redeclare.
-const age = 13;
+const AGE = 13;
 if (true) {
-  const age = 17;
-  console.log(age);
-  // age = 20;
+  const AGE = 17;
+  console.log(AGE);
+  // AGE = 20;
 }
-console.log(age);
+console.log(AGE);
 //! "const" variables must be assigned a value when declaring them
 // const currentJob;
