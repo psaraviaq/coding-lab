@@ -23,9 +23,6 @@ if (true) {
   console.log(favoriteColor);
 }
 console.log(favoriteColor);
-//?...
-let person;
-console.log(person);
 
 //* With "const" you can't reassign nor redeclare.
 const AGE = 13;
