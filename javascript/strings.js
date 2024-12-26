@@ -1,63 +1,27 @@
+let sentence = " I love italian food";
+
+//* "indexOf" (the first occurrence of a substring)
+//~ "lastIndexOf"
+console.log(sentence.indexOf("love"));
+
+//* "slice" (returns a part of a string)
+//! It can take negative values as well, solving the problem of "substring"
+console.log(sentence.slice(0, 10));
+
+//* "toUpperCase" / "toLowerCase" (converts the string to uppercase / lowercase)
+console.log(sentence.toUpperCase(), sentence.toLowerCase());
+
+//* "replace" (replaces the first occurrence of a substring)
+console.log(sentence.replace("love", "hate"));
+
+//* "split" (divides a string using a separator)
+console.log(sentence.split(" "));
+
+//* "trim" (removes whitespace from both ends)
+console.log(sentence.trim());
+
 //* "includes"
-console.log("The house of cats".includes("house"));
-
-//* "indexOf" (not exclusive to arrays)
-console.log("javascript".indexOf("scr"));
-
-//* "match" returns regex matching results in an array
-console.log("match".match(/[a-e]/g)); //* returns all matches
-console.log("match".match(/[a-e]/)); //* only first match
-console.log("¿?".match(/\d/)); //* returns null if no matches are found
+console.log(sentence.includes("love"));
 
 //* "repeat"
-console.log("You".repeat(4));
-
-//* "replace"
-let sentence = "    I LIKE when days go like so well";
-console.log(sentence.replace(/like/gi, "love"));
-console.log(sentence);
-console.log("love".replace(/./g, "$&$&")); //* use "$&" to duplicate
-console.log("cnv".replace(/[cv]/g, (e) => e + "a")); //* with functions
-
-//* "slice"
-console.log(sentence.slice(0, 10));
-console.log(sentence);
-
-//* "split"
-console.log(sentence.split(" "));
-console.log(sentence);
-
-//* "trim" removes whitespace
-console.log(sentence.trim());
-console.log(sentence);
-
-console.log("_______________...________________");
-
-//* Adding decimals to numbers
-const num = 3.5;
-console.log(num.toFixed(4));
-
-//* (from) character (to) ASCII
-console.log("A".charCodeAt());
-console.log(String.fromCharCode(65));
-
-//* Regular expressions (Regex)
-const expr1 = /abcd/;
-const expr2 = /^abcd$/;
-const string = "This is the 'abcd'";
-
-if (expr1.test(string) && !expr2.test(string)) {
-  console.log("expr1: 👍, expr2: 👎");
-}
-
-//* only one ASCII alphabetic value
-console.log(/^[a-zA-Z]$/.test("w"), /^[a-z]$/i.test("R"));
-//* not digit or whitespace
-console.log(/^[\d\s]*$/.test(""));
-
-//* not "a", "b" or "c" at least once
-const letters = ["a", "b", "c", "d"].map((e) => /^[^abc]+$/.test(e));
-console.log(...letters);
-
-//* "\" for escaping and using special characters
-console.log("...wow".replace(/\./g, ""));
+console.log(sentence.repeat(4));
