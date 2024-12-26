@@ -1,4 +1,5 @@
 let sentence = " I love italian food";
+console.log("length:", sentence.length);
 
 //* "indexOf" (the first occurrence of a substring)
 //~ "lastIndexOf"
