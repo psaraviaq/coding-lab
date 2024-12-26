@@ -15,7 +15,7 @@ print(f"{type((2, 3)).__name__}: {(2, 3)}")  # * Tuples (immutable lists)
 # ! Keys must be enclosed in quotes
 print("\n------- Dictionary -------")
 dictionary = {"password": 1234}
-print(f"{type({"password": 1234}).__name__}: {dictionary}")
+print(f"{type(dictionary).__name__}: {dictionary}")
 
 # * 4) Boolean
 # ! They start with a capital letter
@@ -38,10 +38,3 @@ print("{}:", bool({}))
 print("():", bool(()))
 print("set():", bool(set()))
 print("range(0):", bool(range(0)))
-
-# * type + is, isinstance
-print("\n*------ Data type ------*")
-print(f"type([]) is list: {type([]) is list}")
-print(
-    f'isinstance("word", str): {isinstance("word", str)}'
-)  # * Recommended for inheritance
