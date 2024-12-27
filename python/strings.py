@@ -32,3 +32,10 @@ print(
 # ^ It can also take a character to split the string
 print("\n.split():", str(sentence.split()))
 # ! However, you can't pass an empty string, use "list" instead
+
+# * "index"
+# ! But it raises an error if the substring is not found
+print('\n.index("p"): ' + str(sentence.index("pi")))
+
+# * "count" (number of occurrences of a substring)
+print('\n.count("z"): ' + str(sentence.count("z")))
