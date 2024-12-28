@@ -7,6 +7,11 @@ for (let i = 0, j = 0; i < 10 && j > -4; i += 3, j--) {
   console.log(i, j);
 }
 
+//* The "for...of" loop iterates over its elements
+for (x of languages) {
+  console.log("I speak", x);
+}
+
 //* "while" loops
 var health = 100;
 while (health > 0) {
