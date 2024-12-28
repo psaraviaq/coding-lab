@@ -33,4 +33,4 @@ if (true) {
 }
 console.log(AGE);
 //! "const" variables must be assigned a value when declaring them
-// const currentJob;
+// const RADIUS;
