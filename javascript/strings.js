@@ -1,3 +1,5 @@
+console.log("'a' < 'b':", "a" < "b");
+
 let sentence = " I love italian food";
 console.log("length:", sentence.length);
 

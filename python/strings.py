@@ -6,6 +6,9 @@ sentence = "I love pizza"
 # * "len"
 print("len(...):", len(sentence))
 
+# * Comparison
+print("\n'a' < 'b':", "a" < "b")
+
 # * f-strings (solve the problem of concatenation)
 print(f'\nf"...{{x}}...": {sentence}')
 
