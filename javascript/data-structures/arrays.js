@@ -8,6 +8,15 @@ console.log("push:", languages);
 languages.pop();
 console.log("pop:", languages);
 
+//* "indexOf"
+console.log("indexOf:", languages.indexOf("french"));
+
+//* "concat"
+console.log("concat:", languages.concat(["german", "japanese"]));
+
+//* "includes"
+console.log("includes:", languages.includes("english"));
+
 //* "sort"
 languages.sort();
 console.log("sort:", languages);
@@ -16,14 +25,8 @@ console.log("sort:", languages);
 languages.reverse();
 console.log("reverse:", languages);
 
-//* "indexOf"
-console.log("indexOf:", languages.indexOf("french"));
-
-//* "includes"
-console.log("includes:", languages.includes("english"));
+//* "slice"
+console.log("slice:", languages.slice(-2));
 
 //* "join"
 console.log("join:", languages.join());
-
-//* "slice"
-console.log("slice:", languages.slice(-2));
