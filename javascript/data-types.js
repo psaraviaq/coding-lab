@@ -36,3 +36,8 @@ console.log("NaN:", !!NaN);
 //! These are actually truthy values
 console.log("[]", !![]);
 console.log("{}", !!{});
+
+//* __________________________Type Conversion_________________________
+console.log("Number('10'):", Number("10"));
+console.log("String(['a', 'b', 'c']):", String(["a", "b", "c"]));
+console.log("Boolean({}):", Boolean({}));
