@@ -42,3 +42,6 @@ print('\n.index("p"): ' + str(sentence.index("pi")))
 
 # * "count" (number of occurrences of a substring)
 print('\n.count("z"): ' + str(sentence.count("z")))
+
+# * "startswith", "endswith"
+print("\n.endswith('pizza'): " + str(sentence.endswith("pizza")))

@@ -28,3 +28,6 @@ console.log(sentence.includes("love"));
 
 //* "repeat"
 console.log(sentence.repeat(4));
+
+//* "startsWith" / "endsWith"
+console.log(sentence.startsWith("I"), sentence.endsWith("food"));
