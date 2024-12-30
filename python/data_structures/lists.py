@@ -3,46 +3,46 @@
 print(f'["a"] * 5: {["a"] * 5}')
 print(f"[1, 2] + [3, 4]: {[1, 2] + [3, 4]}")
 
-fruits = ["apple", "banana", "pear", "banana"]
+favorite_fruits = ["apple", "banana", "pear", "banana"]
 # print(fruits[10]) #! You can't use indexes out of range
-print("\nfruits:\t\t\t\t\t", fruits)
+print("\nfruits:\t\t\t\t\t", favorite_fruits)
 
 # * "append"
-fruits.append("lemon")
-print('\n.append("lemon"):\t\t\t', fruits)
+favorite_fruits.append("lemon")
+print('\n.append("lemon"):\t\t\t', favorite_fruits)
 
 # * "insert" takes additionally an index
-fruits.insert(3, "orange")
-print('\n.insert(3, "orange"):\t\t\t', fruits)
+favorite_fruits.insert(3, "orange")
+print('\n.insert(3, "orange"):\t\t\t', favorite_fruits)
 
 # ! You can use "del" to remove an element
-del fruits[0]
-print("\ndel fruits[0]:\t\t\t\t", fruits)
+del favorite_fruits[0]
+print("\ndel fruits[0]:\t\t\t\t", favorite_fruits)
 
 # * "pop"
-eaten_fruit = fruits.pop()
-print("\n.pop():\t\t\t\t\t", fruits)
+eaten_fruit = favorite_fruits.pop()
+print("\n.pop():\t\t\t\t\t", favorite_fruits)
 # print(eaten_fruit)
 # ! ...it can also take an index
 
 # * "remove" deletes the first occurrence of a value
-fruits.remove("banana")
-print('\n.remove("banana"):\t\t\t', fruits)
+favorite_fruits.remove("banana")
+print('\n.remove("banana"):\t\t\t', favorite_fruits)
 
 # * "sort"
 # ^ And it has also a "reverse" argument
-fruits.sort()
-print("\n.sort():\t\t\t\t", fruits)
+favorite_fruits.sort()
+print("\n.sort():\t\t\t\t", favorite_fruits)
 # ~ "sorted" changes temporarily the list
 # print("sorted(fruits):", sorted(fruits))
 
 # * "reverse"
-fruits.reverse()
-print("\n.reverse():\t\t\t\t", fruits)
+favorite_fruits.reverse()
+print("\n.reverse():\t\t\t\t", favorite_fruits)
 
 # * "extend" adds multiple elements
-fruits.extend(["strawberry", "mango"])
-print('\n.extend(["strawberry", "mango"]):\t', fruits)
+favorite_fruits.extend(["strawberry", "mango"])
+print('\n.extend(["strawberry", "mango"]):\t', favorite_fruits)
 
 numbers = [7, 4, 7, 7, 1]
 print("\nnumbers:", numbers)
