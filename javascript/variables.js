@@ -1,15 +1,13 @@
-//? What if nothing is assigned to a variable?
-// // Initial value is "undefined"
-// var myName;
-// console.log(myName);
-
-// // But it can be assigned a value later
-// var myName = "Pedro";
-// console.log("My name is " + myName);
-
-// // Or do both in one go;
-// var yourName = "Python";
-// console.log("Your name is", yourName);
+//* When a variable is declared but not assigned a value, it's value is "undefined"
+var month;
+console.log(month);
+var month = "august";
+console.log(month);
+//! However with "var", variables declared in a block scope can be accessed outside of it
+if (true) {
+  var year = 2024;
+}
+console.log(year);
 
 //~ ES6 introduced the block scope
 
