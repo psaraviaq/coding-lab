@@ -9,7 +9,7 @@ print("len(...):", len(sentence))
 # * Comparison
 print("\n'a' < 'b':", "a" < "b")
 
-# * f-strings (solve the problem of concatenation)
+# * f-strings (solves the problem of concatenation)
 print(f'\nf"...{{x}}...": {sentence}')
 
 # * "lower", "upper" (converts the string to lowercase/uppercase)
@@ -31,17 +31,17 @@ print(
     "\t\t.swapcase(): " + sentence.swapcase(),
 )
 
-# * "split" (divide a string into a list of substrings using spaces by default)
+# * "split" (divides a string into a list of substrings using spaces by default)
 # ^ It can also take a character to split the string
 print("\n.split():", str(sentence.split()))
 # ! However, you can't pass an empty string, use "list" instead
 
-# * "index"
+# * "index" (returns the index of the first occurrence of a substring)
 # ! But it raises an error if the substring is not found
 print('\n.index("p"): ' + str(sentence.index("pi")))
 
 # * "count" (number of occurrences of a substring)
 print('\n.count("z"): ' + str(sentence.count("z")))
 
-# * "startswith", "endswith"
+# * "startswith", "endswith" (checks if a string starts/ends with a substring)
 print("\n.endswith('pizza'): " + str(sentence.endswith("pizza")))

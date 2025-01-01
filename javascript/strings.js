@@ -23,11 +23,11 @@ console.log(sentence.split(" "));
 //* "trim" (removes whitespace from both ends)
 console.log(sentence.trim());
 
-//* "includes"
+//* "includes" (checks if a substring is present in a string)
 console.log(sentence.includes("love"));
 
-//* "repeat"
+//* "repeat" (repeats a string a number of times)
 console.log(sentence.repeat(4));
 
-//* "startsWith" / "endsWith"
+//* "startsWith" / "endsWith" (checks if a string starts / ends with a substring)
 console.log(sentence.startsWith("I"), sentence.endsWith("food"));
