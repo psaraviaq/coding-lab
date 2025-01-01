@@ -32,3 +32,9 @@ if (true) {
 console.log(AGE);
 //! "const" variables must be assigned a value when declaring them
 // const RADIUS;
+
+//^ You can also do multiple assignments
+let a = 1,
+  b = 2,
+  c = 3;
+console.log(a, b, c);
