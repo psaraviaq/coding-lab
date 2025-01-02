@@ -2,7 +2,7 @@ person = {"name": "Pedro", "age": 22, "color": "blue"}
 print(f"person:\t\t\t\t{person}")
 
 print(f'\n["name"]: {person["name"]}')
-#! You can't use the dot notation
+# ! You can't use the dot notation
 # print(person.name)
 # * "get" is a safer way to access
 print(f'.get("degree"): {person.get("degree")}')
