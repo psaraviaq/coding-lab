@@ -24,12 +24,3 @@ while True:
     if animal == "fish":
         break
     print("Wrong animal")
-
-print("------------ ADVANCED ------------")
-
-# * "enumerate" is used when you need the index and the element of a sequence
-for index, value in enumerate(["a", "b", "c"]):
-    print(f"index: {index} , value: {value}")
-# * The "else" block is executed when the loop is completed without a "break"
-else:
-    print("The loop completed without a 'break'")
