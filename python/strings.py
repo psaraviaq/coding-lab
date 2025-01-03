@@ -20,7 +20,7 @@ print("\n.lower(): " + sentence.lower(), "\t\t.upper(): " + sentence.upper())
 print('\n.replace("z", "s"): ' + sentence.replace("z", "s"))
 
 # * "strip" (removes whitespace from both ends by default) / "lstrip", "rstrip"
-# ^ It can also take an argument to remove a specific character
+# ^ It can also take an argument to remove specific characters in any order
 print('\n.strip(): "  wow  " --> ' + "  wow  ".strip())
 # ! "removeprefix", "removesuffix" (they only remove once)
 
