@@ -1,4 +1,3 @@
-//? What if nothing is assigned to a variable?
 // // Initial value is "undefined"
 // var myName;
 // console.log(myName);
@@ -37,3 +36,10 @@ if (true) {
 console.log(AGE);
 //! "const" variables must be assigned a value when declaring them
 // const currentJob;
+
+//? Why does this not work? (Research more about hoisting)
+// let randomNumber = 3;
+// if (true) {
+//   console.log(randomNumber);
+//   let randomNumber = 2;
+// }
