@@ -11,3 +11,6 @@ comment
 # TODO: saved for later
 
 print("Hello World!")
+
+number = input("Enter a number: ")
+print("You entered: " + number)

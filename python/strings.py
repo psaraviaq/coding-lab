@@ -3,32 +3,45 @@
 sentence = "I love pizza"
 # sentence[0] = "i"
 
-# * f-strings: "f" prefix before the string, code inside curly braces
-print(f'f"...{{x}}...": {sentence}      len(...): {len(sentence)}')
+# * "len"
+print("len(...):", len(sentence))
 
-# * "lower", "upper"
-print('\nog: "Love"')
-print(".lower(): " + "Love".lower(), "\t\t.upper(): " + "Love".upper())
+# * Comparison
+print("\n'a' < 'b':", "a" < "b")
 
-# * "swapcase", "title", "capitalize"
-print('\nog: "I hate you."')
-print(
-    ".swapcase(): " + "I hate you.".swapcase(),
-    "\t.title(): " + "I hate you.".title(),
-    "\t\t.capitalize(): " + "I hate you.".capitalize(),
-)
+# * f-strings (solves the problem of concatenation)
+print(f'\nf"...{{x}}...": {sentence}')
 
-# * "strip", "lstrip", "rstrip"
-print(
-    '\n.strip(): "  wow  " --> ' + "  wow  ".strip(),
-    '\t.lstrip("."): "...sure" --> ' + "...sure".lstrip("."),
-)
+# * "lower", "upper" (converts the string to lowercase/uppercase)
+print("\n.lower(): " + sentence.lower(), "\t\t.upper(): " + sentence.upper())
 
-# * "split" (default: " ")
-print('\n.split(): "Yes or No" --> ' + str("Yes or No".split()))
-# print(".split(\"a\"): \"array\" --> " + str("array".split("a")))
-# * You can split a string individually with "list"
-print('list("abc"): ', list("abc"))
-
-# * "replace"
+# * "replace" (replaces a substring with another)
+# ! It replaces all occurrences unlike other languages
 print('\n.replace("z", "s"): ' + sentence.replace("z", "s"))
+
+# * "strip" (removes whitespace from both ends by default) / "lstrip", "rstrip"
+# ^ It can also take an argument to remove specific characters in any order
+print('\n.strip(): "  wow  " --> ' + "  wow  ".strip())
+# ! "removeprefix", "removesuffix" (they only remove once)
+
+# * "capitalize", "title", "swapcase"
+print(
+    "\n.capitalize(): " + sentence.capitalize(),
+    "\t.title(): " + sentence.title(),
+    "\t\t.swapcase(): " + sentence.swapcase(),
+)
+
+# * "split" (divides a string into a list of substrings using spaces by default)
+# ^ It can also take a character to split the string
+print("\n.split():", str(sentence.split()))
+# ! However, you can't pass an empty string, use "list" instead
+
+# * "index" (returns the index of the first occurrence of a substring)
+# ! But it raises an error if the substring is not found
+print('\n.index("p"): ' + str(sentence.index("pi")))
+
+# * "count" (number of occurrences of a substring)
+print('\n.count("z"): ' + str(sentence.count("z")))
+
+# * "startswith", "endswith" (checks if a string starts/ends with a substring)
+print("\n.endswith('pizza'): " + str(sentence.endswith("pizza")))

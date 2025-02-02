@@ -1,14 +1,13 @@
-// // Initial value is "undefined"
-// var myName;
-// console.log(myName);
-
-// // But it can be assigned a value later
-// var myName = "Pedro";
-// console.log("My name is " + myName);
-
-// // Or do both in one go;
-// var yourName = "Python";
-// console.log("Your name is", yourName);
+//* When a variable is declared but not assigned a value, it's value is "undefined"
+var month;
+console.log(month);
+var month = "august";
+console.log(month);
+//! However with "var", variables declared in a block scope can be accessed outside of it
+if (true) {
+  var year = 2024;
+}
+console.log(year);
 
 //~ ES6 introduced the block scope
 
@@ -22,9 +21,6 @@ if (true) {
   console.log(favoriteColor);
 }
 console.log(favoriteColor);
-//?...
-let person;
-console.log(person);
 
 //* With "const" you can't reassign nor redeclare.
 const AGE = 13;
@@ -43,3 +39,9 @@ console.log(AGE);
 //   console.log(randomNumber);
 //   let randomNumber = 2;
 // }
+
+//^ You can also do multiple assignments
+let a = 1,
+  b = 2,
+  c = 3;
+console.log(a, b, c);

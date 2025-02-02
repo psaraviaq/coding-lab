@@ -4,28 +4,27 @@
 console.log(typeof 2);
 
 //* 2) String
-console.log(typeof "It's me"); // single or double quotes
-console.log(typeof `Tch`);
-console.log("wow".length); // 'length' is a property
+console.log(typeof "It's me");
 
 //* 3) Boolean
 console.log(typeof true);
-console.log(typeof false);
 
-//! 4) Null (using "typeof" will cause a Javascript bug)
+//* 4) Null (absence of value)
+//! Using "typeof" will cause a bug that is only being kept for legacy reasons
 console.log(typeof null);
 
-//* 5) Undefined
-var noValue;
+//* 5) Undefined (a variable that has been declared but not assigned a value)
+//! Although you can still assign a variable to undefined
+let noValue;
 console.log(noValue);
 
-//* These last two were just introduced in ES6
+//! These last two were just introduced in ES6
 //* 6) BigInt
-var bigNumber = BigInt(3);
+let bigNumber = BigInt(3);
 console.log(typeof bigNumber);
 
-//? 7) Symbol (I don't know much about this type)
-var sym = Symbol();
+//? 7) Symbol
+let sym = Symbol();
 console.log(typeof sym);
 
 //* __________________________Falsy Values_________________________
@@ -34,3 +33,11 @@ console.log("'':", !!"");
 console.log("undefined:", !!undefined);
 console.log("null:", !!null);
 console.log("NaN:", !!NaN);
+//! These are actually truthy values
+console.log("[]", !![]);
+console.log("{}", !!{});
+
+//* __________________________Type Conversion_________________________
+console.log("Number('10'):", Number("10"));
+console.log("String(['a', 'b', 'c']):", String(["a", "b", "c"]));
+console.log("Boolean({}):", Boolean({}));

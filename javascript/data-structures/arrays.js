@@ -1,49 +1,33 @@
-var languages = ["english", "spanish", "french"];
+let languages = ["english", "spanish", "french"];
 
-//* Checks if it's actually an array
-console.log(Array.isArray(languages));
-console.log(languages);
-
-//* "push" adds at the end
+//* "push" (adds an element at the end)
 languages.push("russian");
-console.log(languages);
+console.log("push:", languages);
 
-//* "pop" removes at the end
-console.log(languages.pop());
-console.log(languages);
+//* "pop" (removes the last element)
+languages.pop();
+console.log("pop:", languages);
 
-//* "unshift" adds at the beginning
-languages.unshift("chinese");
-console.log(languages);
+//* "indexOf" (the first occurrence of an element)
+console.log("indexOf:", languages.indexOf("french"));
 
-//* "shift" removes at the beginning
-console.log(languages.shift());
-console.log(languages);
+//* "concat" (adds multiple elements by passing an array)
+console.log("concat:", languages.concat(["german", "japanese"]));
 
-//* "from" creates an array
-console.log(Array.from({ length: 5 }, (_, i) => i));
+//* "includes" (checks if an element is present)
+console.log("includes:", languages.includes("english"));
 
-//* __________________________ ES6 features _____________________________
+//* "sort" (orders the elements)
+languages.sort();
+console.log("sort:", languages);
 
-//* Destructuring
-const [fruit, , user, number] = ["apple", 10, "Pedro"];
-console.log(`${user} eats ${number} ${fruit}s`);
+//* "reverse" (inverts the order)
+languages.reverse();
+console.log("reverse:", languages);
 
-//* The "for...of" loop iterates over its elements
-for (x of languages) {
-  console.log("I speak", x);
-}
+//* "slice" (returns a part of the array)
+console.log("slice:", languages.slice(-2));
 
-//* Spread operator "..." (useful for concatenating and cloning)
-let numbers = [2, 3, 4];
-numbers = [1, ...numbers, 5];
-console.log(numbers);
-
-const myPets = ["cat", "dog"];
-const yourPets = [...myPets];
-yourPets.pop();
-console.log("I:", myPets, "You:", yourPets);
-
-//* Rest operator "..." (condenses elements into a single element)
-const [a, b, ...c] = [1, 2, 3, 4, 5];
-console.log(a, b, c);
+//* "join" (converts the array to a string using a separator)
+//! The default separator is a comma ","
+console.log("join:", languages.join());
