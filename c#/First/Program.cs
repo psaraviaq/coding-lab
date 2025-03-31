@@ -10,4 +10,18 @@
 
 //& "dotnet run": Use this command inside the project folder
 
-Console.WriteLine("Hello, World!");
+//~ You don't need to create a class to run a program
+// Console.WriteLine("Hello, World!");
+
+//~ But you can create a class to run it
+//* Namespaces help to avoid naming conflicts between classes
+namespace First
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
