@@ -1,11 +1,13 @@
 <!--^ git init -->
-<!--~ Creates a Git repository inside the folder, the hidden ".git" directory. -->
+<!--& Initializes a Git repository in the current directory. -->
+<!--~ It creates a hidden ".git" folder. When used again, nothing happens. -->
 
 <!--^ git config --global user.name "___" -->
 <!--^ git config --global user.email "___" -->
-<!--~ Set up your name and email address, only need to do this once. -->
+<!--& Configures Git to use a specific user name and email address. -->
+<!--~ You can use it without arguments to see the current configuration. -->
+<!--~ Or use it again with arguments to change their values. -->
 
 <!--^ git add "___" -->
-<!--~ Adds the file to Git -->
 
 <!--^ git commit -m "___" -->
