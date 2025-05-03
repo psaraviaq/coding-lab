@@ -1,3 +1,5 @@
+.drafts/
+
 # "python" compiled files
 __pycache__/
 
