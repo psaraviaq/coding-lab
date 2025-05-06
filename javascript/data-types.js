@@ -1,4 +1,5 @@
 //* There are 7 primitive data types in Javascript
+//^ Use "typeof" to check the data type
 
 //* 1) Number
 console.log(typeof 2);
