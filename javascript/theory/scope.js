@@ -15,7 +15,7 @@ console.log(`Bye ${username}`);
 function localGreet(question) {
   let username = "Kevin";
   console.log(`Hello ${username}, ${question}`);
-  //! If you don't declare a variable in a function, it will be global
+  //! If you don't declare a variable in a function (var, let or const), it will be global
   // password = "123";
 }
 localGreet("how are you?");
@@ -27,7 +27,7 @@ console.log(`Bye ${username}`);
 if (true) {
   let username = "Jane";
   console.log(`Hello ${username}`);
-  //! Same goes for code blocks
+  //! Same goes for code blocks, but only for "let" and "const"
   // let password = "123";
 }
 console.log(`Bye ${username}`);
