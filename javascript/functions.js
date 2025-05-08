@@ -15,6 +15,14 @@ speak();
   console.log("Hello");
 })();
 
+//^ In functions, "pass-by-value" is used with primitive data types
+//^ This means the argument is copied into the function, so the original value isn't changed
+let number = 27;
+function add(number) {
+  number += 1;
+}
+console.log(number);
+
 //* "arguments" is used to access the arguments passed to a function
 //! Even if the parameters are not defined
 function sum() {
