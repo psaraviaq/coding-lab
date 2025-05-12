@@ -1,5 +1,13 @@
-//* "every"
+//^ Arrays also have methods that take a callback function as an argument
 let arr = [2, 6, 7, 4, -1, 23];
+
+//* "forEach" doesn't return anything
+arr.forEach((e) => console.log(e));
+// let val = "";
+// arr.forEach((e) => (val += e));
+// console.log(val);
+
+//* "every"
 console.log(arr.every((e) => e < 30));
 
 //* "filter"
@@ -13,6 +21,10 @@ console.log(arr.map((e) => e * 2));
 
 //* "reduce" has a second argument that is optional
 console.log(arr.reduce((accumulator, current) => accumulator + current, 0));
+
+//* "sort" (orders the elements)
+// languages.sort();
+// console.log("sort:", languages);
 
 //* "some"
 console.log(arr.some((e) => !(e % 7)));

@@ -17,10 +17,6 @@ console.log("concat:", languages.concat(["german", "japanese"]));
 //* "includes" (checks if an element is present)
 console.log("includes:", languages.includes("english"));
 
-//* "sort" (orders the elements)
-languages.sort();
-console.log("sort:", languages);
-
 //* "reverse" (inverts the order)
 languages.reverse();
 console.log("reverse:", languages);
