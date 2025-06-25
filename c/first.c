@@ -1,8 +1,8 @@
-//* This is needed for the "printf" function and its relatives
+//* This is needed for "printf"
 #include <stdio.h>
 
 int main(void)
 {
-    //! "printf" does not add a newline character by default, so you have to add it yourself
-    printf("hello, world\n");
+    //! "printf" does not add a newline character by default
+    printf("Hello, World!\n");
 }
