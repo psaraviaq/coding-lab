@@ -9,5 +9,9 @@
 <!--~ Or use it again with arguments to change their values. -->
 
 <!--^ git add "___" -->
+<!--& Chooses which file changes are included in the next commit. -->
 
 <!--^ git commit -m "___" -->
+<!--& Stores staged changes in the repository. -->
+<!--~ Git creates a commit object in the repository (inside the ".git" folder). -->
+<!--~ The commit object contains some information and a pointer to a tree (where the changes are actually stored). -->
