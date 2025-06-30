@@ -15,3 +15,7 @@
 <!--& Stores staged changes in the repository. -->
 <!--~ Git creates a commit object in the repository (inside the ".git" folder). -->
 <!--~ The commit object contains some information and a pointer to a tree (where the changes are actually stored). -->
+<!--~ It also stores the ID of the previous commit, this unidirectional chain is called the commit history. -->
+
+<!--^ git status -->
+<!--& Checks the status of the files in the working directory. -->
