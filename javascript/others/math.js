@@ -8,3 +8,5 @@ console.log(Math.floor(1.9));
 console.log(Math.ceil(3.1));
 //* "round" rounds to the nearest integer
 console.log(Math.round(7.4), Math.round(7.6));
+
+//* Math.trunc

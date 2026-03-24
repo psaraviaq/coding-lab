@@ -1,8 +1,9 @@
 //* a basic "object"
-var person = {
+let person = {
   name: "Pedro",
   age: 22,
-  pets: ["cat"],
+  pets: ["cat", "dog"],
+  //& different ways to represent methods
   greeting() {
     console.log(`Hi, my name is ${this.name}`);
   },
@@ -12,6 +13,9 @@ var person = {
 console.log(person.pets);
 console.log(person["name"]);
 person.greeting();
+
+//* this (with arrow functions the reference is where is called)
+//* primitive values in stack, reference values (objects) in heap
 
 //* Intellisense doesn't support object built-in methods on purpose
 console.log(person.hasOwnProperty("age"));
