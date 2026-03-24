@@ -1,7 +1,7 @@
 // comment
+
 /*
-also
-a
+another
 comment
 */
 
@@ -10,15 +10,4 @@ comment
 //*! Warning !!!
 //*TODO: Do that
 
-console.log("Hello World!"); // inline comment
-
-//* Using a variable from the console
-var rl = require("readline/promises").createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-(async function () {
-  var greet = await rl.question("Type a greeting: ");
-  console.log(`${greet} Pedro!`);
-  rl.close();
-})();
+console.log("Hello World!");

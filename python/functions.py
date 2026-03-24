@@ -1,31 +1,53 @@
+#
+# * "def"
+def sum(x, y):
+    return x + y
 
-#* Functions use the keyword "def"
-#* When you don't return anything, it returns "None"
-def double(x):
 
-    #* Docstrings add documentation to functions
-    """This function multiplies a number by 2"""
+print(sum(5, 3))
 
-    return x * 2
+# ! Arguments are required
+# print(sum())
+# * Keyword arguments
+print(sum(y=2, x=7))
 
-print(double(5))
-#! Parameter values are required unless you set a default value
-# print(double())
 
-#* You can pass an arbitrary number of arguments using a "*" before the parameter
-#* It converts the arguments into a tuple (iterable)
+# * Default parameters
+def multiply(x, y=1):
+    return x * y
+
+
+print(multiply(5))
+
+
+# * You can return multiple values (tuple)
+def multiple_values():
+    return 1, 2, 3
+
+
+a, b, c = multiple_values()
+print(a, b, c)
+
+
+# * When no return is specified, the function returns "None"
+def no_return():
+    pass
+
+
+print(no_return())
+
+
+# * "*args" (tuple)
 def pizza(*toppings):
     print(toppings)
 
+
 pizza("pepperoni", "mushrooms", "onions")
 
-#* You can pass an arbitrary number of keyword arguments using a "**" before the parameter
-#* It converts the arguments into a dictionary
-def info(**person):
+
+# * "**kwargs" (dictionary)
+def user_data(**person):
     print(person)
 
-info(name="John", age=22, height=1.80)
 
-#* If you want to have a function that doesn't do anything yet, use the "pass" keyword
-def test_code():
-    pass
+user_data(name="Pedro", age=24)

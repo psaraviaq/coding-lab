@@ -1,3 +1,6 @@
+.drafts/
+.vscode/
+
 # "python" compiled files
 __pycache__/
 
@@ -24,5 +27,4 @@ build/
 .dart_tool/
 
 # 'c' compiled files
-.temp/
-.vscode/
+*.out

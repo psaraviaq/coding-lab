@@ -1,32 +1,47 @@
-//* Initial value is "undefined"
-var myName;
-console.log(myName);
-
-//* But it can be assigned a value later
-var myName = "Pedro";
-console.log("My name is " + myName);
-
-//* Or do both in one go;
-var yourName = "Python";
-console.log("Your name is", yourName);
-
-//* ES6 introduced the block scope
-//* Can assign different values with "let" but not re-declaring it
-let color = "red";
+//* When a variable is declared but not assigned a value, it's value is "undefined"
+var month;
+console.log(month);
+var month = "august";
+console.log(month);
+//! However with "var", variables declared in a block scope can be accessed outside of it
 if (true) {
-  let color = "blue";
-  console.log(color);
-  color = "yellow";
-  console.log(color);
+  var year = 2024;
 }
-console.log(color);
+console.log(year);
 
-//*Can't assign nor re-declare with "const"
-const age = 13;
+//~ ES6 introduced the block scope
+
+//* With "let" you can reassign values with but not redeclare the variable.
+let favoriteColor = "red";
+// let favoriteColor;
 if (true) {
-  const age = 17;
-  console.log(age);
+  let favoriteColor = "blue";
+  console.log(favoriteColor);
+  favoriteColor = "yellow";
+  console.log(favoriteColor);
 }
-console.log(age);
+console.log(favoriteColor);
+
+//* With "const" you can't reassign nor redeclare.
+const AGE = 13;
+if (true) {
+  const AGE = 17;
+  console.log(AGE);
+  // AGE = 20;
+}
+console.log(AGE);
 //! "const" variables must be assigned a value when declaring them
 // const currentJob;
+
+//? Why does this not work? (Research more about hoisting)
+// let randomNumber = 3;
+// if (true) {
+//   console.log(randomNumber);
+//   let randomNumber = 2;
+// }
+
+//^ You can also do multiple assignments
+let a = 1,
+  b = 2,
+  c = 3;
+console.log(a, b, c);

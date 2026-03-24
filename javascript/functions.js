@@ -1,22 +1,39 @@
-//* simple function
-function factorial(n) {
-  if (n === 0) return 1;
-  return n * factorial(n - 1);
+//* Function declaration
+function greet() {
+  console.log("Hello");
 }
-console.log(factorial(6));
+greet();
 
-//* "arguments" keyword
-function totalSum() {
-  console.log(arguments);
-  var sum = 0;
-  for (var i = 0; i < arguments.length; i++) {
+//* Function expression
+let speak = function () {
+  console.log("Hello");
+};
+speak();
+
+//* IIFE (Immediately Invoked Function Expression)
+(function () {
+  console.log("Hello");
+})();
+
+//^ In functions, "pass-by-value" is used with primitive data types
+//^ This means the argument is copied into the function, so the original value isn't changed
+let number = 27;
+function add(number) {
+  number += 1;
+}
+console.log(number);
+
+//* "arguments" is used to access the arguments passed to a function
+//! Even if the parameters are not defined
+function sum() {
+  // console.log(arguments);
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
     sum += arguments[i];
   }
   return sum;
 }
-console.log(totalSum(2, 6, 1, 5));
-
-//* __________________________ ES6 features _____________________________
+console.log(sum(1, 2, 3, 4));
 
 //* Default parameters
 function noParams(number = 10) {
@@ -25,10 +42,27 @@ function noParams(number = 10) {
 console.log(noParams());
 
 //* Arrow functions
-console.log(((x) => x * x)(25));
+const multiply = (x, y) => {
+  return x * y;
+};
+console.log(multiply(5, 15));
 
-const greet = () => ({ greeting: "hello" });
-console.log(greet());
+const double = (x) => x * 2;
+console.log(double(7));
+
+//^ A callback function is a function passed as an argument to another function
+function welcomeMessage(name, callback) {
+  const message = callback(name);
+  console.log(message);
+}
+function greet(name) {
+  return `Hello ${name}`;
+}
+function goodbye(name) {
+  return `Goodbye ${name}`;
+}
+welcomeMessage("Pedro", greet);
+welcomeMessage("Pedro", goodbye);
 
 //* Spread operator "..." (expands array into its elements)
 const numbers = [3, 17, 2, 9, 23, 5, 14];
@@ -38,10 +72,10 @@ function myFunction(x, y, z, w) {
 myFunction(...numbers);
 
 //* Rest operator "..." (condenses elements into a single element)
-function speak(person, ...languages) {
-  console.log(languages);
-  for (x of languages) {
-    console.log(`${person} speaks ${x}`);
-  }
-}
-speak("Pedro", "english", "spanish", "french");
+// function speak(person, ...languages) {
+//   console.log(languages);
+//   for (x of languages) {
+//     console.log(`${person} speaks ${x}`);
+//   }
+// }
+// speak("Pedro", "english", "spanish", "french");

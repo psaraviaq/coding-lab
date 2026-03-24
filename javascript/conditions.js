@@ -1,5 +1,5 @@
 //* basic if-else condition
-var fruit = "apricot";
+let fruit = "apricot";
 if (fruit === "apple" || fruit[0] === "a") {
   console.log("it's an apple");
 } else {
@@ -7,10 +7,10 @@ if (fruit === "apple" || fruit[0] === "a") {
 }
 
 //* more conditions
-var high_score = 90;
-if (high_score !== 90) {
+let highScore = 90;
+if (highScore !== 90) {
   console.log("good");
-} else if (high_score === 90 && high_score % 9 !== 0) {
+} else if (highScore === 90 && highScore % 9 !== 0) {
   console.log("bad");
 } else {
   console.log("ok");
@@ -18,7 +18,7 @@ if (high_score !== 90) {
 
 //* "switch" for lots of conditions, the "break" keyword is necessary
 //*  for every case in order to stop executing the next cases
-var color = "yellow";
+let color = "yellow";
 switch (color) {
   case "red":
     console.log("not red");
@@ -37,6 +37,6 @@ switch (color) {
 }
 
 //* Ternary operator
-var pet = "cat";
-var petSound = pet === "cat" ? "meow" : "bark";
+let pet = "cat";
+let petSound = pet === "cat" ? "meow" : "bark";
 console.log(petSound);

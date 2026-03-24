@@ -1,0 +1,49 @@
+.container {
+  /** Grid container */
+  display: grid;
+
+  /** "template" defines the number and size of rows or columns */
+  /*~ Use "repeat" when you have multiple columns with the same size */
+  /* grid-template-rows: 20% 30% 50%; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+
+  /** "auto" will automatically adjust the size */
+  /*~ Use "minmax" whn you don't know one of the sizes */
+  grid-auto-rows: minmax(150px, auto);
+
+  /** "gap" defines the space between rows and columns */
+  /* column-gap: 10px; */
+  /* row-gap: 20px; */
+  gap: 20px;
+}
+
+/** Use grid lines to define the position of the items */
+/*~ After the first element, all the other elements will sort themselves */
+.one {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 4; */
+  grid-column: 1/4;
+}
+.nine {
+  grid-row: 2/4;
+  grid-column: 3;
+}
+
+/*~ With "span" you can define the size of the element */
+.four {
+  grid-row: 2 / span 3;
+}
+
+/*! Missing: Aligning and Justifying items */
+/*! Transparent Whole Grid */
+
+/** grid-template-areas */
+.area {
+  grid-template-areas: "two";
+}
+
+/** grid-area */
+._two {
+  grid-area: two;
+}
