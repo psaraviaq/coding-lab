@@ -12,5 +12,5 @@ comment
 
 print("Hello World!")
 
-number = input("Enter a number: ")
-print("You entered: " + number)
+text = input("Enter something: ")
+print("You entered:", text)
