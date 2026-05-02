@@ -9,14 +9,17 @@ public class _Scanner {
         //* Pass "System.in" as an argument to the constructor
         Scanner scanner = new Scanner(System.in);
 
-        //! Using "print" or "println" depends on whether you want a newline after the prompt
         System.out.print("Enter the password: ");
-        //* "nextLine" reads a line of text from the user
-        String password= scanner.nextLine();
+        //* "next" reads a single word
+        //* "nextLine" reads a whole line
+        String password = scanner.next();
+        // String password = scanner.nextLine();
 
         System.out.print("Enter the code: ");
-        //* "nextInt" is for reading an integer, and there are similar methods for other types 
+        //* "nextInt" reads an integer
+        //* "nextDouble" reads a floating-point number
         int code = scanner.nextInt();
+        // double code = scanner.nextDouble();
 
         System.out.println("Password: " + password + ", Code: " + code);
 
@@ -25,4 +28,3 @@ public class _Scanner {
         scanner.close();
     }
 }
-
