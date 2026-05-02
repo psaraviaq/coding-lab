@@ -1,8 +1,8 @@
 public class Strings {
-    
+
     //* Strings are objects in java
     //! They are immutable, they can't be changed with any method
-    
+
     public static void main(String[] args) {
         //* The "String" class overrides the "toString" method of the "Object" class
         //* So it prints the content of the string instead of the reference
@@ -10,28 +10,22 @@ public class Strings {
 
         //* Methods
         length();
-        charAt();
-        equals();
+        equals(); // equalsIgnoreCase
+        repeat();
         toLowerCase();
         toUpperCase();
-        trim();
         indexOf();
+        trim();
         split();
+        charAt();
     }
-    
+
     static void length() {
         //! length is a method for strings in java
         String str = "Hello World!";
         System.out.println("\"Hello World!\" --> " + "length(): " + str.length());
     }
-    
-    static void charAt() {
-        //* For reading a character at a specific index
-        //! In java, you can't use [] to read a character
-        String str = "Peter";
-        System.out.println("\"Peter\" --> " + "charAt(2): " + str.charAt(2));
-    }
-    
+
     static void equals() {
         //* For comparing the content of two strings
         //! In java, you can't use == to compare two strings
@@ -41,30 +35,36 @@ public class Strings {
         //* You can use "equalsIgnoreCase" to ignore the case
         System.out.println("\"peter\".equalsIgnoreCase(\"Peter\"): " + str1.equalsIgnoreCase("Peter"));
     }
-    
+
+    static void repeat() {
+        //* For repeating a string a specific number of times
+        String str = "Hello";
+        System.out.println("\"Hello \" --> " + "repeat(3): " + str.repeat(3));
+    }
+
     static void toLowerCase() {
         //* For converting a string to lowercase
         String str = "Peter";
         System.out.println("\"Peter\" --> " + "toLowerCase(): " + str.toLowerCase());
     }
-    
+
     static void toUpperCase() {
         //* For converting a string to uppercase
         String str = "Peter";
         System.out.println("\"Peter\" --> " + "toUpperCase(): " + str.toUpperCase());
     }
-    
-    static void trim() {
-        //* For removing white-spaces from the beginning and the end of a string
-        String str = "   Hello World!   ";
-        System.out.println("\"   Hello World!   \" --> " + "trim(): " + str.trim());
-    }
-    
+
     static void indexOf() {
         //* For finding the index of the first occurrence of a string
         //* Or returns -1 if the string is not found
         String str = "Hello World!";
         System.out.println("\"Hello World!\" --> " + "indexOf(\"World\"): " + str.indexOf("World"));
+    }
+
+    static void trim() {
+        //* For removing white-spaces from the beginning and the end of a string
+        String str = "   Hello World!   ";
+        System.out.println("\"   Hello World!   \" --> " + "trim(): " + str.trim());
     }
 
     static void split() {
@@ -73,5 +73,12 @@ public class Strings {
         //! The method returns an array of strings
         String[] arr = str.split(", ");
         System.out.println("\"Hello, World!\" --> " + "split(\", \"): [\"" + arr[0] + "\", \"" + arr[1] + "\"]");
+    }
+
+    static void charAt() {
+        //* For reading a character at a specific index
+        //! In java, you can't use [] to read a character
+        String str = "Peter";
+        System.out.println("\"Peter\" --> " + "charAt(2): " + str.charAt(2));
     }
 }
