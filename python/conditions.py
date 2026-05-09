@@ -8,10 +8,10 @@ elif num < 0:
 else:
     print("zero")
 
-# * Conditional assignment / Ternary ("___" if "___" else "___")
+# * ___ if ___ else ___ (ternary operator)
 print("even" if num % 2 == 0 else "odd")
 
-# * "match" ("switch" in other languages)
+# * "match"
 lang = "uk"
 match lang:
     case "es":
