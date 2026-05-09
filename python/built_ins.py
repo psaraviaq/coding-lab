@@ -7,5 +7,9 @@ print("min(1, 2, 3):", min(1, 2, 3))
 print("max(1, 2, 3):", max(1, 2, 3))
 print("sum([1, 2, 3]):", sum([1, 2, 3]))
 
-# * "range" (start, stop, step)
-print("\nlist(range(1, 10, 2)):", list(range(1, 10, 2)))
+# * "round"
+print("round(2.5):", round(2.5))
+print("round(3.14159, 2):", round(3.14159, 2))
+
+# * "abs"
+print("abs(-5):", abs(-5))
