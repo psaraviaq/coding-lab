@@ -1,10 +1,10 @@
 #
-# * "Modules" are files that contain Python code
+# * Modules are related groups of functions, classes, and variables that are organized together in a file.
 import math
 
 print(f"sqrt(36): {math.sqrt(36)}")
 
-# * from "___" import "___"
+# * from ___ import ___
 from math import log, e
 
 print(f"ln(e): {log(e)}")
@@ -19,7 +19,7 @@ print(f"4!: {f(4)}")
 # ! "*" (not recommended)
 # from math import *
 
-# * This only happens when the module is executed, not when it is imported
+# * This only happens when you run the module directly, not when you import it.
 # ~ When you import a module, all the code in it is executed
 if __name__ == "__main__":
     print(__name__)
