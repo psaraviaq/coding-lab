@@ -3,12 +3,6 @@
 sentence = "I love pizza"
 # sentence[0] = "i"
 
-# * "len"
-print("len(...):", len(sentence))
-
-# * Comparison
-print("\n'a' < 'b':", "a" < "b")
-
 # * f-strings (solves the problem of concatenation)
 print(f'\nf"...{{x}}...": {sentence}')
 
