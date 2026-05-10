@@ -22,3 +22,7 @@ try:
     print(area(-1, 2))
 except ValueError:
     print("An error occurred while calculating the area.")
+
+# * "assert" is used to check if a condition is true, and if not, it raises an exception
+#! Assertions should not be handled with try and except, they are meant to crash the program.
+assert 3 == 1 + 1
