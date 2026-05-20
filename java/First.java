@@ -14,6 +14,9 @@ public class First {
         // System.out.println("I'm", "Peter");
         //* But you can concatenate them
         System.out.println("I'm" + " Peter");
+
+        //~ "printf" is for formatted output, and can take multiple arguments
+        System.out.printf("%s\t%s\n", "Name:", "Pedro");
     }
 
 }
