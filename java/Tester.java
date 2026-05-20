@@ -2,7 +2,7 @@
 //! In Java, there can be more than one class (or interface) in a file
 //! But only one of them can be public and that's the main class
 public class Tester {
-    
+
     public static void main(String[] args) {
         Movie movie = new Movie();
         movie.title = "Lost in Cubicle Space";
@@ -16,17 +16,17 @@ public class Tester {
         //! However, you can override it to print something else
         System.out.println(movie);
     }
-    
+
 }
 
 //* Class with variables and methods
 class Movie {
-    
+
     //* Variables
     String title;
     String genre;
     int rating;
-    
+
     //* Methods
     void playIt() {
         System.out.println("Playing the movie");
