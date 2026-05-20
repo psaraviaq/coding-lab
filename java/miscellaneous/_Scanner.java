@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class _Scanner {
 
-    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         //* Create a "Scanner" object to read input from the user
         //* Pass "System.in" as an argument to the constructor
